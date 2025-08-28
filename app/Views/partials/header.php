@@ -8,6 +8,9 @@
     <meta name="description" content="<?= esc($meta['description'] ?? 'Professional CCTV & Surveillance Services') ?>">
     <meta name="keywords" content="<?= esc($meta['keywords'] ?? 'CCTV, Surveillance, Security') ?>">
 
-    <script src="https://cdn.tailwindcss.com"></script>
+  
+<link rel="stylesheet" href="<?php echo base_url('/SENTINEL/public_html/assets/css/styles.css'); ?>">
+
+
 </head>
 <body>
