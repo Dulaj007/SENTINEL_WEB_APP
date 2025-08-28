@@ -1,73 +1,57 @@
-<<<<<<< HEAD
-# CodeIgniter 4 Application Starter
+# 24/7 Sentinel – CCTV & Surveillance Website
 
-## What is CodeIgniter?
+## Project Overview
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible and secure.
-More information can be found at the [official site](https://codeigniter.com).
+24/7 Sentinel is a professional CCTV monitoring company providing 24/7 live surveillance for residential and commercial clients in Sri Lanka. The website is designed to showcase the company's services, enable client inquiries, and integrate modern communication tools.
 
-This repository holds a composer-installable app starter.
-It has been built from the
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+This project is built using **CodeIgniter 4** as the backend framework and **Tailwind CSS** for styling.
 
-More information about the plans for version 4 can be found in [CodeIgniter 4](https://forum.codeigniter.com/forumdisplay.php?fid=28) on the forums.
+---
 
-You can read the [user guide](https://codeigniter.com/user_guide/)
-corresponding to the latest version of the framework.
+## Features
 
-## Installation & updates
+### Basic Pages
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+- **Home Page** – Overview of services and company introduction.
+- **About Us** – Company information, mission, and vision.
+- **Services** – Detailed listing of CCTV monitoring services.
+- **Portfolio / Gallery** – Showcase of previous installations and projects.
+- **Contact Us** – Form for client inquiries and service requests.
+- **Blog / News** – Section for company updates and articles.
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+### Functionalities
 
-## Setup
+- **Product Inquiry Form** – Clients can submit inquiries directly via the website.
+- **Service Booking / Request Form** – Easy service request submission.
+- **Newsletter Subscription** – Collect user emails for company updates.
+- **WhatsApp Chat Integration** – Direct communication with clients.
+- **Live Chat** – Real-time support (future upgrade).
+- **Multi-language Support** – English (Sinhala/Tamil optional in future upgrades).
+- **SEO Optimization** – Search engine friendly structure.
+- **Social Media Integration** – Links to company social accounts.
+- **Google Maps Integration** – Display business location.
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+### Project Setup
 
-## Important Change with index.php
+- Built using **CodeIgniter 4**.
+- Styled with **Tailwind CSS**.
+- Organized assets: CSS, JS, images.
+- Common components: reusable header and footer templates.
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+---
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+## Future Enhancements
 
-**Please** read the user guide for a better explanation of how CI4 works!
+- Integration with emergency response systems.
+- Client login portal for service tracking.
+- Scalability for AI-based monitoring solutions.
 
-## Repository Management
+---
 
-We use GitHub issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+## Installation
 
-This repository is a "distribution" one, built by our release preparation script.
-Problems with it can be raised on our forum, or as issues in the main repository.
+1. Clone the repository:
 
-## Server Requirements
-
-PHP version 8.1 or higher is required, with the following extensions installed:
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-
-> [!WARNING]
-> - The end of life date for PHP 7.4 was November 28, 2022.
-> - The end of life date for PHP 8.0 was November 26, 2023.
-> - If you are still using PHP 7.4 or 8.0, you should upgrade immediately.
-> - The end of life date for PHP 8.1 will be December 31, 2025.
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php) if you plan to use MySQL
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-=======
-# SENTINEL_WEB_APP
-Web application that made with CodeIgniter 4 for CCTV monitoring company.
->>>>>>> 996a5c4bdda063466f476daf17d8e88a18cc9e0d
+```bash
+git clone <repository-url>
+```
