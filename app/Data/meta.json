@@ -1,0 +1,17 @@
+{
+  "home": {
+    "title": "24/7 Sentinel - Home",
+    "description": "Professional CCTV monitoring services for home and business.",
+    "keywords": "CCTV, security, surveillance, home security, business security"
+  },
+  "about": {
+    "title": "About Us - 24/7 Sentinel",
+    "description": "Learn about 24/7 Sentinel, your trusted CCTV & surveillance partner.",
+    "keywords": "about, CCTV, company, surveillance"
+  },
+  "services": {
+    "title": "Our Services - 24/7 Sentinel",
+    "description": "Explore the range of CCTV and surveillance services we provide.",
+    "keywords": "services, CCTV, monitoring, security solutions"
+  }
+}
