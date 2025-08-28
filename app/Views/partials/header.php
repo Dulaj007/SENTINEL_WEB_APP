@@ -9,5 +9,7 @@
     <meta name="keywords" content="<?= esc($meta['keywords'] ?? 'CCTV, Surveillance, Security') ?>">
 
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="<?= base_url('assets/css/styles.css') ?>">
+
 </head>
 <body>
