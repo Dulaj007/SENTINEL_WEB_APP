@@ -1,13 +1,7 @@
-<!-- pages/home.php -->
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home - 24/7 Sentinel</title>
-     <link href="<?= base_url('assets/css/output.css') ?>" rel="stylesheet">
-     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
+
+<?= $this->include('partials/header') ?><html lang="en">
+
+
 
 <?= view('partials/navbar') ?>
 
