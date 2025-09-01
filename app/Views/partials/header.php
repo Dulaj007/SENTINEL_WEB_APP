@@ -7,10 +7,11 @@
     <title><?= esc($meta['title'] ?? '24/7 Sentinel') ?></title>
     <meta name="description" content="<?= esc($meta['description'] ?? 'Professional CCTV & Surveillance Services') ?>">
     <meta name="keywords" content="<?= esc($meta['keywords'] ?? 'CCTV, Surveillance, Security') ?>">
+<link rel="stylesheet" href="<?php echo base_url('/SENTINEL/public_html/assets/css/main-style.css'); ?>">
+  <script src="https://cdn.tailwindcss.com"></script>
 
-  
-<link rel="stylesheet" href="<?php echo base_url('/SENTINEL/public_html/assets/css/styles.css'); ?>">
 
 
 </head>
 <body>
+
