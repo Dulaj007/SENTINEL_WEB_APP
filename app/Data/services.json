@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "SENTINEL/public_html/assets/icons/eye.png",
+    "title": "Live Monitoring",
+    "description": "24/7 real-time surveillance with trained security professionals monitoring your property around the clock",
+    "features": [
+      "Real-time alerts",
+      "Professional operators",
+      "Instant response"
+    ]
+  },
+  {
+    "icon": "SENTINEL/public_html/assets/icons/mic.png",
+    "title": "Two-Way Audio",
+    "description": "Direct communication capabilities for immediate intervention and deterrent actions",
+    "features": [
+      "Live intervention",
+      "Deterrent warnings",
+      "Clear audio quality"
+    ]
+  },
+  {
+    "icon": "SENTINEL/public_html/assets/icons/phone.png",
+    "title": "Emergency Response",
+    "description": "Integrated emergency response system with direct connections to local authorities",
+    "features": [
+      "Police dispatch",
+      "Fire department",
+      "Medical emergency"
+    ]
+  }
+]
