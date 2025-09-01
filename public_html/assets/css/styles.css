@@ -40,9 +40,12 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-dark-1: #121212;
+    --color-dark-2: #282828;
     --color-dark-3: #101724;
     --color-white-80: #FFFFFFCC;
     --color-white-60: #FFFFFF99;
+    --color-blue-dark: #03256A;
+    --color-blue: #24638A;
     --color-yellow: #FFBF35;
     --color-orange-dark: #AF7A08;
     --color-red-dark: #A40000;
@@ -252,6 +255,9 @@
   }
   .my-12 {
     margin-block: calc(var(--spacing) * 12);
+  }
+  .-mt-0 {
+    margin-top: calc(var(--spacing) * -0);
   }
   .-mt-0\.5 {
     margin-top: calc(var(--spacing) * -0.5);
@@ -469,6 +475,9 @@
   }
   .bg-dark-3 {
     background-color: var(--color-dark-3);
+  }
+  .bg-white {
+    background-color: var(--color-white);
   }
   .bg-white\/10 {
     background-color: color-mix(in srgb, #FFFFFF 10%, transparent);

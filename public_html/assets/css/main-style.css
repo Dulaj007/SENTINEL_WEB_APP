@@ -14,3 +14,8 @@
   --color-orange-dark: #AF7A08;
   --color-red-dark: #A40000;
 }
+body {
+    background-color: var(--color-dark-1);
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+}
