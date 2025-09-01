@@ -1,4 +1,4 @@
-<section id="services" class="my-12 px-4 md:px-0">
+<section id="services" class="my-12 px-4 md:px-4">
   <!-- Centered Titles -->
   <div class="text-center mb-8">
     <h2 class="text-2xl md:text-4xl font-bold text-[var(--color-white)]">
@@ -9,8 +9,8 @@
     </h2>
   </div>
 
-  <!-- Cards Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+  <!-- Cards Row -->
+  <div class="flex flex-col md:flex-row justify-center gap-10 ">
     <?php foreach($services as $service): ?>
       <?= view('cards/service-card', [
           'icon' => $service['icon'],
