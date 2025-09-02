@@ -15,6 +15,13 @@ class Home extends BaseController
         $services = json_decode($jsonData, true);
         $data['services'] = $services;
 
+        
+        // Load services JSON
+        $jsonData = file_get_contents(APPPATH . 'Data/work-home.json');
+        $workHomeData = json_decode($jsonData, true);
+        $data['workHomeData'] = $workHomeData;
+
+
         // Return home view with all data
         return view('pages/home', $data);
     }

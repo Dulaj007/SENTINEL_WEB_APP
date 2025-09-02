@@ -3,6 +3,7 @@
   <!-- Icon -->
   <div class="bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] w-12 h-12 flex items-center justify-center rounded-xl">
     <img src="<?= base_url($icon) ?>" alt="<?= esc($title) ?> Icon" class="w-6 h-6">
+    
   </div>
 
   <!-- Title + Description -->
