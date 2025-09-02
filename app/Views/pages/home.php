@@ -9,7 +9,8 @@
 <p>Your CCTV monitoring solution.</p>
 <?= view('section/services-home', ['services' => $services]) ?>
 <?= view('section/work-home', ['work-home' => $workHomeData]) ?>
-<?= view('cards/work-card') ?>
+<?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
+
 
 <div class="bg-dark-3 p-6">
   <h1 class="font-display text-3xl text-yellow">Welcome to Tailwind v4+ with CodeIgniter</h1>
