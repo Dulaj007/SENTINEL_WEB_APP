@@ -25,6 +25,11 @@ class Home extends BaseController
         $insightsData = json_decode($jsonData, true);
         $data['insightsData'] = $insightsData;
 
+        // Load Testimonials-home JSON
+        $jsonData = file_get_contents(APPPATH . 'Data/Testimonials-home.json');
+        $testimonialsData = json_decode($jsonData, true);
+        $data['testimonialsData'] = $testimonialsData; 
+
         // Return home view with all data
         return view('pages/home', $data);
     }

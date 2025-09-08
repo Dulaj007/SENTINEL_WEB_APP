@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Nimal Perera",
+        "role": "Restaurant Owner",
+        "rating": 5,
+        "message": "24/7 SENTINEL has been protecting our restaurant for 3 years. Their response time is incredible and the peace of mind is priceless.",
+        "image": "SENTINEL/public_html/assets/img/user-1.png"
+    },
+    {
+        "name": "Hiruni Silva",
+        "role": "Warehouse Manager",
+        "rating": 5,
+        "message": "The two-way audio feature is amazing. Our security team can communicate directly with visitors even when we're not on site.",
+        "image": "SENTINEL/public_html/assets/img/user-2.png"
+    },
+    {
+        "name": "Nimal Perera",
+        "role": "Project Manager",
+        "rating": 4,
+        "message": "Professional service with cutting-edge technology. They caught a break-in attempt and prevented thousands in damages.",
+        "image": "SENTINEL/public_html/assets/img/user-3.png"
+    },
+     {
+        "name": "Nimal Perera",
+        "role": "Project Manager",
+        "rating": 4,
+        "message": "Professional service with cutting-edge technology. They caught a break-in attempt and prevented thousands in damages.",
+        "image": "SENTINEL/public_html/assets/img/user-3.png"
+    }
+]
