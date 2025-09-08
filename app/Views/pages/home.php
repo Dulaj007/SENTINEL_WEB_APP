@@ -15,6 +15,7 @@
 
   <?= $this->include('section/getStarted-home') ?>
   
+<?= $this->include('section/WhyChoose') ?>
 
 <div class="bg-dark-3 p-6">
   <h1 class="font-display text-3xl text-yellow">Welcome to Tailwind v4+ with CodeIgniter</h1>
