@@ -10,6 +10,8 @@
 <?= view('section/services-home', ['services' => $services]) ?>
 <?= view('section/work-home', ['work-home' => $workHomeData]) ?>
 <?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
+<?= view('section/Testimonials-home', ['testimonialsData' => $testimonialsData]) ?>
+
 
   <?= $this->include('section/getStarted-home') ?>
   
