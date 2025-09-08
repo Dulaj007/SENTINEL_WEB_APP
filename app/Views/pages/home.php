@@ -4,9 +4,7 @@
 
 
 <?= view('partials/navbar') ?>
-
-<h1>Welcome to 24/7 Sentinel</h1>
-<p>Your CCTV monitoring solution.</p>
+<?= $this->include('section/heroHome') ?>
 <?= view('section/services-home', ['services' => $services]) ?>
 <?= view('section/work-home', ['work-home' => $workHomeData]) ?>
 <?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
