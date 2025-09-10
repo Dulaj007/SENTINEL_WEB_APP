@@ -1,55 +1,87 @@
-<nav class="w-full bg-[var(--color-black)] text-[var(--color-white)]"
+<!-- NAVBAR -->
+<nav id="main-nav"
+     class="w-full fixed top-0 left-0 z-50 bg-[var(--color-black)] text-[var(--color-white)]
+            shadow-lg transition-transform duration-300 ease-in-out will-change-transform"
      role="navigation" aria-label="Primary"
      style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
-  <div class="mx-auto max-w-7xl px-4 lg:px-6">
-    <div class="flex h-16 items-center justify-between">
+  <div class="mx-auto max-w-7xl px-4 lg:px-8">
+    <div class="flex h-20 items-center justify-between">
+
       <!-- Brand -->
-      <a href="#" class="flex items-center gap-2">
-        <img src="assets/img/247LogoNoBG.svg" alt="24/7 Sentinel logo" class="h-10 w-10 object-contain" />
+      <a href="#" class="flex items-center gap-3">
+        <img src="assets/icons/logo.png" alt="24/7 Sentinel logo" class="h-14 w-14 object-contain" />
         <div class="leading-tight">
-          <div class="text-base font-extrabold tracking-wide">
+          <div class="text-lg font-extrabold tracking-wide">
             <span class="text-[var(--color-white)]">24/7</span>
             <span class="ml-1 bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] bg-clip-text text-transparent">
               SENTINEL
             </span>
           </div>
-          <div class="text-[12px] text-[var(--color-white-60)]">Live Monitoring</div>
+          <div class="text-[13px] text-[var(--color-white-60)]">Live Monitoring</div>
         </div>
       </a>
+  <!-- Desktop Menu -->
+  <div class="hidden lg:flex items-center gap-4">
+    <a href="<?= base_url('/') ?>"
+      class="px-4 py-2 text-[15px] font-semibold rounded-md <?= set_active('') ?>">
+      Home
+    </a>
+    <a href="<?= base_url('about') ?>"
+      class="px-4 py-2 text-[15px] font-semibold rounded-md hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.08)] transition <?= set_active('about') ?>">
+      About
+    </a>
+    <a href="<?= base_url('services') ?>"
+      class="px-4 py-2 text-[15px] font-semibold rounded-md hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.08)] transition <?= set_active('services') ?>">
+      Services
+    </a>
+    <a href="<?= base_url('portfolio') ?>"
+      class="px-4 py-2 text-[15px] font-semibold rounded-md hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.08)] transition <?= set_active('portfolio') ?>">
+      Portfolio
+    </a>
+    <a href="<?= base_url('blog') ?>"
+      class="px-4 py-2 text-[15px] font-semibold rounded-md hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.08)] transition <?= set_active('blog') ?>">
+      Blog
+    </a>
 
-      <!-- Desktop Menu -->
-      <div class="hidden lg:flex items-center gap-2">
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white)] border-b-2 border-[var(--color-yellow)]">Home</a>
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.05)]">About</a>
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.05)]">Services</a>
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.05)]">Products</a>
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.05)]">Portfolio</a>
-        <a href="#" class="px-3 py-2 text-sm font-semibold rounded-md text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.05)]">Blog</a>
-        <a href="#"
-           class="ml-3 inline-flex items-center rounded-xl px-4 py-2 text-sm font-semibold
-                  bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
-                  text-[var(--color-white)] shadow hover:brightness-110
-                  focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60">
-          Contact
-        </a>
-      </div>
+    <!-- Quick Contact Icons (desktop) -->
+    <div class="flex items-center gap-3 ml-4">
+      <!-- Facebook -->
+      <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+        class="p-1 rounded-md text-[var(--color-white-80)] hover:text-[var(--color-yellow)] transition">
+        <img src="assets/icons/fb-logo.png" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
+      </a>
+
+      <!-- WhatsApp -->
+      <a href="https://wa.me/947XXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"
+        class="p-1 rounded-md text-[var(--color-white-80)] hover:text-[var(--color-green)] transition">
+        <img src="assets/icons/wp-logo.png" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
+      </a>
+    </div>
+
+    <!-- Contact Button -->
+    <a href="<?= base_url('contact') ?>"
+      class="ml-4 inline-flex items-center rounded-xl px-6 py-2 text-[15px] font-semibold
+              bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
+              text-[var(--color-black)] shadow-md hover:brightness-110 transition">
+      Contact
+    </a>
+  </div>
+
 
       <!-- Mobile Hamburger -->
       <button id="nav-toggle" type="button"
-              class="lg:hidden inline-flex items-center justify-center rounded-md p-2
-                     text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]
-                     focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60"
+              class="lg:hidden inline-flex items-center justify-center rounded-md p-1
+                     text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.15)]
+                     focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60 transition"
               aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
-        <!-- Hamburger icon -->
-        <svg id="icon-open" class="h-6 w-6" viewBox="0 0 24 24" fill="none"
+        <svg id="icon-open" class="h-7 w-7" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="3" y1="6" x2="21" y2="6"></line>
           <line x1="3" y1="12" x2="21" y2="12"></line>
           <line x1="3" y1="18" x2="21" y2="18"></line>
         </svg>
-        <!-- Close icon -->
-        <svg id="icon-close" class="hidden h-6 w-6" viewBox="0 0 24 24" fill="none"
+        <svg id="icon-close" class="hidden h-7 w-7" viewBox="0 0 24 24" fill="none"
              stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <line x1="18" y1="6" x2="6" y2="18"></line>
           <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -57,26 +89,64 @@
       </button>
     </div>
   </div>
-
-  <!-- Mobile Menu -->
-  <div id="mobile-menu" class="lg:hidden hidden border-t border-[rgba(255,255,255,0.10)]">
-    <div class="space-y-1 px-4 py-3">
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white)] bg-[rgba(255,255,255,0.05)]">Home</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]">About</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]">Services</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]">Products</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]">Portfolio</a>
-      <a href="#" class="block rounded-md px-3 py-2 text-base font-semibold text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.10)]">Blog</a>
-      <a href="#"
-         class="mt-2 block text-center rounded-xl px-4 py-2 text-base font-semibold
-                bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
-                text-[var(--color-black)] shadow hover:brightness-110 focus:outline-none
-                focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60">
-        Contact
-      </a>
-    </div>
-  </div>
 </nav>
+
+<!-- MOBILE MENU OVERLAY -->
+<div id="mobile-menu"
+     class="lg:hidden fixed inset-0 z-40 bg-[var(--color-black)] bg-opacity-95
+            flex flex-col items-center justify-center space-y-6 text-center text-lg
+            opacity-0 pointer-events-none transform -translate-y-4 transition-all duration-250 ease-in-out">
+  <!-- White close button (top-right) -->
+  <button id="mobile-close"
+          class="absolute top-6 right-6 bg-white text-black rounded-full w-10 h-10 flex items-center justify-center shadow-lg"
+          aria-label="Close menu">
+    <span class="text-2xl leading-none">&times;</span>
+  </button>
+
+
+
+  <!-- Navigation Links -->
+<a href="<?= base_url('/') ?>"
+   class="block px-4 py-2 font-semibold hover:text-[var(--color-yellow)] transition <?= set_active('') ?>">
+  Home
+</a>
+<a href="<?= base_url('about') ?>"
+   class="block px-4 py-2 font-semibold hover:text-[var(--color-yellow)] transition <?= set_active('about') ?>">
+  About
+</a>
+<a href="<?= base_url('services') ?>"
+   class="block px-4 py-2 font-semibold hover:text-[var(--color-yellow)] transition <?= set_active('services') ?>">
+  Services
+</a>
+<a href="<?= base_url('portfolio') ?>"
+   class="block px-4 py-2 font-semibold hover:text-[var(--color-yellow)] transition <?= set_active('portfolio') ?>">
+  Portfolio
+</a>
+<a href="<?= base_url('blog') ?>"
+   class="block px-4 py-2 font-semibold hover:text-[var(--color-yellow)] transition <?= set_active('blog') ?>">
+  Blog
+</a>
+  <!-- Social Icons inside the menu list -->
+  <div class="flex items-center justify-center gap-6 mt-6">
+    <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"
+       class="p-2 rounded-full bg-[rgba(255,255,255,0.1)] text-white hover:text-[var(--color-yellow)] transition">
+      <img src="assets/icons/fb-logo.png" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
+    </a>
+    <a href="https://wa.me/947XXXXXXXX" target="_blank" rel="noopener" aria-label="WhatsApp"
+       class="p-2 rounded-full bg-[rgba(255,255,255,0.1)] text-white hover:text-[var(--color-green)] transition">
+       <img src="assets/icons/wp-logo.png" alt="24/7 Sentinel logo" class="h-6 w-1-6 object-contain" />
+    </a>
+  </div>
+
+  <!-- Contact Button -->
+<a href="<?= base_url('contact') ?>"
+   class="mt-6 inline-block rounded-xl px-6 py-2 font-semibold
+          bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
+          text-[var(--color-black)] shadow-md hover:brightness-110 transition">
+  Contact
+</a>
+</div>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', function () {
@@ -84,13 +154,69 @@
     const menu = document.getElementById('mobile-menu');
     const openIcon = document.getElementById('icon-open');
     const closeIcon = document.getElementById('icon-close');
+    const mobileClose = document.getElementById('mobile-close');
+    const nav = document.getElementById('main-nav');
+
+    let menuOpen = false;
+
+    function openMenu() {
+      menuOpen = true;
+      // show overlay
+      menu.style.opacity = '1';
+      menu.style.pointerEvents = 'auto';
+      menu.style.transform = 'translateY(0)';
+      // update hamburger icons
+      openIcon.classList.add('hidden');
+      closeIcon.classList.remove('hidden');
+      // keep navbar visible while menu is open
+      nav.style.transform = 'translateY(0)';
+      // prevent body scroll
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMenu() {
+      menuOpen = false;
+      // hide overlay
+      menu.style.opacity = '0';
+      menu.style.pointerEvents = 'none';
+      menu.style.transform = 'translateY(-8px)';
+      // update icons
+      openIcon.classList.remove('hidden');
+      closeIcon.classList.add('hidden');
+      // restore body scroll
+      document.body.style.overflow = '';
+    }
 
     toggle?.addEventListener('click', () => {
-      const open = menu.classList.contains('hidden');
-      menu.classList.toggle('hidden', !open);
-      openIcon.classList.toggle('hidden', open);
-      closeIcon.classList.toggle('hidden', !open);
-      toggle.setAttribute('aria-expanded', String(open));
+      if (menuOpen) closeMenu();
+      else openMenu();
     });
+
+    mobileClose?.addEventListener('click', () => closeMenu());
+
+    // Close when clicking outside content (backdrop)
+    menu?.addEventListener('click', (e) => {
+      if (e.target === menu) closeMenu();
+    });
+
+    // Close on ESC
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && menuOpen) closeMenu();
+    });
+
+    // Hide on scroll down, show on scroll up — but DISABLED while mobile menu is open
+    let lastScroll = window.pageYOffset || 0;
+    window.addEventListener('scroll', () => {
+      if (menuOpen) return; // don't hide while overlay is open
+      const currentScroll = window.pageYOffset || 0;
+      if (currentScroll > lastScroll && currentScroll > 80) {
+        // scrolling down -> hide
+        nav.style.transform = 'translateY(-100%)';
+      } else {
+        // scrolling up -> show
+        nav.style.transform = 'translateY(0)';
+      }
+      lastScroll = currentScroll;
+    }, { passive: true });
   });
 </script>
