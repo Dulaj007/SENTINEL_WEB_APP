@@ -1,4 +1,4 @@
-<footer class="w-full text-[var(--color-white)] border-t border-[rgba(255,255,255,0.08)] relative overflow-hidden"
+<footer class="w-full text-[var(--color-white)] border-t border-[rgba(255,255,255,0.08)] bg-[var(--color-black)]  relative overflow-hidden"
         role="contentinfo"
         style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
   

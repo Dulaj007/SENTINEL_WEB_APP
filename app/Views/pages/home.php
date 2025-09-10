@@ -1,28 +1,24 @@
 
+<!-- Top of home.php -->
 <?= $this->include('partials/header') ?>
 
+<!-- Persistent Matrix background -->
+<canvas id="matrixCanvas"></canvas>
 
-
+<!-- Page content -->
 <?= view('partials/navbar') ?>
 <?= $this->include('section/heroHome') ?>
-<?= $this->include('section/callUs') ?>
-<?= $this->include('section/contactQuick') ?>
 <?= view('section/services-home', ['services' => $services]) ?>
-<?= view('section/work-home', ['work-home' => $workHomeData]) ?>
-<?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
-<?= view('section/Testimonials-home', ['testimonialsData' => $testimonialsData]) ?>
-
-
-  <?= $this->include('section/getStarted-home') ?>
-  
 <?= $this->include('section/WhyChoose') ?>
-
-<div class="bg-dark-3 p-6">
-  <h1 class="font-display text-3xl text-yellow">Welcome to Tailwind v4+ with CodeIgniter</h1>
-  <button class="btn-primary mt-4 text-red-dark">Click Me</button>
-</div>
-
+<?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
+<?= view('section/work-home', ['work-home' => $workHomeData]) ?>
+<?= $this->include('section/getStarted-home') ?>
+<?= $this->include('section/callUs') ?>
+<?= view('section/Testimonials-home', ['testimonialsData' => $testimonialsData]) ?>
+<?= $this->include('section/contactQuick') ?>
 <?= view('scripts/home-script') ?>
+
 <?= view('partials/footer') ?>
-</body>
-</html>
+
+
+

@@ -1,5 +1,8 @@
 <section id="contact-us" class="bg-[var(--color-dark-2)] py-16 px-4 md:px-8">
-  <div class="max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-8 justify-between">
+   <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/40 to-transparent z-0"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-0"></div>
+
+  <div class="relative max-w-[1200px] mx-auto flex flex-col lg:flex-row gap-8 justify-between z-5">
     
     <!-- Form Section -->
     <div class="flex-1 w-full lg:w-auto bg-[var(--color-dark-1)] p-8 shadow-lg rounded-xl">

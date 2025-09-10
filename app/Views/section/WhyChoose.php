@@ -1,5 +1,7 @@
 
-<section id="why-choose" class="relative bg-[var(--color-dark-1)] text-white py-16 px-4 md:px-8">
+<section id="why-choose" class="relative text-white py-8 px-4 md:px-8 bg-[var(--color-black)] sm:bg-transparent">
+      <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/60 to-transparent z-0"></div>
+
     <!-- Mobile Background Image -->
     <div class="absolute inset-0 md:hidden">
         <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>" alt="Monitoring Center" 
