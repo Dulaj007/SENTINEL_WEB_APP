@@ -1,9 +1,12 @@
-<section id="get-started" class="bg-[var(--color-dark-1)] text-center py-12 md:py-16 px-4 md:px-6 opacity-0">
+<section class="">
+<div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/40 to-transparent z-0"></div>
+<section id="get-started" class="bg-transparent text-center py-12 md:py-16 px-4 md:px-6 opacity-0">
+  
   <!-- Title -->
-  <h2 class="text-2xl md:text-4xl font-bold text-[var(--color-white)] mb-3">
+  <h2 class="text-2xl md:text-4xl font-bold text-[var(--color-white)] mb-3 z-1">
     Getting Started is Easy
   </h2>
-  <p class="text-[var(--color-white-80)] text-sm md:text-lg max-w-2xl mx-auto mb-10 md:mb-12">
+  <p class="text-[var(--color-white-80)] text-sm md:text-lg max-w-2xl mx-auto mb-10 md:mb-12 z-1">
     Secure your property in 3 simple steps with The 24/7 Sentinel process – designed to keep your home and business safe.
   </p>
 
@@ -43,7 +46,7 @@
     </div>
   </div>
 </section>
-
+</section>
 <!-- GSAP + ScrollTrigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>

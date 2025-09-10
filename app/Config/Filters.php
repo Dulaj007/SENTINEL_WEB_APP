@@ -25,16 +25,17 @@ class Filters extends BaseFilters
      * or [filter_name => [classname1, classname2, ...]]
      */
     public array $aliases = [
-        'csrf'          => CSRF::class,
-        'toolbar'       => DebugToolbar::class,
-        'honeypot'      => Honeypot::class,
-        'invalidchars'  => InvalidChars::class,
-        'secureheaders' => SecureHeaders::class,
-        'cors'          => Cors::class,
-        'forcehttps'    => ForceHTTPS::class,
-        'pagecache'     => PageCache::class,
-        'performance'   => PerformanceMetrics::class,
-    ];
+    'csrf'          => CSRF::class,
+    'toolbar'       => DebugToolbar::class,
+    'honeypot'      => Honeypot::class,
+    'invalidchars'  => InvalidChars::class,
+    'secureheaders' => SecureHeaders::class,
+    'cors'          => Cors::class,
+    'forcehttps'    => ForceHTTPS::class,
+    'pagecache'     => PageCache::class,
+    'performance'   => PerformanceMetrics::class,
+    'minifyHtml'    => \App\Filters\MinifyHtml::class, // ✅ add this
+];
 
     /**
      * List of special required filters.
@@ -79,7 +80,9 @@ class Filters extends BaseFilters
         'after' => [
             // 'honeypot',
             // 'secureheaders',
+             'minifyHtml' => ['except' => ['api/*']],
         ],
+    
     ];
 
     /**
@@ -108,3 +111,6 @@ class Filters extends BaseFilters
      */
     public array $filters = [];
 }
+
+
+

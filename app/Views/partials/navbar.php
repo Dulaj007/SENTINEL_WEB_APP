@@ -20,6 +20,7 @@
           <div class="text-[13px] text-[var(--color-white-60)]">Live Monitoring</div>
         </div>
       </a>
+
   <!-- Desktop Menu -->
   <div class="hidden lg:flex items-center gap-4">
     <a href="<?= base_url('/') ?>"
@@ -60,19 +61,18 @@
 
     <!-- Contact Button -->
     <a href="<?= base_url('contact') ?>"
-      class="ml-4 inline-flex items-center rounded-xl px-6 py-2 text-[15px] font-semibold
-              bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
-              text-[var(--color-black)] shadow-md hover:brightness-110 transition">
+      class="ml-4 bg-gradient-animate inline-flex items-center rounded-xl px-6 py-2 text-[15px] font-bold
+            bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
+          text-[var(--color-black)] shadow-md hover:brightness-110 transition hover:text-white hover:scale-105 transform duration-500">    
       Contact
     </a>
   </div>
 
-
       <!-- Mobile Hamburger -->
       <button id="nav-toggle" type="button"
               class="lg:hidden inline-flex items-center justify-center rounded-md p-1
-                     text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.15)]
-                     focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60 transition"
+                  text-[var(--color-white-80)] hover:text-[var(--color-white)] hover:bg-[rgba(255,255,255,0.15)]
+                    focus:outline-none focus:ring-2 focus:ring-[var(--color-yellow)] focus:ring-opacity-60 transition"
               aria-controls="mobile-menu" aria-expanded="false">
         <span class="sr-only">Open main menu</span>
         <svg id="icon-open" class="h-7 w-7" viewBox="0 0 24 24" fill="none"
@@ -147,7 +147,7 @@
 </a>
 </div>
 
-
+<!-- Mobile nav bar script -->
 <script>
   document.addEventListener('DOMContentLoaded', function () {
     const toggle = document.getElementById('nav-toggle');
@@ -161,29 +161,28 @@
 
     function openMenu() {
       menuOpen = true;
-      // show overlay
       menu.style.opacity = '1';
       menu.style.pointerEvents = 'auto';
       menu.style.transform = 'translateY(0)';
-      // update hamburger icons
+
       openIcon.classList.add('hidden');
       closeIcon.classList.remove('hidden');
-      // keep navbar visible while menu is open
+
       nav.style.transform = 'translateY(0)';
-      // prevent body scroll
+ 
       document.body.style.overflow = 'hidden';
     }
 
     function closeMenu() {
       menuOpen = false;
-      // hide overlay
+
       menu.style.opacity = '0';
       menu.style.pointerEvents = 'none';
       menu.style.transform = 'translateY(-8px)';
-      // update icons
+
       openIcon.classList.remove('hidden');
       closeIcon.classList.add('hidden');
-      // restore body scroll
+  
       document.body.style.overflow = '';
     }
 
@@ -194,26 +193,26 @@
 
     mobileClose?.addEventListener('click', () => closeMenu());
 
-    // Close when clicking outside content (backdrop)
+   
     menu?.addEventListener('click', (e) => {
       if (e.target === menu) closeMenu();
     });
 
-    // Close on ESC
+   
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape' && menuOpen) closeMenu();
     });
 
-    // Hide on scroll down, show on scroll up — but DISABLED while mobile menu is open
+
     let lastScroll = window.pageYOffset || 0;
     window.addEventListener('scroll', () => {
-      if (menuOpen) return; // don't hide while overlay is open
+      if (menuOpen) return; 
       const currentScroll = window.pageYOffset || 0;
       if (currentScroll > lastScroll && currentScroll > 80) {
-        // scrolling down -> hide
+     
         nav.style.transform = 'translateY(-100%)';
       } else {
-        // scrolling up -> show
+        
         nav.style.transform = 'translateY(0)';
       }
       lastScroll = currentScroll;

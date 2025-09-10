@@ -3,7 +3,7 @@
   <img src="<?= base_url($icon) ?>" alt="<?= esc($title) ?> Icon" class="w-full h-full object-cover">
 
   <!-- Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/60 to-transparent pointer-events-none"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/80 to-transparent pointer-events-none"></div>
 
   <!-- Text Content -->
   <div class="absolute bottom-4 left-4 text-white z-10">

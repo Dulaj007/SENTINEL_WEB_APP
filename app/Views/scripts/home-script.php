@@ -1,48 +1,44 @@
+<!-- Matrix Effect Script -->
 <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  const section = document.getElementById('getStarted');
-  const steps = section.querySelectorAll('.step');
-  const totalSteps = steps.length;
+const canvas = document.getElementById('matrixCanvas');
+const ctx = canvas.getContext('2d');
 
-  function updateStepOnScroll() {
-    const scrollY = window.scrollY || window.pageYOffset;
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
-    const viewportHeight = window.innerHeight;
+function resizeCanvas() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
 
-    // Calculate how far the user has scrolled inside the sticky section
-    const scrollRelative = scrollY - sectionTop;
+const columns = Math.floor(canvas.width / 25);
+const drops = Array(columns).fill(0);
 
-    if (scrollRelative < 0) {
-      // Above the section: Show step 1 only
-      showStep(0);
-    } else if (scrollRelative >= sectionHeight - viewportHeight) {
-      // Below the sticky section: Show last step
-      showStep(totalSteps - 1);
-    } else {
-      // Inside the sticky section, divide height into steps
-      const stepHeight = (sectionHeight - viewportHeight) / (totalSteps - 1);
-      const currentStep = Math.min(totalSteps - 1, Math.floor(scrollRelative / stepHeight));
-      showStep(currentStep);
+const circleRadius = 4;
+const speed = 0.35;
+const fps = 30;
+
+function draw() {
+    // dark fade trail
+    ctx.fillStyle = 'rgba(18, 18, 18, 0.08)';
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+    for (let i = 0; i < drops.length; i++) {
+        // 80% dim orange, 20% bright yellow
+        const bright = Math.random() < 0.2;
+        ctx.fillStyle = bright
+            ? 'rgba(255, 191, 53, 0.9)'   // yellow
+            : 'rgba(175, 122, 8, 0.6)';   // orange-dark
+
+        ctx.beginPath();
+        ctx.arc(i * 25 + 12, drops[i] * 20, circleRadius, 0, Math.PI * 2);
+        ctx.fill();
+
+        drops[i] += speed;
+        if (drops[i] * 20 > canvas.height || Math.random() > 0.985) {
+            drops[i] = 0;
+        }
     }
-  }
+}
 
-  function showStep(stepIndex) {
-    steps.forEach((step, index) => {
-      if (index === stepIndex) {
-        step.style.opacity = '1';
-        step.style.pointerEvents = 'auto';
-      } else {
-        step.style.opacity = '0';
-        step.style.pointerEvents = 'none';
-      }
-    });
-  }
-
-  // Initialize showing the first step
-  showStep(0);
-
-  // Attach scroll event to window
-  window.addEventListener('scroll', updateStepOnScroll);
-});
+setInterval(draw, 1000 / fps);
 </script>

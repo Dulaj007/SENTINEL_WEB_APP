@@ -1,21 +1,19 @@
-<section id="testimonials" class="py-12 md:py-16 relative opacity-0">
-    <!-- Section line at start -->
-    <div class="w-full h-px bg-[var(--color-white-60)] mt-12"></div>
+<section id="testimonials" class=" md:py-16 relative opacity-0">
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-0"></div>
 
-    <div class="w-full max-w-6xl mx-auto text-center mb-12 pt-10">
+    <div class="w-full max-w-6xl mx-auto text-center mb-12 pt-10 z-5">
         <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-white)]">
             Client <span class="text-[var(--color-yellow)]">Testimonials</span>
         </h2>
     </div>
 
-    <div class="grid gap-2 md:grid-cols-4 px-4 md:px-0">
+    <div class="grid gap-2 md:grid-cols-3 px-4 lg:px-28 z-5">
         <?php foreach ($testimonialsData as $testimonial): ?>
             <?= view('cards/Testimonials-card', ['testimonial' => $testimonial]); ?>
         <?php endforeach; ?>
     </div>
 
-    <!-- Section line at end -->
-    <div class="w-full h-px bg-[var(--color-white-60)] mt-12"></div>
+
 </section>
 
 <!-- GSAP + ScrollTrigger -->

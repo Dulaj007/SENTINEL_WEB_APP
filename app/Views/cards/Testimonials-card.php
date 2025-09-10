@@ -12,7 +12,7 @@
        class="w-24 h-24 rounded-full object-cover">
 
   <div class="ml-4">
-    <h3 class="text-lg font-semibold text-[var(--color-white)] m-0">
+    <h3 class="text-lg font-semibold text-[var(--color-white)] m-0 z-5">
       <?= $testimonial['name']; ?>
     </h3>
     <span class="text-sm text-[var(--color-white-60)]">
@@ -28,7 +28,7 @@
 </div>
 
     <!-- Message -->
-    <p class="text-[var(--color-white-80)] text-sm leading-relaxed text-center">
+    <p class="text-[var(--color-white-80)] text-sm leading-relaxed text-center z-5">
       “<?= $testimonial['message']; ?>”
     </p>
   </div>

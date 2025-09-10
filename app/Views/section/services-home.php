@@ -1,11 +1,11 @@
 
-  <section id="services" class="relative my-12 px-4 md:px-4">
+  <section id="services" class="relative pb-24 px-4 md:px-4 bg-[var(--color-dark-2)]">
   <!-- Background Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/60 to-transparent z-0"></div>
-
+  <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/40 to-transparent z-1"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-1"></div>
 
   <!-- Centered Titles -->
-  <div class="relative z-10 text-center mb-8 pt-5">
+  <div class="relative z-10 text-center mb-8 pt-20">
     <h2 class="text-2xl md:text-4xl font-bold text-[var(--color-white)]">
        Our Security Services
     </h2>
