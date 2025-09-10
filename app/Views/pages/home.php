@@ -6,6 +6,7 @@
 <?= view('partials/navbar') ?>
 <?= $this->include('section/heroHome') ?>
 <?= $this->include('section/callUs') ?>
+<?= $this->include('section/contactQuick') ?>
 <?= view('section/services-home', ['services' => $services]) ?>
 <?= view('section/work-home', ['work-home' => $workHomeData]) ?>
 <?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
