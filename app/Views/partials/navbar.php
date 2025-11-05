@@ -1,9 +1,10 @@
 <!-- NAVBAR -->
 <nav id="main-nav"
-     class="w-full fixed top-0 left-0 z-50 bg-[var(--color-black)] text-[var(--color-white)]
+     class="w-full fixed top-0 left-0 z-50 bg-[rgba(0,0,0,0.5)] backdrop-blur-md text-[var(--color-white)]
             shadow-lg transition-transform duration-300 ease-in-out will-change-transform"
      role="navigation" aria-label="Primary"
      style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+
   <div class="mx-auto max-w-7xl px-4 lg:px-8">
     <div class="flex h-20 items-center justify-between">
 

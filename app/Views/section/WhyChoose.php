@@ -1,6 +1,6 @@
 
 <section id="why-choose" class="relative text-white py-8 px-4 md:px-8 bg-[var(--color-black)] sm:bg-transparent">
-      <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/60 to-transparent z-0"></div>
+      <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/90 to-transparent z-0"></div>
 
     <!-- Mobile Background Image -->
     <div class="absolute inset-0 md:hidden">
@@ -15,7 +15,7 @@
                 Why Choose 24/7 Sentinel?
             </h2>
             <p class="text-[var(--color-white-80)] mb-8">
-                We are a leading professional CCTV monitoring company dedicated to providing comprehensive security solutions for residential and commercial clients. Our state-of-the-art monitoring center operates 24/7 with trained security professionals.
+                We are a leading professional CCTV monitoring company dedicated to providing comprehensive security solutions for residential and commercial clients. Our state of the art monitoring center operates 24/7 with trained security professionals.
             </p>
 
             <div class="grid grid-cols-2 gap-4 mb-8 text-[var(--color-yellow)] font-bold text-lg">
@@ -47,10 +47,15 @@
             </div>
         </div>
 
-        <!-- Right Image for Desktop -->
-        <div class="hidden md:block md:w-1/2">
-            <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>" alt="Monitoring Center" class="rounded-lg shadow-lg">
-           
-        </div>
+    <!-- Right Image for Desktop -->
+<div class="hidden md:block md:w-1/2 relative">
+    <!-- Background shadow layer -->
+    <div class="absolute inset-0 bg-black rounded-lg blur-3xl opacity-40 -z-10"></div>
+
+    <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>" 
+         alt="Monitoring Center" 
+         class="rounded-lg shadow-2xl">
+</div>
+
     </div>
 </section>

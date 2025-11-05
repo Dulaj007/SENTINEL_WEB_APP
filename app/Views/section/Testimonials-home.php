@@ -1,20 +1,23 @@
-<section id="testimonials" class=" md:py-16 relative opacity-0">
+  <section>
   <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-0"></div>
+  <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/40 to-transparent z-1"></div>
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-1"></div>
+<section id="testimonials" class=" md:py-16 relative opacity-0">
 
-    <div class="w-full max-w-6xl mx-auto text-center mb-12 pt-10 z-5">
-        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-white)]">
+    <div class="w-full max-w-7xl mx-auto text-center mb-12 pt-10 z-5">
+        <h2 class="text-3xl md:text-4xl font-bold text-[var(--color-white)] z-5 relative">
             Client <span class="text-[var(--color-yellow)]">Testimonials</span>
         </h2>
-    </div>
+    
 
-    <div class="grid gap-2 md:grid-cols-3 px-4 lg:px-28 z-5">
+    <div class="grid  gap-2 md:grid-cols-3 px-4 lg:px-28 ">
         <?php foreach ($testimonialsData as $testimonial): ?>
             <?= view('cards/Testimonials-card', ['testimonial' => $testimonial]); ?>
         <?php endforeach; ?>
     </div>
 
-
-</section>
+</div>
+</section></section>
 
 <!-- GSAP + ScrollTrigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>

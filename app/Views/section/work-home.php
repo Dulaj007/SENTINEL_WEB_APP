@@ -1,8 +1,8 @@
 
-  <section  class="relative pb-24 px-4 md:px-4 bg-[var(--color-dark-2)]">
+  <section  class="relative pb-24 px-4 md:px-4 bg-[var(--color-black)]/30">
   <!-- Background Gradient Overlay -->
-  <div class="absolute inset-0 bg-gradient-to-b from-black/100 via-black/40 to-transparent z-0"></div>
-  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/40 to-transparent z-0"></div>
+
+  <div class="absolute inset-0 bg-gradient-to-t from-black/100 via-black/100 to-transparent z-0"></div>
 
 
   <!-- Centered Titles -->
@@ -10,7 +10,7 @@
     <h2 class="text-2xl md:text-4xl font-bold text-[var(--color-white)] pt-16">
       Our Work
     </h2>
-    <h2 class="text-base md:text-xl font-semibold text-[var(--color-white-60)] mt-2">
+    <h2 class="text-base md:text-lg font-semibold text-[var(--color-white-60)] mt-2">
       Successful security installations across various industries
     </h2>
   </div>
@@ -28,7 +28,7 @@
 
   <!--  Discover portfolio -->
    <div class="flex flex-col sm:flex-row gap-4 justify-center">
-      <a href="<?= base_url('contact') ?>"
+      <a href="<?= base_url('portfolio') ?>"
         class="flex justify-center items-center gap-2 px-8 py-3 font-semibold rounded-[10px] text-[var(--color-white)]
               bg-gradient-to-r from-[var(--color-orange-dark)] via-[var(--color-yellow)] to-[var(--color-red)]
               bg-gradient-animate hover:opacity-90 transition transform duration-500 hover:scale-105">
