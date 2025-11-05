@@ -10,7 +10,10 @@
 <?= $this->include('section/heroHome') ?>
 <?= view('section/services-home', ['services' => $services]) ?>
 <?= $this->include('section/WhyChoose') ?>
-<?= view('section/Insights-home', ['insightsData' => $insightsData]) ?>
+
+<?php /* <?= view('section/Insights-home', ['insightsData' => $insightsData]) ?> */ ?>
+
+
 <?= view('section/work-home', ['work-home' => $workHomeData]) ?>
 <?= $this->include('section/getStarted-home') ?>
 <?= $this->include('section/callUs') ?>

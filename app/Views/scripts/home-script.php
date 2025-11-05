@@ -3,19 +3,21 @@
 const canvas = document.getElementById('matrixCanvas');
 const ctx = canvas.getContext('2d');
 
-function resizeCanvas() {
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-const columns = Math.floor(canvas.width / 25);
-const drops = Array(columns).fill(0);
-
+let columns;
+let drops;
 const circleRadius = 4;
 const speed = 0.35;
 const fps = 30;
+
+function setupMatrix() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    columns = Math.floor(canvas.width / 25);
+    drops = Array(columns).fill(0);
+}
+
+window.addEventListener('resize', setupMatrix);
+setupMatrix();
 
 function draw() {
     // dark fade trail
@@ -26,8 +28,8 @@ function draw() {
         // 80% dim orange, 20% bright yellow
         const bright = Math.random() < 0.2;
         ctx.fillStyle = bright
-            ? 'rgba(255, 191, 53, 0.9)'   // yellow
-            : 'rgba(175, 122, 8, 0.6)';   // orange-dark
+            ? 'rgba(255, 191, 53, 0.6)'   // yellow
+            : 'rgba(175, 122, 8, 0.4)';   // orange-dark
 
         ctx.beginPath();
         ctx.arc(i * 25 + 12, drops[i] * 20, circleRadius, 0, Math.PI * 2);

@@ -2,31 +2,37 @@
   {
     "icon": "SENTINEL/public_html/assets/icons/eye.png",
     "title": "Live Monitoring",
-    "description": "24/7 real-time surveillance with trained security professionals monitoring your property around the clock",
+    "description": "Our 24/7 monitoring center uses AI and certified professionals to detect and respond to threats in real-time.",
+    "img":"SENTINEL/public_html/assets/img/service-1.png",
     "features": [
-      "Real-time alerts",
-      "Professional operators",
-      "Instant response"
+      "Real-time threat detection and analysis",
+      "AI-powered behavioral analytics",
+      "Certified security professionals on duty",
+      "Instant alert notifications"
     ]
   },
   {
     "icon": "SENTINEL/public_html/assets/icons/mic.png",
     "title": "Two-Way Audio",
-    "description": "Direct communication capabilities for immediate intervention and deterrent actions",
+    "description": "Advanced two-way audio allows immediate communication and intervention at your property.",
+    "img":"SENTINEL/public_html/assets/img/service-2.png",
     "features": [
-      "Live intervention",
-      "Deterrent warnings",
-      "Clear audio quality"
+      "Live voice intervention capabilities",
+      "Deterrent effect on potential intruders",
+      "Clear, high-quality audio transmission",
+      "Remote assistance and guidance"
     ]
   },
   {
     "icon": "SENTINEL/public_html/assets/icons/phone.png",
     "title": "Emergency Response",
-    "description": "Integrated emergency response system with direct connections to local authorities",
+    "description": "Detected threats trigger emergency protocols, coordinating with local authorities for rapid response.",
+    "img":"SENTINEL/public_html/assets/img/service-3.png",
     "features": [
-      "Police dispatch",
-      "Fire department",
-      "Medical emergency"
+      "Direct connection to emergency services",
+      "Automated dispatch protocols",
+      "Real-time situation updates",
+      "Coordinated response management"
     ]
   }
 ]
