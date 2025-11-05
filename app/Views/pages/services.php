@@ -10,4 +10,10 @@
 <?= $this->include('section/servicesSections/CoreServices') ?>
 <?= $this->include('section/servicesSections/scriptServices') ?>
 
+<?= $this->include('section/contactQuick') ?>
+
+
+
+
+
 <?= view('partials/footer') ?>
