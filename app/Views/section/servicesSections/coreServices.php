@@ -1,5 +1,5 @@
 <!-- Core Services -->
-<section class="relative py-20 sm:py-24" style="background-color: var(--color-dark-1);">
+<section class="relative py-20 sm:py-24" style="background-color: var(--color-black);">
   <div class="mx-auto max-w-7xl px-5 sm:px-8">
     
     <!-- Header -->
@@ -27,7 +27,7 @@
           </div>
           
           <p class="text-white/80 text-base sm:text-lg leading-relaxed">
-            Our state-of-the-art monitoring center operates 24/7/365 with certified security professionals
+            Our state of the art monitoring center operates 24/7/365 with certified security professionals
             watching your property in real-time. Using advanced AI-powered analytics and human expertise,
             we detect and respond to threats instantly.
           </p>
@@ -62,7 +62,7 @@
 
         <!-- Image -->
         <div class="order-first lg:order-last">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out hover:shadow-[0_0_20px_var(--color-yellow)] hover:border-yellow-400/50">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
             <img src="<?= base_url('SENTINEL/public_html/assets/img/service-1.png') ?>" 
                  alt="Live Monitoring" 
                  class="w-full h-full object-cover">
@@ -74,7 +74,7 @@
       <div class="reveal grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-center">
         <!-- Image -->
         <div>
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out hover:shadow-[0_0_20px_var(--color-yellow)] hover:border-yellow-400/50">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
             <img src="<?= base_url('SENTINEL/public_html/assets/img/service-2.png') ?>" 
                  alt="Two-Way Audio" 
                  class="w-full h-full object-cover">
@@ -178,7 +178,7 @@
 
         <!-- Image -->
         <div class="order-first lg:order-last">
-          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out hover:shadow-[0_0_20px_var(--color-yellow)] hover:border-yellow-400/50">
+          <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
             <img src="<?= base_url('SENTINEL/public_html/assets/img/service-3.png') ?>" 
                  alt="Emergency Response" 
                  class="w-full h-full object-cover">
