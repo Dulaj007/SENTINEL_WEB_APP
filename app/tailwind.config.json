@@ -1,0 +1,6 @@
+{
+  "content": [
+    "./app/Views/**/*.php",
+    "./public/**/*.html"
+  ]
+}
