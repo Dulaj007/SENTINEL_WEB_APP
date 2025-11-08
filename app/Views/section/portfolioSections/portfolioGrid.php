@@ -1,9 +1,10 @@
-<section class="py-12 md:py-16" id="portfolio-grid" style="background: linear-gradient(to bottom, var(--color-black), var(--color-dark-1), var(--color-dark-2));">
+<!-- Portfolio Grid Section -->
+<section class="py-12 md:py-16" id="portfolio-grid" style="background: linear-gradient(to bottom, var(--color-black), var(--color-dark-2), var(--color-black));">
     <div class="portfolio-slider overflow-hidden relative" id="portfolioSlider">
         <div class="flex transition-transform duration-500 ease-in-out" id="portfolioTrack">
             <?php 
             $allProjects = [
-                // Page 1 (6 cards) - Randomly alternating between card1 and card2
+                // Page 1
                 [
                     'title' => 'World Trade Center Colombo', 
                     'category'=>'commercial', 
@@ -74,7 +75,7 @@
                     ]
                 ],
                 
-                // Page 2 (6 cards)
+                // Page 2
                 [
                     'title' => 'Kandy General Hospital', 
                     'category'=>'hospitality', 
@@ -143,14 +144,13 @@
                 ],
             ];
             
-            // Divide projects into pages (6 per page)
             $projectsPerPage = 6;
             $pages = array_chunk($allProjects, $projectsPerPage);
             
             foreach ($pages as $pageIndex => $pageProjects): ?>
                 <div class="min-w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-4 sm:px-6 lg:px-10 py-4" data-page="<?= $pageIndex + 1 ?>">
                     <?php foreach ($pageProjects as $p): ?>
-                    <div class="reveal project-card rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-105 cursor-pointer" 
+                    <div class="portfolio-reveal project-card rounded-xl overflow-hidden transition-all duration-500 transform hover:scale-105 cursor-pointer" 
                          style="background-color: var(--color-dark-2);"
                          onmouseover="this.style.boxShadow='0 0 20px rgba(255,191,53,0.6)'"
                          onmouseout="this.style.boxShadow=''"
