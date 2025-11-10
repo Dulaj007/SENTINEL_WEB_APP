@@ -1,9 +1,9 @@
 <!-- NAVBAR -->
 <nav id="main-nav"
      class="w-full fixed top-0 left-0 z-50 bg-[rgba(0,0,0,0.5)] backdrop-blur-md text-[var(--color-white)]
-            shadow-lg transition-transform duration-300 ease-in-out will-change-transform"
-     role="navigation" aria-label="Primary"
-     style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
+            shadow-lg transition-transform duration-500 ease-in-out will-change-transform">
+
+
 
   <div class="mx-auto max-w-7xl px-4 lg:px-8">
     <div class="flex h-20 items-center justify-between">
@@ -150,73 +150,82 @@
 
 <!-- Mobile nav bar script -->
 <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    const toggle = document.getElementById('nav-toggle');
-    const menu = document.getElementById('mobile-menu');
-    const openIcon = document.getElementById('icon-open');
-    const closeIcon = document.getElementById('icon-close');
-    const mobileClose = document.getElementById('mobile-close');
-    const nav = document.getElementById('main-nav');
+  document.addEventListener("DOMContentLoaded", () => {
+    const nav = document.getElementById("main-nav");
+    const hero = document.getElementById("hero");
+    const toggle = document.getElementById("nav-toggle");
+    const menu = document.getElementById("mobile-menu");
+    const openIcon = document.getElementById("icon-open");
+    const closeIcon = document.getElementById("icon-close");
+    const mobileClose = document.getElementById("mobile-close");
 
     let menuOpen = false;
+    let lastScrollY = window.scrollY;
+    let ticking = false;
 
+    // --- MOBILE MENU HANDLING ---
     function openMenu() {
       menuOpen = true;
-      menu.style.opacity = '1';
-      menu.style.pointerEvents = 'auto';
-      menu.style.transform = 'translateY(0)';
-
-      openIcon.classList.add('hidden');
-      closeIcon.classList.remove('hidden');
-
-      nav.style.transform = 'translateY(0)';
- 
-      document.body.style.overflow = 'hidden';
+      menu.style.opacity = "1";
+      menu.style.pointerEvents = "auto";
+      menu.style.transform = "translateY(0)";
+      openIcon.classList.add("hidden");
+      closeIcon.classList.remove("hidden");
+      document.body.style.overflow = "hidden";
     }
 
     function closeMenu() {
       menuOpen = false;
-
-      menu.style.opacity = '0';
-      menu.style.pointerEvents = 'none';
-      menu.style.transform = 'translateY(-8px)';
-
-      openIcon.classList.remove('hidden');
-      closeIcon.classList.add('hidden');
-  
-      document.body.style.overflow = '';
+      menu.style.opacity = "0";
+      menu.style.pointerEvents = "none";
+      menu.style.transform = "translateY(-8px)";
+      openIcon.classList.remove("hidden");
+      closeIcon.classList.add("hidden");
+      document.body.style.overflow = "";
     }
 
-    toggle?.addEventListener('click', () => {
-      if (menuOpen) closeMenu();
-      else openMenu();
-    });
+    toggle?.addEventListener("click", () => (menuOpen ? closeMenu() : openMenu()));
+    mobileClose?.addEventListener("click", closeMenu);
+    menu?.addEventListener("click", (e) => e.target === menu && closeMenu());
+    document.addEventListener("keydown", (e) => e.key === "Escape" && menuOpen && closeMenu());
 
-    mobileClose?.addEventListener('click', () => closeMenu());
+    // --- NAV SCROLL BEHAVIOR ---
+    const heroHeight = hero ? hero.offsetHeight : 0;
 
-   
-    menu?.addEventListener('click', (e) => {
-      if (e.target === menu) closeMenu();
-    });
+    function handleScroll() {
+      const currentY = window.scrollY;
 
-   
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && menuOpen) closeMenu();
-    });
-
-
-    let lastScroll = window.pageYOffset || 0;
-    window.addEventListener('scroll', () => {
-      if (menuOpen) return; 
-      const currentScroll = window.pageYOffset || 0;
-      if (currentScroll > lastScroll && currentScroll > 80) {
-     
-        nav.style.transform = 'translateY(-100%)';
-      } else {
-        
-        nav.style.transform = 'translateY(0)';
+      // Always show navbar when hero is in view
+      if (currentY < heroHeight - 80) {
+        nav.style.transform = "translateY(0)";
+        lastScrollY = currentY;
+        ticking = false;
+        return;
       }
-      lastScroll = currentScroll;
-    }, { passive: true });
+
+      // Hide nav when scrolling down
+      if (currentY > lastScrollY && !menuOpen) {
+        nav.style.transform = "translateY(-100%)";
+      }
+      // Show nav when scrolling up
+      else if (currentY < lastScrollY && !menuOpen) {
+        nav.style.transform = "translateY(0)";
+      }
+
+      lastScrollY = currentY;
+      ticking = false;
+    }
+
+    window.addEventListener(
+      "scroll",
+      () => {
+        if (!ticking) {
+          window.requestAnimationFrame(handleScroll);
+          ticking = true;
+        }
+      },
+      { passive: true }
+    );
   });
 </script>
+

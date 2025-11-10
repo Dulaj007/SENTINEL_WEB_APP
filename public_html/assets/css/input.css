@@ -10,15 +10,15 @@
   --color-white-80: #FFFFFFCC; 
   --color-white-60: #FFFFFF99; 
 
-  --color-blue-dark: #03256A;
-  --color-blue: #24638A;
+  --color-blue-dark: #0136a0;
+  --color-blue: #089efc;
   --color-yellow: #FFBF35;
-  --color-yellow-dark:#855b00;
+  --color-yellow-dark:#775100;
   --color-orange-dark: #7a5503;
   --color-red: #DB2525;
-  --color-red-dark: #A40000; 
+  --color-red-dark: #7c0000; 
   --color-green:#25D366;
-  --color-green-dark:#25D366;
+  --color-green-dark:#018a33;
 }
 body {
     background-color: var(--color-dark-1);
