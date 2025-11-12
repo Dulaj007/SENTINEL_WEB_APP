@@ -11,9 +11,11 @@
   --color-blue-dark: #03256A;
   --color-blue: #24638A;
   --color-yellow: #FFBF35;
+  --color-yellow-dark:#855b00;
   --color-orange-dark: #7a5503;
   --color-red: #DB2525;
   --color-red-dark: #A40000; 
+  --color-green:#25D366;
 }
 body {
     background-color: var(--color-dark-1);
