@@ -1,4 +1,4 @@
-<section id="hero" class="relative w-full h-[90vh] flex items-center justify-center text-white overflow-hidden">
+<section id="hero" class="relative w-full h-[90vh] flex items-center justify-center text-white overflow-hidden pt-20">
 
     <!-- Background Image -->
     <div class="absolute inset-0 opacity-100">

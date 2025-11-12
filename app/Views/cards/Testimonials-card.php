@@ -1,15 +1,15 @@
 <?php
 // Expecting $testimonial array with keys: name, role, rating, message, image
 ?>
-<div id="testimonials" class="max-w-lg mx-auto">
-  <div class="testimonial-card p-6">
+<div id="testimonials" class="max-w-lg mx-auto md:border-1 border-[var(--color-white)]/10">
+  <div class="testimonial-card p-2 md:p-5 md:py-8 ">
 
     <!-- Top row: Image left + Name/Role right -->
  <!-- Top row: Image left + Name/Role right -->
-<div class="flex items-center justify-center mb-4">
+<div class="flex items-center justify-center mb-2">
   <img src="<?= base_url($testimonial['image']); ?>"
        alt="<?= $testimonial['name']; ?>"
-       class="w-24 h-24 rounded-full object-cover">
+       class="w-18 h-18 rounded-full object-cover">
 
   <div class="ml-4">
     <h3 class="text-lg font-semibold text-[var(--color-white)] m-0 z-5">
@@ -19,7 +19,7 @@
       <?= $testimonial['role']; ?>
     </span>
         <!-- Stars -->
-    <div class="flex justify-center mb-4">
+    <div class="flex justify-start ">
       <?php for ($i=0; $i < $testimonial['rating']; $i++): ?>
         <span class="text-[var(--color-yellow)] text-lg mr-1">★</span>
       <?php endfor; ?>
@@ -28,7 +28,7 @@
 </div>
 
     <!-- Message -->
-    <p class="text-[var(--color-white-80)] text-sm leading-relaxed text-center z-5">
+    <p class="text-[var(--color-white-80)] max-w-full text-xs leading-relaxed text-center z-5">
       “<?= $testimonial['message']; ?>”
     </p>
   </div>

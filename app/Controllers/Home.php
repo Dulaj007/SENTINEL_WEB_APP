@@ -15,6 +15,10 @@ class Home extends BaseController
         $services = json_decode($jsonData, true);
         $data['services'] = $services;
 
+        $jsonData = file_get_contents(APPPATH . 'Data/services.json');
+        $services = json_decode($jsonData, true);
+        $data['ServicesHomeV2'] = $services;
+
         // Load work-home JSON
         $jsonData = file_get_contents(APPPATH . 'Data/work-home.json');
         $workHomeData = json_decode($jsonData, true);
@@ -25,10 +29,12 @@ class Home extends BaseController
         $insightsData = json_decode($jsonData, true);
         $data['insightsData'] = $insightsData;
 
-        // Load Testimonials-home JSON
+
+         // Load JSON file from app/Data/
         $jsonData = file_get_contents(APPPATH . 'Data/Testimonials-home.json');
         $testimonialsData = json_decode($jsonData, true);
-        $data['testimonialsData'] = $testimonialsData; 
+        $data['testimonialsData'] = $testimonialsData;
+
 
         // Return home view with all data
         return view('pages/home', $data);

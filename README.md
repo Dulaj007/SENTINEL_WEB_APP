@@ -55,3 +55,11 @@ This project is built using **CodeIgniter 4** as the backend framework and **Tai
 ```bash
 git clone <repository-url>
 ```
+
+#css
+
+run this command to update css live
+
+```bash
+npx tailwindcss -i ./public_html/assets/css/input.css -o ./public_html/assets/css/output.css --watch
+```

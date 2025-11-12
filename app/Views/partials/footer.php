@@ -1,15 +1,7 @@
-<footer class="w-full text-[var(--color-white)] border-t border-[rgba(255,255,255,0.08)] bg-[var(--color-black)]  relative overflow-hidden"
+<footer class="w-full h-auto py-10 text-[var(--color-white)] border-t border-white/20 bg-[var(--color-black)]  relative overflow-hidden"
         role="contentinfo"
         style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
-  
-  <!-- Gradient background -->
-  <div aria-hidden="true" class="absolute inset-0 -z-10"
-       style="background: linear-gradient(180deg,
-                 var(--color-black) 0%,
-                 #0b0b0b 28%,
-                 #0e0e0e 52%,
-                 var(--color-dark-1) 100%);">
-  </div>
+
 
   <!-- Top-left sheen -->
   <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 opacity-[0.25]"
@@ -18,8 +10,8 @@
                  rgba(255,255,255,0.00) 50%);">
   </div>
 
-  <div class="relative mx-auto max-w-7xl px-4 lg:px-6 py-12 lg:py-16">
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16">
+  <div class="relative mx-auto max-w-7xl px-4 lg:px-6 py-12 lg:py-16 ">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-16 ">
 
       <!-- Brand / Intro -->
       <div>
@@ -36,15 +28,15 @@
           </div></a>
         </div>
 
-        <p class="mt-4 sm:mt-5 max-w-md text-[var(--color-white-80)] text-base sm:text-lg leading-6 sm:leading-7">
+        <p class="mt-4 sm:mt-5 max-w-md text-[var(--text-secondary)] text-base sm:text-lg leading-6 sm:leading-7">
           Professional CCTV monitoring services providing 24/7 security solutions.
         </p>
       </div>
 
       <!-- Services -->
-      <div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-4">Services</h3>
-        <ul class="space-y-2 sm:space-y-3  text-sm sm:text-base text-[var(--color-white-80)]">
+      <div class="">
+        <h3 class="text-xl border-b p-3 sm:text-2xl font-bold mb-4">Services</h3>
+        <ul class="space-y-2 sm:space-y-2 ml-5 text-sm sm:text-base text-[var(--text-secondary)]">
           <li> <a href="<?= base_url('services') ?>" class="hover:text-[var(--color-yellow)] transition cursor-pointer">Live Monitoring </a></li>
           <li> <a href="<?= base_url('services') ?>" class="hover:text-[var(--color-yellow)] transition cursor-pointer">Emergency Response </a></li>
           <li> <a href="<?= base_url('services') ?>" class="hover:text-[var(--color-yellow)] transition cursor-pointer">Two-Way Audio </a></li>
@@ -54,8 +46,8 @@
 
       <!-- Company -->
       <div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-4">Company</h3>
-        <ul class="space-y-2 sm:space-y-3 text-sm sm:text-base text-[var(--color-white-80)]">
+        <h3 class="text-xl sm:text-2xl border-b p-3 font-bold mb-4">Company</h3>
+        <ul class="space-y-2 sm:space-y-1 text-sm ml-5 sm:text-base text-[var(--text-secondary)]">
           <li><a href="<?= base_url('about') ?>" class=" hover:text-[var(--color-white)] underline-offset-4 hover:underline transition">About Us</a></li>
           <li><a href="<?= base_url('services') ?>" class=" hover:text-[var(--color-white)] underline-offset-4 hover:underline transition">Services</a></li>
           <li><a href="<?= base_url('careers') ?>" class=" hover:text-[var(--color-white)] underline-offset-4 hover:underline transition">Careers</a></li>
@@ -66,10 +58,10 @@
 
       <!-- Connect -->
       <div>
-        <h3 class="text-xl sm:text-2xl font-bold mb-4">Connect</h3>
-        <ul class="space-y-3 sm:space-y-4 text-sm sm:text-base text-[var(--color-white)]/80">
+        <h3 class="text-xl sm:text-2xl  border-b p-3 font-bold mb-4">Connect</h3>
+        <ul class="space-y-3 sm:space-y-3 text-sm sm:text-base text-[var(--color-white)]/80">
           <li class="flex items-center gap-3 hover:text-[var(--color-blue)] transition cursor-pointer">
-            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--color-white)]">
+            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--text-secondary)]">
               <!-- facebook icon -->
               <img src="assets/icons/fb-logo.png" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
              
@@ -77,14 +69,14 @@
             <span>247sentinel</span>
           </li>
           <li class="flex items-center gap-3 hover:text-[#A020F0]  transition cursor-pointer">
-            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--color-white)]">
+            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--text-secondary)]">
               <!-- envelope -->
               <img src="assets/icons/em-logo.png" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
             </span>
             <span>info@247sentinel.com</span>
           </li>
           <li class="flex items-center gap-3 hover:text-[var(--color-orange-dark)] transition cursor-pointer">
-            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--color-white)]">
+            <span class="inline-flex items-center justify-center h-8 w-8 rounded-full  text-[var(--text-secondary)]">
               <!-- map pin -->
               <img src="assets/icons/loc-logo.svg" alt="24/7 Sentinel logo" class="h-6 w-6 object-contain" />
             </span>
@@ -96,7 +88,7 @@
     </div>
 
     <!-- divider line -->
-    <div class="mt-10 lg:mt-12 border-t border-[rgba(255,255,255,0.10)]"></div>
+    <div class="mt-10 lg:mt-12 border-t border-white/20"></div>
 
     <!-- bottom bar -->
     <div class="py-4 text-center text-[var(--color-white-60)] text-sm sm:text-base">
