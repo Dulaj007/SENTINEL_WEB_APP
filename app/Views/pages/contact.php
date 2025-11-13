@@ -1,16 +1,12 @@
 
 <!-- Top of home.php -->
 <?= $this->include('partials/header') ?>
-
-<!-- Persistent Matrix background -->
-<canvas id="matrixCanvas"></canvas>
-
 <!-- Page content -->
-<?= view('partials/navbar') ?>
-<?= $this->include('section/contact/heroContact') ?>
+<?= view('partials/navbarV2') ?>
+<?= $this->include('section/contactUsV2/heroContactV2') ?>
 
-<?= $this->include('section/contact/contactusCards') ?>
-<?= $this->include('section/contactQuick') ?>
+<?= $this->include('section/contactUsV2/contactusCardsV2') ?>
+<?= $this->include('section/homeV2/ContactQuickHomeV2') ?>
 <?= view('scripts/home-script') ?>
 
 <?= view('partials/footer') ?>
