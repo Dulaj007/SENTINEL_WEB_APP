@@ -5,12 +5,15 @@
 
 
 <!-- Page content -->
-<?= view('partials/navbar') ?>
-<?= $this->include('section/servicesSections/heroServices') ?>
-<?= $this->include('section/servicesSections/CoreServices') ?>
-<?= $this->include('section/servicesSections/scriptServices') ?>
+<?= view('partials/navbarV2') ?>
 
-<?= $this->include('section/contactQuick') ?>
+
+
+<?= $this->include('section/servicesV2/heroServices') ?>
+<?= $this->include('section/servicesV2/CoreServices') ?>
+<?= $this->include('section/servicesV2/scriptServices') ?>
+
+
 
 
 
