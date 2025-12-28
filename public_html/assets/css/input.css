@@ -465,3 +465,63 @@ h1, h2, h3, h4, h5, h6,.font-title {
   backdrop-filter: blur(2px);
   border-radius: 0.5rem;
 }
+
+/* Shimmer Animation for Gradient Text */
+  @keyframes shimmer {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  /* Float Animation for Orbs */
+  @keyframes float {
+    0%, 100% { transform: translate(0, 0) rotate(0deg); }
+    25% { transform: translate(10px, -10px) rotate(2deg); }
+    50% { transform: translate(-5px, 5px) rotate(-2deg); }
+    75% { transform: translate(-10px, -5px) rotate(1deg); }
+  }
+
+  /* Button Shine Animation */
+  @keyframes button-shine {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(200%); }
+  }
+
+  /* Scroll Dot Animation */
+  @keyframes scroll-dot {
+    0%, 100% { transform: translateY(0); opacity: 1; }
+    50% { transform: translateY(20px); opacity: 0.5; }
+  }
+
+  /* Hover state for secondary button */
+  .services-secondary-btn:hover {
+    background-color: var(--color-yellow) !important;
+    color: var(--color-black) !important;
+    box-shadow: 0 0 30px rgba(255, 191, 53, 0.5);
+  }
+
+  /* Service section animations */
+  [data-aos="fade-right"] {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  [data-aos="fade-left"] {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  [data-aos].aos-animate {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Mobile optimizations */
+  @media (max-width: 768px) {
+    [data-aos] {
+      opacity: 1 !important;
+      transform: none !important;
+    }
+  }
