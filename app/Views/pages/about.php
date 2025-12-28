@@ -6,12 +6,12 @@
 <canvas id="matrixCanvas"></canvas>
 
 <!-- Page content -->
-<?= view('partials/navbar') ?>
-<?= $this->include('section/aboutUsSections/heroAboutUs') ?>
-<?= $this->include('section/aboutUsSections/StoryAboutUs') ?>
-<?= $this->include('section/aboutUsSections/teamAboutUs') ?>
-<?= $this->include('section/aboutUsSections/vandMAboutUs') ?>
-<?= $this->include('section/aboutUsSections/scriptAboutUs') ?>
+<?= view('partials/navbarV2') ?>
+<?= $this->include('section/aboutV2/heroAboutUs') ?>
+<?= $this->include('section/aboutV2/StoryAboutUs') ?>
+<?= $this->include('section/aboutV2/teamAboutUs') ?>
+<?= $this->include('section/aboutV2/vandMAboutUs') ?>
+<?= $this->include('section/aboutV2/scriptAboutUs') ?>
 
 
 
