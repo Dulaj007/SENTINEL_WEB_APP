@@ -34,7 +34,6 @@
     <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] mb-2 leading-tight">
       &nbsp;Our&nbsp;<span class="text-[var(--accent-red)]"><br class="block lg:hidden">&nbsp;Security</span>
       <span class=""><br class="hidden lg:block">&nbsp;PORTFOLIO<br class="block lg:hidden">&nbsp;<span class="text-[var(--accent-red)]">PROJECTS</span></span>
-      <span class="absolute h-[36px] lg:h-[45px] w-[4px] bg-[var(--accent-red)] animate-blink"></span>
     </h1>
 
     <!-- Subtitle -->
