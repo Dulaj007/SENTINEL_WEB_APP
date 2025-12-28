@@ -192,6 +192,40 @@
 }
 
 /* ========================================
+   CUSTOM SCROLLBAR STYLES
+======================================== */
+.modal-details-section {
+  /* Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 59, 63, 0.6) rgba(255, 255, 255, 0.05);
+}
+
+/* Webkit browsers (Chrome, Safari, Edge) */
+.modal-details-section::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-details-section::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 10px;
+  margin: 8px 0;
+}
+
+.modal-details-section::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, var(--accent-red), rgba(255, 59, 63, 0.8));
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+  transition: all 0.3s ease;
+}
+
+.modal-details-section::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, var(--accent-red), var(--accent-shine));
+  background-clip: padding-box;
+  box-shadow: 0 0 10px rgba(255, 59, 63, 0.5);
+}
+
+/* ========================================
    RESPONSIVE
 ======================================== */
 @media (max-width: 768px) {
@@ -208,6 +242,11 @@
   .modal-details-section {
     max-height: calc(95vh - 250px);
     overflow-y: auto;
+  }
+  
+  /* Thinner scrollbar on mobile */
+  .modal-details-section::-webkit-scrollbar {
+    width: 6px;
   }
 }
 </style>
