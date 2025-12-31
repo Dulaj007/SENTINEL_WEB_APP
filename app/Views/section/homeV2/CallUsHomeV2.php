@@ -18,7 +18,12 @@
 
     <!-- Title -->
     <h1 class="text-4xl relative z-10 sm:text-5xl max-w-5xl font-extrabold mb-6">
-      <span class="text-[var(--text-primary)] drop-shadow-[0_0_5px_var(--accent-red)]">Ready to Secure Your Property?</span>
+    <span class="text-[var(--text-primary)] drop-shadow-[0_0_5px_var(--accent-red)]">
+      Ready to Secure  
+      <span class="hidden md:inline"> Your Property</span>?
+    </span>
+
+
     </h1>
 
     <!-- Description -->

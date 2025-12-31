@@ -1,5 +1,5 @@
 <section class="relative h-[90vh] flex items-center justify-center overflow-hidden">
-    <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>"
+    <img src="<?= getenv('app.baseURL') ?>assets/img/imgH1.png"
          alt="portfolio hero background"
          class="absolute inset-0 w-full h-full object-cover">
 

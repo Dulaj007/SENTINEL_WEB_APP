@@ -27,13 +27,13 @@
         <input type="email" name="email" placeholder="Email Address *" required class="w-full p-3 rounded-lg bg-[var(--color-dark-2)] text-white border border-[var(--color-dark-1)] focus:border-[var(--color-yellow)] outline-none" />
         <input type="tel" name="phone" placeholder="Phone Number *" required pattern="^\+\d{2}\s\d{2,3}\s\d{4,5}$" class="w-full p-3 rounded-lg bg-[var(--color-dark-2)] text-white border border-[var(--color-dark-1)] focus:border-[var(--color-yellow)] outline-none" />
 
-        <!-- Service Dropdown -->
+        <!-- Service Dropdown 
         <select name="service" class="w-full p-3 rounded-lg bg-[var(--color-dark-2)] text-white border border-[var(--color-dark-1)] focus:border-[var(--color-yellow)] outline-none appearance-none">
           <option value="">Select Service Type</option>
           <option value="Live Monitoring">Live Monitoring</option>
           <option value="Alarm Response">Alarm Response</option>
           <option value="Security Assessment">Security Assessment</option>
-        </select>
+        </select>-->
 
         <!-- Message -->
         <textarea name="message" rows="4" placeholder="Tell us about your security needs ..." required class="w-full p-3 rounded-lg bg-[var(--color-dark-2)] text-white border border-[var(--color-dark-1)] focus:border-[var(--color-yellow)] outline-none"></textarea>
@@ -51,7 +51,7 @@
                 transform transition duration-500
                 bg-gradient-animate
                 hover:bg-gradient-to-r from-[var(--accent-red)] via-[var(--bg-background)] to-[var(--accent-red)]">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/se-logo.svg') ?>" alt="Send" class="w-7 h-7" />
+          <img src="<?= getenv('app.baseURL') ?>assets/icons/se-logo.svg" alt="Send" class="w-7 h-7" />
           Send Message
         </button>
 
@@ -73,22 +73,22 @@
       <p class="text-[var(--color-white-60)] text-sm mb-2">Contact us for a free consultation</p>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/fb-logo.png') ?>" alt="Facebook" class="w-8 h-8" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/fb-logo.png" alt="Facebook" class="w-8 h-8" />
         <p class="text-[var(--color-white)] font-medium">Follow us on Facebook</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/loc-logo.svg') ?>" alt="Location" class="w-8 h-8" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/loc-logo.svg" alt="Location" class="w-8 h-8" />
         <p class="text-[var(--color-white-80)]">Horana Road, Wekada, Panadura, Sri Lanka</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/em-logo.png') ?>" alt="Email" class="w-8 h-6" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/em-logo.png" alt="Email" class="w-8 h-6" />
         <p class="text-[var(--color-white-80)]">info@24-7sentinel.com</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/call-logo.png') ?>" alt="Phone" class="w-8 h-8" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/call-logo.png" alt="Phone" class="w-8 h-8" />
         <p class="text-[var(--color-white-80)]">+1 (555) 123-4567</p>
       </div>
 

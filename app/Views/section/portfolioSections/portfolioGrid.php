@@ -10,11 +10,11 @@
                     'category'=>'commercial', 
                     'location'=>'Colombo 01',
                     'cameras'=>'200+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-3.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png'),
+                        ('assets/img/porfolio/card1/img-3.png')
                     ]
                 ],
                 [
@@ -22,11 +22,11 @@
                     'category'=>'industrial', 
                     'location'=>'Biyagama',
                     'cameras'=>'150+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img3.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png'),
+                        ('assets/img/porfolio/card2/img3.png')
                     ]
                 ],
                 [
@@ -34,11 +34,11 @@
                     'category'=>'residential', 
                     'location'=>'Colombo 07',
                     'cameras'=>'100+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-3.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png'),
+                        ('assets/img/porfolio/card1/img-3.png')
                     ]
                 ],
                 [
@@ -46,10 +46,10 @@
                     'category'=>'retail', 
                     'location'=>'Colombo 03',
                     'cameras'=>'350+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png')
                     ]
                 ],
                 [
@@ -57,10 +57,10 @@
                     'category'=>'commercial', 
                     'location'=>'Dematagoda',
                     'cameras'=>'275+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png')
                     ]
                 ],
                 [
@@ -68,10 +68,10 @@
                     'category'=>'hospitality', 
                     'location'=>'Mount Lavinia',
                     'cameras'=>'180+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png')
                     ]
                 ],
                 
@@ -81,10 +81,10 @@
                     'category'=>'hospitality', 
                     'location'=>'Kandy',
                     'cameras'=>'400+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png')
                     ]
                 ],
                 [
@@ -92,10 +92,10 @@
                     'category'=>'industrial', 
                     'location'=>'Katunayake',
                     'cameras'=>'225+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png')
                     ]
                 ],
                 [
@@ -103,10 +103,10 @@
                     'category'=>'commercial', 
                     'location'=>'Colombo Fort',
                     'cameras'=>'175+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png')
                     ]
                 ],
                 [
@@ -114,10 +114,10 @@
                     'category'=>'residential', 
                     'location'=>'Dehiwala',
                     'cameras'=>'300+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png')
                     ]
                 ],
                 [
@@ -125,10 +125,10 @@
                     'category'=>'retail', 
                     'location'=>'Nugegoda',
                     'cameras'=>'250+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
+                    'img'=> ('assets/img/porfolio/card1/img-1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card1/img-2.png')
+                        ('assets/img/porfolio/card1/img-1.png'),
+                        ('assets/img/porfolio/card1/img-2.png')
                     ]
                 ],
                 [
@@ -136,10 +136,10 @@
                     'category'=>'industrial', 
                     'location'=>'Malabe',
                     'cameras'=>'190+',
-                    'img'=> base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
+                    'img'=> ('assets/img/porfolio/card2/img1.png'),
                     'gallery' => [
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img1.png'),
-                        base_url('SENTINEL/public_html/assets/img/porfolio/card2/img2.png')
+                        ('assets/img/porfolio/card2/img1.png'),
+                        ('assets/img/porfolio/card2/img2.png')
                     ]
                 ],
             ];

@@ -31,7 +31,7 @@
            class="items-center justify-center gap-2 w-[100px] py-3 font-semibold rounded-[15px] text-[var(--color-white)]
                   hover:opacity-90 transition transform duration-500 hover:scale-105
                   hidden md:flex">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/next-icon.svg') ?>" alt="Next Icon" class="w-16 h-16">
+          <img src="<?= getenv('app.baseURL') ?>assets/icons/next-icon.svg" alt="Next Icon" class="w-16 h-16">
         </a>
       </div>
 

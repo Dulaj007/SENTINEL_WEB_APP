@@ -119,7 +119,7 @@
              style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
           
           <div class="relative overflow-hidden aspect-[4/3]">
-            <img src="<?= base_url('SENTINEL/public_html/assets/img/imgStory.png') ?>" 
+            <img src="<?= getenv('app.baseURL') ?>assets/img/imgStory.png" 
                  alt="Monitoring Room" 
                  class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
             

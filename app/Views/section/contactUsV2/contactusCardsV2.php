@@ -3,7 +3,7 @@
   <!-- Background Image -->
   <div class="absolute inset-0">
     <img 
-      src="<?= base_url('SENTINEL/public_html/assets/img/contactusimg.png') ?>" 
+      src="<?= getenv('app.baseURL') ?>assets/img/contactusimg.png" 
       alt="Contact Us Background"
       class="w-full h-full object-cover opacity-70 blur-md"
     >

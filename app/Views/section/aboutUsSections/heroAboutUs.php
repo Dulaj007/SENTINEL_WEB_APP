@@ -3,7 +3,7 @@
 
   <!-- Background Image -->
   <div class="absolute inset-0">
-    <img src="<?= base_url('SENTINEL/public_html/assets/img/hero_aboutus.jpg') ?>"
+    <img src="<?= getenv('app.baseURL') ?>assets/img/hero_aboutus.jpg"
          alt="About Sentinel Background"
          class="w-full h-full object-cover object-center">
     <!-- Global dark overlay (very subtle) -->
@@ -36,7 +36,7 @@
            class="flex items-center gap-2 px-8 py-3 font-semibold rounded-[10px] text-[var(--color-white)]
                   bg-gradient-to-r from-[var(--color-orange-dark)] via-[var(--color-yellow)] to-[var(--color-red)]
                   bg-gradient-animate hover:opacity-90 transition transform duration-500 hover:scale-105">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/whiteShield.png') ?>" alt="Shield Icon" class="w-5 h-5">
+          <img src="<?= getenv('app.baseURL') ?>assets/icons/whiteShield.png" alt="Shield Icon" class="w-5 h-5">
           Start Monitoring
         </a>
 
@@ -44,7 +44,7 @@
         <a href="<?= base_url('services') ?>"
            class="flex items-center gap-2 px-8 py-3 border border-[var(--color-yellow)] text-[var(--color-white)] font-semibold rounded-[10px]
                   hover:bg-[var(--color-white)] hover:text-[var(--color-yellow)] hover:opacity-90 transition transform duration-500 hover:scale-105">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/yellowarrow.png') ?>" alt="Arrow Icon" class="w-5 h-5">
+          <img src="<?= getenv('app.baseURL') ?>assets/icons/yellowarrow.png" alt="Arrow Icon" class="w-5 h-5">
           Watch Demo
         </a>
       </div>

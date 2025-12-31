@@ -64,7 +64,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-1.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-1.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold" style="color: var(--color-white);">Alex Carter</div>
@@ -80,7 +80,7 @@
               <div class="flex items-center gap-3">
                 <div class="relative h-12 w-12 overflow-hidden rounded-full ring-2 shrink-0"
                      style="ring-color: var(--color-yellow);">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-1.png') ?>" alt="Alex Carter" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-1.png" alt="Alex Carter" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight" style="color: var(--color-white);">Alex Carter</h3>
@@ -123,7 +123,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-2.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-2.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold" style="color: var(--color-white);">Jessica Brown</div>
@@ -139,7 +139,7 @@
               <div class="flex items-center gap-3">
                 <div class="relative h-12 w-12 overflow-hidden rounded-full ring-2 shrink-0"
                      style="ring-color: var(--color-yellow);">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-2.png') ?>" alt="Jessica Brown" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-2.png" alt="Jessica Brown" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight" style="color: var(--color-white);">Jessica Brown</h3>
@@ -179,7 +179,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-3.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-3.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold" style="color: var(--color-white);">Michael Lee</div>
@@ -195,7 +195,7 @@
               <div class="flex items-center gap-3">
                 <div class="relative h-12 w-12 overflow-hidden rounded-full ring-2 shrink-0"
                      style="ring-color: var(--color-yellow);">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-3.png') ?>" alt="Michael Lee" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-3.png" alt="Michael Lee" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight" style="color: var(--color-white);">Michael Lee</h3>

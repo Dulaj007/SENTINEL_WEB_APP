@@ -33,7 +33,7 @@
               bg-gradient-to-r from-[var(--color-orange-dark)] via-[var(--color-yellow)] to-[var(--color-red)]
               bg-gradient-animate hover:opacity-90 transition transform duration-500 hover:scale-105">
                     Discover portfolio
-      <img src="<?= base_url('SENTINEL/public_html/assets/icons/se-logo.svg') ?>" alt="Shield Icon" class="w-6 h-6">
+      <img src="<?= getenv('app.baseURL') ?>assets/icons/se-logo.svg" alt="Shield Icon" class="w-6 h-6">
                 
       </a>
   </div>

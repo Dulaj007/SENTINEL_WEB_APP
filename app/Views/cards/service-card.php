@@ -29,7 +29,7 @@
     <ul class="space-y-2 text-sm">
       <?php foreach($features as $feature): ?>
         <li class="flex items-center gap-2 font-medium">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/correct.png') ?>" alt="Correct Icon" class="w-4 h-4">
+          <img src="<?= getenv('app.baseURL') ?> assets/icons/correct.png') " alt="Correct Icon" class="w-4 h-4">
           <?= esc($feature) ?>
         </li>
       <?php endforeach; ?>

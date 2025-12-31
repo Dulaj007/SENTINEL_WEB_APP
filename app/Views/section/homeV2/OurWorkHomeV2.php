@@ -45,16 +45,18 @@
   </div>
 
   <!-- Cards Row -->
- <div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 
-            place-items-center max-w-7xl mx-auto">
-  <?php foreach($workHomeData as $workHomeDataSingle): ?>
-    <?= view('cards/work-card', [
-        'icon' => $workHomeDataSingle['icon'],
-        'title' => $workHomeDataSingle['title'],
-        'description' => $workHomeDataSingle['description']
-    ]) ?>
+<div class="relative z-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 place-items-center max-w-7xl mx-auto">
+  <?php foreach($workHomeData as $index => $workHomeDataSingle): ?>
+    <div class="<?= ($index >= 4) ? 'hidden sm:block' : '' ?> <?= ($index >= 8) ? 'hidden lg:block' : '' ?>">
+      <?= view('cards/work-card', [
+          'icon' => $workHomeDataSingle['icon'],
+          'title' => $workHomeDataSingle['title'],
+          'description' => $workHomeDataSingle['description']
+      ]) ?>
+    </div>
   <?php endforeach; ?>
 </div>
+
 
 
   <!-- Discover Portfolio Button -->
@@ -64,7 +66,7 @@
               bg-gradient-to-r from-[var(--color-orange-dark)] via-[var(--color-yellow)] to-[var(--color-red)]
               bg-gradient-animate tracking-wide hover:opacity-90 transition transform duration-500 hover:scale-105">
       Discover full Portfolio
-      <img src="<?= base_url('SENTINEL/public_html/assets/icons/se-logo-2.svg') ?>" alt="Shield Icon" class="w-6 h-6">
+      <img src="<?= getenv('app.baseURL') ?>assets/icons/se-logo-2.svg" alt="Shield Icon" class="w-6 h-6">
     </a>
   </div>
 

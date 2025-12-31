@@ -2,7 +2,7 @@
 
     <!-- Background Image -->
     <div class="absolute inset-0 opacity-100">
-        <img src="<?= base_url('SENTINEL/public_html/assets/img/hero.png') ?>"
+        <img src="<?= getenv('app.baseURL') ?>assets/img/hero.png"
              alt="Hero Background"
              class="w-full h-full object-cover object-right md:opacity-100">
         <div class="absolute inset-0 bg-[var(--color-dark-1)]/60"></div>

@@ -14,6 +14,4 @@
 <?= $this->include('section//homeV2/TestimonialsHomeV2') ?>
 
 <?= view('partials/footer') ?>
-
-
-
+<?= view('partials/bgOverlay') ?>

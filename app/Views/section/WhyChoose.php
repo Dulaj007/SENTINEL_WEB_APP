@@ -4,7 +4,7 @@
 
     <!-- Mobile Background Image -->
     <div class="absolute inset-0 md:hidden">
-        <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>" alt="Monitoring Center" 
+        <img src="<?= getenv('app.baseURL') ?>assets/img/imgH1.png" alt="Monitoring Center" 
              class="w-full h-full object-cover opacity-30">
     </div>
 
@@ -52,7 +52,7 @@
     <!-- Background shadow layer -->
     <div class="absolute inset-0 bg-black rounded-lg blur-3xl opacity-40 -z-10"></div>
 
-    <img src="<?= base_url('SENTINEL/public_html/assets/img/imgH1.png') ?>" 
+    <img src="<?= getenv('app.baseURL') ?>assets/img/imgH1.png" 
          alt="Monitoring Center" 
          class="rounded-lg shadow-2xl">
 </div>

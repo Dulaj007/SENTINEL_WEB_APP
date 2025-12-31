@@ -5,7 +5,7 @@
 
   <!-- Full Background Image -->
   <div class="absolute -inset-1">
-    <img src="<?= base_url('SENTINEL/public_html/assets/img/portfolioHero.png') ?>" 
+    <img src="<?= getenv('app.baseURL') ?>assets/img/portfolioHero.png" 
          alt="Portfolio Hero Background" 
          class="w-full h-full object-cover object-center">
     <!-- Dark overlay -->
@@ -76,7 +76,7 @@
                 hover:scale-105 transform transition duration-500
                 bg-gradient-animate
                 hover:bg-gradient-to-r from-[var(--accent-red)] via-[var(--bg-background)] to-[var(--accent-red)]">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/yellowarrow.png') ?>" class="w-5 h-5" alt="arrow">
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/yellowarrow.png" class="w-5 h-5" alt="arrow">
         <span>View Projects</span>
       </a>
     </div>
