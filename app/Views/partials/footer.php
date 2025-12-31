@@ -1,7 +1,9 @@
-<footer class="w-full h-auto py-10 text-[var(--color-white)] border-t border-white/20 bg-[var(--color-black)]  relative overflow-hidden"
+<footer class="w-full h-auto py-10 text-[var(--color-white)]   relative overflow-hidden
+bg-gradient-to-t from-[var(--accent-red)]/20 to-[var(--color-black)]"
         role="contentinfo"
         style="font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;">
 
+  <div class="mt-10 lg:mt-12 border-t border-white/30 "></div>
 
   <!-- Top-left sheen -->
   <div aria-hidden="true" class="pointer-events-none absolute inset-0 -z-10 opacity-[0.25]"
@@ -88,7 +90,7 @@
     </div>
 
     <!-- divider line -->
-    <div class="mt-10 lg:mt-12 border-t border-white/20"></div>
+    <div class="mt-10 lg:mt-12 border-t border-white/30"></div>
 
     <!-- bottom bar -->
     <div class="py-4 text-center text-[var(--color-white-60)] text-sm sm:text-base">

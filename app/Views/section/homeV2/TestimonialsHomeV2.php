@@ -1,4 +1,4 @@
-<section id="testimonials" class="relative w-full bg-[var(--color-black)] py-24 h-screen px-4 md:px-8">
+<section id="testimonials" class="relative w-auto h-auto bg-[var(--color-black)] py-24 px-4 md:px-8">
     <!-- Section Title -->
     <div class="text-center mb-16">
         <h2 class="text-4xl sm:text-5xl  font-extrabold text-[var(--text-primary)] drop-shadow-[0_0_5px_var(--accent-red)]">
@@ -10,9 +10,12 @@
     </div>
 
     <!-- Testimonials Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-4xl  mx-auto relative z-10">
-        <?php foreach($testimonialsData as $testimonial): ?>
+ <div class="grid grid-cols-1 md:grid-cols-3 gap-2 max-w-4xl mx-auto relative z-10">
+    <?php foreach($testimonialsData as $index => $testimonial): ?>
+        <div class="<?= ($index >= 3) ? 'hidden md:block' : '' ?> <?= ($index >= 6) ? 'hidden lg:block' : '' ?>">
             <?= view('cards/Testimonials-card', ['testimonial' => $testimonial]) ?>
-        <?php endforeach; ?>
-    </div>
+        </div>
+    <?php endforeach; ?>
+</div>
+
 </section>

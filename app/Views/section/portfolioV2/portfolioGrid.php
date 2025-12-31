@@ -7,9 +7,9 @@
 // ========================================
 // Available work images
 $workImages = [
-    base_url('SENTINEL/public_html/assets/img/work-img-1.png'),
-    base_url('SENTINEL/public_html/assets/img/work-img-2.png'),
-    base_url('SENTINEL/public_html/assets/img/work-img-3.png')
+    base_url('assets/img/work-img-1.png'),
+    base_url('assets/img/work-img-2.png'),
+    base_url('assets/img/work-img-3.png')
 ];
 
 // Shuffled image assignment for main images (distributed across 12 projects)

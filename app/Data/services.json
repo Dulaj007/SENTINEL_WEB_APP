@@ -1,9 +1,9 @@
 [
   {
-    "icon": "SENTINEL/public_html/assets/icons/eye.png",
+    "icon": "assets/icons/eye.png",
     "title": "Live Monitoring",
     "description": "Our 24/7 monitoring center uses AI and certified professionals to detect and respond to threats in real-time.",
-    "img":"SENTINEL/public_html/assets/img/service-1.png",
+    "img":"assets/img/service-1.png",
     "features": [
       "Real-time threat detection and analysis",
       "AI-powered behavioral analytics",
@@ -12,10 +12,10 @@
     ]
   },
   {
-    "icon": "SENTINEL/public_html/assets/icons/mic.png",
+    "icon": "assets/icons/mic.png",
     "title": "Two-Way Audio",
     "description": "Advanced two-way audio allows immediate communication and intervention at your property.",
-    "img":"SENTINEL/public_html/assets/img/service-2.png",
+    "img":"assets/img/service-2.png",
     "features": [
       "Live voice intervention capabilities",
       "Deterrent effect on potential intruders",
@@ -24,10 +24,10 @@
     ]
   },
   {
-    "icon": "SENTINEL/public_html/assets/icons/phone.png",
+    "icon": "assets/icons/phone.png",
     "title": "Emergency Response",
     "description": "Detected threats trigger emergency protocols, coordinating with local authorities for rapid response.",
-    "img":"SENTINEL/public_html/assets/img/service-3.png",
+    "img":"assets/img/service-3.png",
     "features": [
       "Direct connection to emergency services",
       "Automated dispatch protocols",

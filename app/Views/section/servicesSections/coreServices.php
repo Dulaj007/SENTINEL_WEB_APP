@@ -63,7 +63,7 @@
         <!-- Image -->
         <div class="order-first lg:order-last">
           <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
-            <img src="<?= base_url('SENTINEL/public_html/assets/img/service-1.png') ?>" 
+            <img src="<?= getenv('app.baseURL') ?>assets/img/service-1.png" 
                  alt="Live Monitoring" 
                  class="w-full h-full object-cover">
           </div>
@@ -75,7 +75,7 @@
         <!-- Image -->
         <div>
           <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
-            <img src="<?= base_url('SENTINEL/public_html/assets/img/service-2.png') ?>" 
+            <img src="<?= getenv('app.baseURL') ?>assets/img/service-2.png" 
                  alt="Two-Way Audio" 
                  class="w-full h-full object-cover">
           </div>
@@ -179,7 +179,7 @@
         <!-- Image -->
         <div class="order-first lg:order-last">
           <div class="relative overflow-hidden rounded-2xl border border-white/10 shadow-2xl transition-all duration-300 ease-out ">
-            <img src="<?= base_url('SENTINEL/public_html/assets/img/service-3.png') ?>" 
+            <img src="<?= getenv('app.baseURL') ?>assets/img/service-3.png" 
                  alt="Emergency Response" 
                  class="w-full h-full object-cover">
           </div>

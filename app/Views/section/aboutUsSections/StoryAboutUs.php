@@ -29,7 +29,7 @@
 
     <!-- Story Image -->
     <div>
-      <img src="<?= base_url('SENTINEL/public_html/assets/img/imgStory.png') ?>" 
+      <img src="<?= getenv('app.baseURL') ?>assets/img/imgStory.png" 
            alt="Monitoring Room" 
            class="rounded-xl shadow-lg">
     </div>

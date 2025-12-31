@@ -164,7 +164,7 @@
             
             <!-- Image -->
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= base_url('SENTINEL/public_html/assets/img/service-1.png') ?>" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service-1.png" 
                    alt="Live Monitoring Service" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               
@@ -190,7 +190,7 @@
                style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
             
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= base_url('SENTINEL/public_html/assets/img/service-2.png') ?>" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service-2.png" 
                    alt="Two-Way Audio Service" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               
@@ -392,7 +392,7 @@
                style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
             
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= base_url('SENTINEL/public_html/assets/img/service-3.png') ?>" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service-3.png" 
                    alt="Emergency Response Service" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               

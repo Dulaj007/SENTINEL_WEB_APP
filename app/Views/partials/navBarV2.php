@@ -5,6 +5,7 @@
 
     <!-- Center: Brand with Logo -->
     <div class="flex items-center gap-3">
+      <a href="<?= base_url('/') ?>" class="">
       <h1 class="text-xl sm:text-2xl font-extrabold flex items-center gap-1">
         <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)] text-2xl uppercase font-semibold tracking-widest  animate-pulse">
           ⬤ 
@@ -12,14 +13,15 @@
         <span class="text-[var(--text-primary)] drop-shadow-[0_0_2px_var(--text-primary)]">24/7</span>
         <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)]">SENTINEL</span>
       </h1>
+      </a>
     </div>
 
     <!-- Right: Desktop Links -->
     <div class="hidden lg:flex items-center gap-6 font-title">
       <a href="<?= base_url('/') ?>" class="nav-link">Home</a>
-      <a href="<?= base_url('about') ?>" class="nav-link">About</a>
-      <a href="<?= base_url('services') ?>" class="nav-link">Services</a>
-      <a href="<?= base_url('portfolio') ?>" class="nav-link">Portfolio</a>
+      <a href="<?= base_url('/about') ?>" class="nav-link">About</a>
+      <a href="<?= base_url('/services') ?>" class="nav-link">Services</a>
+      <a href="<?= base_url('/portfolio') ?>" class="nav-link">Portfolio</a>
      
       <a href="<?= base_url('contact') ?>" 
          class="px-4 py-2 flex items-center gap-2 border border-[var(--accent-red)] rounded-2xl
@@ -57,6 +59,7 @@
     Contact
   </a>
 </div>
+
 <script>
 // Hamburger + Mobile Menu (your existing code)
 const toggleBtn = document.getElementById('menu-toggle');
@@ -90,12 +93,16 @@ toggleBtn.addEventListener('click', () => {
 });
 
 // Highlight current page link
-const currentURL = window.location.href;
+const currentPath = window.location.pathname.replace(/\/$/, '');
+
 document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
-  if(currentURL.includes(link.getAttribute('href'))) {
+  const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
+
+  if (currentPath === linkPath) {
     link.classList.add('text-[var(--accent-red)]', 'font-bold');
   }
 });
+
 
 // Smart navbar hide/show on scroll
 let lastScrollTop = 0;

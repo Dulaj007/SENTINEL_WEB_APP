@@ -1,8 +1,8 @@
 <section id="hero" class="relative w-full h-screen flex items-center overflow-hidden">
 
   <!-- Full Background Image -->
-  <div class="absolute -inset-1">
-    <img src="<?= base_url('SENTINEL/public_html/assets/img/newbg.png') ?>" 
+  <div class="absolute -inset-1"> 
+    <img src="<?= getenv('assets.baseURL') ?>img/newbg.png" 
          alt="Hero Background" 
          class="w-full h-full object-cover object-center">
     <!-- Dark overlay for better text contrast -->
@@ -35,7 +35,7 @@
     <h1 class="text-2xl sm:text-4xl lg:text-5xl font-extrabold text-[var(--text-primary)] mb-2 leading-tight">
       &nbsp;Protect&nbsp;Your <span class="text-[var(--accent-red)]"><br class="block lg:hidden">&nbsp;World</span>
       <span class=""><br class="hidden lg:block">&nbsp;24/ 7  <br class="block lg:hidden">&nbsp;<span id="typed-words" class="text-[var(--accent-red)]"></span></span>
-      <span class="absolute h-[36px] lg:h-[45px] w-[4px] bg-[var(--accent-red)] animate-blink"></span>
+      <span class="absolute  w-[4px] text-[var(--accent-red)] animate-blink">|</span>
     </h1>
 
     <!-- Subtitle -->
@@ -46,19 +46,19 @@
 
     <!-- Buttons -->
     <div class="flex flex-col sm:flex-row gap-4">
-  <a href="<?= base_url('contact') ?>" 
-   class="flex items-center gap-2 px-4 py-4 font-bold rounded-2xl 
-          bg-gradient-to-r from-[var(--accent-red)] via-[var(--accent-shine)] to-[var(--accent-red)]
-          text-[var(--bg-background)] shadow-[var(--shadow-hard)]
-          bg-gradient-animate hover:opacity-90 transition transform duration-500 hover:scale-105">
+      <a href="<?= base_url('contact') ?>" 
+        class="flex items-center gap-2 px-4 py-4 font-bold rounded-2xl 
+                bg-gradient-to-r from-[var(--accent-red)] via-[var(--accent-shine)] to-[var(--accent-red)]
+                text-[var(--bg-background)] shadow-[var(--shadow-hard)]
+                bg-gradient-animate hover:opacity-90 transition transform duration-500 hover:scale-105">
 
-  <!-- Inline SVG Icon -->
-  <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 24">
-    <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
-  </svg>
+        <!-- Inline SVG Icon -->
+        <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 24">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"></path>
+        </svg>
 
-  <h1>Start Monitoring</h1>
-</a>
+        <h1>Start Monitoring</h1>
+      </a>
 
       <a href="<?= base_url('services') ?>" 
          class="flex items-center gap-2 px-8 py-4 border border-[var(--accent-red)] rounded-2xl
@@ -66,7 +66,7 @@
                 hover:scale-105 transform transition duration-500
                 bg-gradient-animate
                 hover:bg-gradient-to-r from-[var(--accent-red)] via-[var(--bg-background)] to-[var(--accent-red)]">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/yellowarrow.png') ?>" class="w-5 h-5">
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/yellowarrow.png" class="w-5 h-5">
         <h1>Watch Demo</h1>
       </a>
     </div>
@@ -74,13 +74,18 @@
 
   <!-- Optional Floating Right Accent Elements -->
   <div class="absolute right-10 bottom-10 hidden lg:flex flex-col items-center space-y-2">
-    <div class="w-12 h-12 rounded-full border-2 border-[var(--accent-red)] flex items-center justify-center shadow-[var(--shadow-soft)] animate-bounce">
-      <svg class="w-6 h-6 text-[var(--accent-red)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
-      </svg>
-    </div>
-    <span class="text-[var(--accent-red)] font-medium">Get Started</span>
-  </div>
+    <h1 class="relative z-10 text-xl sm:text-3xl font-normal leading-tight mb-6 mt-15 text-center  ">
+    <span class="flex items-center justify-center gap-2 text-white ">
+     <img 
+      src="<?= getenv('app.baseURL') ?>assets/icons/phone.png" 
+      alt="Phone Icon"
+      class="w-12 h-12 animate-phone-ring"
+    />
+      CALL US - 077 123 4567
+    </span>
+  </h1>  
+</div>
+
 
 </section>
 
@@ -120,7 +125,5 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 
-<!-- Extra Animations -->
-<style>
 
-</style>
+

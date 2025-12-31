@@ -3,7 +3,7 @@
   <!-- ===== Background Image ===== -->
   <div class="absolute inset-0 -z-10">
     <img 
-      src="<?= base_url('SENTINEL/public_html/assets/img/servicebg.png') ?>" 
+      src="<?= getenv('app.baseURL') ?>assets/img/servicebg.png" 
       alt="Services Background" 
       class="w-full h-full object-cover object-center"
     >
@@ -27,137 +27,19 @@
     </div>
 
     <!-- Main Title -->
-    <h1 class="text-4xl text-center sm:text-5xl font-extrabold leading-tight mb-10">
+    <h1 class="text-4xl text-center sm:text-5xl font-extrabold leading-tight ">
       <span class="text-[var(--color-white)] drop-shadow-[0_0_4px_var(--accent-red)]">
         OUR SERVICES
       </span>
     </h1>
   </div>
 
-  <!-- ===== Services Cards Container ===== -->
-  <div class="flex flex-wrap justify-center gap-10 z-10 px-6">
-
-    <?php 
-      // Load services data from JSON
-      $services = json_decode(file_get_contents(APPPATH . 'Data/services.json'), true); 
-      
-      // Loop through each service
-      foreach ($services as $index => $service): 
-        $icon = $service['icon'];
-        $title = $service['title'];
-        $description = $service['description'];
-        $features = $service['features'];
-        $img = $service['img'];
-    ?>
-
-    <!-- ===== Single Service Card ===== -->
-    <div 
-      class="electric-border relative group max-w-md w-full sm:w-[370px] 
-             rounded-2xl overflow-hidden text-[var(--color-white)] shadow-lg 
-             transition-all duration-500 hover:scale-[1.04]"
-      style="--electric-border-color:<?= $index % 2 === 0 ? 'var(--accent-red)' : 'var(--color-blue)' ?>; --eb-border-width:2px;"
-    >
-
-      <!-- ===== Electric Lightning SVG Filter ===== -->
-      <svg class="eb-svg" aria-hidden focusable="false">
-        <defs>
-          <filter id="electric-filter" color-interpolation-filters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
-            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
-            <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
-              <animate attributeName="dy" values="700;0" dur="6s" repeatCount="indefinite" calcMode="linear" />
-            </feOffset>
-            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
-            <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
-              <animate attributeName="dy" values="0;-700" dur="6s" repeatCount="indefinite" calcMode="linear" />
-            </feOffset>
-            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
-            <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
-              <animate attributeName="dx" values="490;0" dur="6s" repeatCount="indefinite" calcMode="linear" />
-            </feOffset>
-            <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
-            <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
-              <animate attributeName="dx" values="0;-490" dur="6s" repeatCount="indefinite" calcMode="linear" />
-            </feOffset>
-            <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
-            <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
-            <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
-            <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
-          </filter>
-        </defs>
-      </svg>
-
-      <!-- ===== Electric Glow Layers (CSS-driven) ===== -->
-      <div class="eb-layers">
-        <div class="eb-stroke"></div>
-        <div class="eb-glow-1"></div>
-        <div class="eb-glow-2"></div>
-        <div class="eb-background-glow"></div>
-      </div>
-
-      <!-- ===== Card Background with Image and Overlay ===== -->
-      <div class="absolute inset-0 opacity-30">
-        <img src="<?= base_url($img) ?>" alt="<?= esc($title) ?> Background" class="w-full h-full object-cover rounded-2xl">
-      </div>
-      <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-black)] via-transparent to-transparent"></div>
-
-      <!-- ===== Main Card Content ===== -->
-      <div class="eb-content relative z-10 p-8 flex flex-col gap-5 bg-[color-mix(in_srgb,var(--color-black)_10%,transparent)] backdrop-blur-sm rounded-2xl">
-
-        <!-- ==== Icon Container ==== -->
-        <div class="bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] 
-                    w-14 h-14 flex items-center justify-center rounded-xl shadow-md">
-          <img src="<?= base_url($icon) ?>" alt="<?= esc($title) ?> Icon" class="w-7 h-7">
-        </div>
-
-        <!-- ==== Title and Description ==== -->
-        <div>
-          <h2 class="text-xl font-semibold"><?= esc($title) ?></h2>
-          <p class="text-[var(--text-secondary)] text-sm mt-1"><?= esc($description) ?></p>
-        </div>
-
-        <!-- ==== Features List ==== -->
-        <ul class="space-y-2 text-sm">
-          <?php foreach($features as $feature): ?>
-            <li class="flex items-center gap-2 font-medium">
-              <img src="<?= base_url('SENTINEL/public_html/assets/icons/correct.png') ?>" alt="Correct Icon" class="w-4 h-4">
-              <?= esc($feature) ?>
-            </li>
-          <?php endforeach; ?>
-          
-        </ul>
-
-        <!-- ==== Discover Button ==== -->
-        <div class="mt-auto flex justify-end">
-          <a href="<?= base_url('services') ?>"
-             class="px-5 py-2 border border-[var(--color-yellow)] text-[var(--color-yellow)] rounded-lg
-                    text-sm font-medium transition-all duration-500 ease-in-out 
-                    group-hover:bg-gradient-to-r group-hover:from-[var(--color-yellow)] group-hover:to-[var(--color-orange-dark)]
-                    group-hover:text-[var(--color-black)]">
-            Discover More
-          </a>
-        </div>
-
-        <!-- ==== Promotional Badge (Shown only on first card) ==== -->
-        <?php if($index === 0): ?>
-          <div class="absolute top-4 right-4 bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] 
-                      text-[var(--color-black)] text-xs font-bold px-3 py-1 rounded-full shadow-lg">
-            20% OFF
-          </div>
-        <?php endif; ?>
-
-      </div>
-    </div>
-
-    <?php endforeach; ?>
-    
-  </div>
-
-<!-- ===== Custom Package Full-Width Card ===== -->
-<div class="px-4 sm:px-6">
+  <!-- ===== Custom Package Full-Width Card ===== -->
+<div class="p-4 mb-15">
   <div 
-    class="electric-border relative group w-full max-w-5xl mx-auto mt-20 
-           rounded-2xl overflow-hidden text-[var(--color-white)] shadow-lg
-           transition-all duration-500 hover:scale-[1.02] px-4 sm:px-6"
+    class="electric-border relative group w-full max-w-7xl mx-auto mt-5 
+           rounded-2xl overflow-hidden text-[var(--color-white)] shadow-lg 
+           transition-all duration-500 p-3"
     style="--electric-border-color:var(--bg-primary); --eb-border-width:2px;"
   >
           
@@ -179,35 +61,41 @@
     </div>
 
     <!-- ===== Card Content ===== -->
-    <div class="eb-content relative z-10 p-10 flex flex-col md:flex-row md:items-center md:justify-between 
-                gap-8 bg-[color-mix(in_srgb,var(--color-black)_10%,transparent)] backdrop-blur-sm rounded-2xl">
+    <div class="eb-content md:p-8 relative z-10 gap-8 flex flex-col md:flex-row md:items-center md:justify-between 
+                 bg-[color-mix(in_srgb,var(--color-black)_10%,transparent)] backdrop-blur-sm rounded-2xl">
 
       <!-- ==== Left Side ==== -->
       <div class="flex flex-col gap-4 md:w-1/2">
-        <div class="w-full bg-[var(--bg-secondary)] rounded-2xl shadow-lg p-8 flex flex-col items-center text-center transition-transform duration-300 hover:scale-[1.02] hover:shadow-xl">
+        <div class="w-full bg-[var(--bg-secondary)] text-base md:tex-lg rounded-2xl shadow-lg p-5 py-10 flex flex-col items-center text-center transition-transform duration-300 hover:shadow-xl">
+
+        
           <div class="bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
-                      w-24 h-24 flex items-center justify-center rounded-2xl shadow-md mb-6">
+                      w-16 h-16 md:w-24 md:h-24 flex items-center justify-center rounded-2xl shadow-md mb-4">
             <svg fill="#000000" viewBox="0 -5.47 56.254 56.254" xmlns="http://www.w3.org/2000/svg" class="w-12 h-12">
               <path d="M494.211,354.161l1.174-1.366H482.552L469.8,367.5h12.94Zm-8.4,13.336H510.05l-6.589-7.664-5.528-6.429-8.354,9.713Zm-15.856,2.329,24.1,25.356L482.53,369.826Zm40.824,0h-2.1l-8.829,0H485.083l12.774,28.1.082.178,12.17-26.8Zm-8.94,25.322,24.057-25.32H513.337Zm24.215-27.65L513.3,352.8H500.478l12.642,14.7Z" transform="translate(-469.802 -352.795)"></path>
             </svg>
           </div>
 
-          <h2 class="text-3xl font-bold text-[var(--text-primary)] mb-3">Custom Package</h2>
+          <h2 class="text-xl md:text-3xl font-bold text-[var(--text-primary)] mb-3">Create Your Custom Package</h2>
           <p class="text-[var(--text-secondary)] max-w-2xl">
-            Design your own CCTV monitoring plan by selecting only the services you need —
-            including <span class="font-semibold text-[var(--color-yellow)]">Live Monitoring</span>,
-            <span class="font-semibold text-[var(--color-yellow)]">Two-Way Audio</span>, and
-            <span class="font-semibold text-[var(--color-yellow)]">Emergency Response</span>.
-            You can also specify your preferred number of cameras and screens to match your setup.
+            Choose the number of cameras for your monitoring system and contact us via  
+            <span class="text-green-500">WhatsApp</span> or <span class="text-yellow-500">Email</span> directly. We will get in touch with you in seconds.
           </p>
         </div>
       </div>
 
       <!-- ==== Right Side: Text & Controls ==== -->
-      <div class="flex flex-col gap-4 md:w-1/2 p-5 md:p-0">
+      <div class="flex flex-col gap-4 md:w-1/2 p-3 md:p-0">
 
-        <!-- CAMERA COUNT SLIDER -->
-        <div class="mt-10">
+        <!-- ===== Input Fields ===== -->
+        <div class=" space-y-6">
+          <div class="flex flex-col gap-3 ">
+            <input id="nameInput" type="text" placeholder="Your Name" class="p-3 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)]"> 
+            <input id="emailInput" type="email" placeholder="Your Email" class="p-3 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)]">
+            <input id="locationInput" type="text" placeholder="Location / Company" class="p-3 rounded-lg bg-[var(--bg-secondary)] text-[var(--text-primary)]">
+          </div>
+
+          <!-- Camera Range Slider -->
           <label for="cameraRange" class="flex items-center gap-2 font-title text-base font-medium text-[var(--text-primary)]">
             <svg fill="white" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"
                  class="w-9 h-9 drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]">
@@ -216,49 +104,48 @@
             Cameras: 
             <span id="cameraValue" class="text-[var(--color-yellow)] font-semibold ml-1">3</span>
           </label>
-          <input id="cameraRange" type="range" min="3" max="100" value="3" 
-                 class="w-full accent-[var(--color-yellow)] mt-2 cursor-pointer">
+          <input id="cameraRange" type="range" min="1" max="100" value="0" 
+                 class="w-full accent-[var(--color-yellow)] cursor-pointer">
         </div>
 
-        <!-- MONITOR COUNT SLIDER -->
-        <div class="mt-6">
-          <label for="monitorRange" class="flex items-center gap-2 font-title text-base font-medium text-[var(--text-primary)]">
-            <svg viewBox="0 0 24 24" fill="white" xmlns="http://www.w3.org/2000/svg"
-                 class="w-8 h-8 drop-shadow-[0_0_6px_rgba(255,255,255,0.6)]">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                    d="M6.93417 2H17.0658C17.9523 1.99995 18.7161 1.99991 19.3278 2.08215C19.9833 2.17028 20.6117 2.36902 21.1213 2.87868C21.631 3.38835 21.8297 4.0167 21.9179 4.67221C22.0001 5.28388 22.0001 6.0477 22 6.9342V13.0658C22.0001 13.9523 22.0001 14.7161 21.9179 15.3278C21.8297 15.9833 21.631 16.6117 21.1213 17.1213C20.6117 17.631 19.9833 17.8297 19.3278 17.9179C18.7161 18.0001 17.9523 18.0001 17.0658 18L13 18V20H17C17.5523 20 18 20.4477 18 21C18 21.5523 17.5523 22 17 22H7C6.44772 22 6 21.5523 6 21C6 20.4477 6.44772 20 7 20H11V18L6.93417 18C6.04769 18.0001 5.28387 18.0001 4.67221 17.9179C4.0167 17.8297 3.38835 17.631 2.87868 17.1213C2.36902 16.6117 2.17028 15.9833 2.08215 15.3278C1.99991 14.7161 1.99995 13.9523 2 13.0658V6.93417C1.99995 6.04769 1.99991 5.28387 2.08215 4.67221C2.17028 4.0167 2.36902 3.38835 2.87868 2.87868C3.38835 2.36902 4.0167 2.17028 4.67221 2.08215C5.28387 1.99991 6.04769 1.99995 6.93417 2Z"/>
-            </svg>
-            Monitors: 
-            <span id="monitorValue" class="text-[var(--color-yellow)] font-semibold ml-1">1</span>
-          </label>
-          <input id="monitorRange" type="range" min="1" max="20" value="1" 
-                 class="w-full accent-[var(--color-yellow)] mt-2 cursor-pointer">
-        </div>
-
-        <!-- CHECKBOXES -->
-        <div class="flex flex-col gap-3 font-title text-lg text-[var(--text-primary)]">
+        <!-- ===== Feature Checkboxes ===== -->
+        <div class="flex flex-col gap-3 font-title text-base md:text-lg text-[var(--text-primary)]">
           <label class="flex items-center gap-3 cursor-pointer">
-            <input type="checkbox" id="liveMonitoring" class="accent-[var(--accent-red)] cursor-pointer">
-            <span>Live Monitoring</span>
+            <input type="checkbox" id="liveMonitoring" class="accent-[var(--accent-red)] scale-125 cursor-pointer" checked>
+            <span>Live Monitoring</span> - <span class="bg-gradient-to-r from-white/70 to-red-500
+                      text-[var(--color-black)] text-sm font-bold px-2 py-1 rounded-full shadow-lg tracking-[px]">FREE</span>
           </label>
           <label class="flex items-center gap-3 cursor-pointer">
-            <input type="checkbox" id="twoWayAudio" class="accent-[var(--accent-red)] cursor-pointer">
-            <span>Two-Way Audio</span>
+            <input type="checkbox" id="twoWayAudio" class="accent-[var(--accent-red)] scale-125  cursor-pointer" checked>
+            <span>Two-Way Audio</span> - <span class="bg-gradient-to-r from-white/70 to-red-500
+                      text-[var(--color-black)] text-sm font-bold px-2 py-1 rounded-full shadow-lg tracking-[px]">FREE</span>
           </label>
           <label class="flex items-center gap-3 cursor-pointer">
-            <input type="checkbox" id="emergencyResponse" class="accent-[var(--accent-red)] cursor-pointer">
-            <span>Emergency Response</span>
+            <input type="checkbox" id="emergencyResponse" class="accent-[var(--accent-red)] scale-125 cursor-pointer" checked>
+            <span>Emergency Response</span> - <span class="bg-gradient-to-r from-white/70 to-red-500
+                      text-[var(--color-black)] text-sm font-bold px-2 py-1 rounded-full shadow-lg tracking-[px]">FREE</span>
           </label>
         </div>
 
-        <!-- APPLY BUTTON -->
-        <div class="flex justify-end mt-4 ">
+        <!-- ===== Apply Buttons with Icons ===== -->
+        <div class="flex justify-end mt-4 gap-4 flex-col text-base md:flex-row">
           <button 
-            class="px-5 py-2 border border-[var(--color-yellow)] rounded-lg
-                      textlg font-semibold transition-all duration-500 ease-in-out 
-                      bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)]
-                      text-[var(--color-black)] hover:scale-105 cursor-pointer">
-            Apply for Package
+            class="px-3 py-2 border border-green-300 rounded-lg textlg font-semibold transition-all duration-500 ease-in-out 
+                   bg-gradient-to-r from-green-500 to-green-800 text-[var(--color-black)] hover:scale-105 cursor-pointer flex items-center gap-2">
+            <!-- WhatsApp Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
+              <path d="M12.04 2.003c-5.52 0-10 4.48-10 10 0 1.767.463 3.482 1.343 4.998L2 22l5.262-1.373A9.963 9.963 0 0 0 12.04 22c5.52 0 10-4.48 10-10s-4.48-9.997-10-9.997zm5.63 14.37c-.246.688-1.44 1.332-1.994 1.412-.531.077-1.19.109-3.43-1.058-2.063-1.064-3.375-3.012-3.57-3.264-.195-.252-1.622-2.05-1.622-3.914 0-1.863 1.13-2.784 1.529-3.148.399-.363.788-.404 1.056-.404.269 0 .523 0 .751.007.242.007.566-.092.886.687.31.756 1.048 2.611 1.142 2.805.096.194.154.42.024.677-.13.252-.19.42-.386.635-.195.214-.406.476-.577.639-.19.182-.39.383-.144.757.246.375 1.074 1.767 2.31 2.86 1.597 1.375 2.312 1.566 2.655 1.747.344.182.547.154.749-.092.202-.246.867-1.002 1.094-1.345.226-.344.455-.289.767-.174.312.115 1.956.92 2.294 1.09.338.17.565.254.646.392.082.139.082.802-.164 1.489z"/>
+            </svg>
+            Send to WhatsApp
+          </button>
+          <button 
+            class="px-3 py-2 border border-[var(--color-yellow)] rounded-lg textlg font-semibold transition-all duration-500 ease-in-out 
+                   bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] text-[var(--color-black)] hover:scale-105 cursor-pointer flex items-center gap-2">
+            <!-- Email Icon -->
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" class="w-6 h-6">
+              <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+            </svg>
+            Send to Email
           </button>
         </div>
       </div>
@@ -267,20 +154,120 @@
   </div>
 </div>
 
+<!-- ===== Services Cards Container ===== -->
+<div class="flex flex-wrap justify-center gap-10 z-10 px-6 ">
+  <?php 
+    $services = json_decode(file_get_contents(APPPATH . 'Data/services.json'), true); 
+    foreach ($services as $index => $service): 
+      $icon = $service['icon'];
+      $title = $service['title'];
+      $description = $service['description'];
+      $features = $service['features'];
+      $img = $service['img'];
+  ?>
+  <!-- ===== Single Service Card ===== -->
+  <div 
+    class="electric-border relative group max-w-4xl w-full sm:w-[370px] rounded-2xl overflow-hidden text-[var(--color-white)] shadow-lg transition-all duration-500"
+    style="--electric-border-color:<?= $index % 2 === 0 ? 'var(--accent-red)' : 'var(--color-blue)' ?>; --eb-border-width:2px;"
+  >
 
+    <!-- ===== Electric Lightning SVG Filter ===== -->
+    <svg class="eb-svg" aria-hidden focusable="false">
+      <defs>
+        <filter id="electric-filter" color-interpolation-filters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+          <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+            <animate attributeName="dy" values="700;0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+          </feOffset>
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+          <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+            <animate attributeName="dy" values="0;-700" dur="6s" repeatCount="indefinite" calcMode="linear" />
+          </feOffset>
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+          <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+            <animate attributeName="dx" values="490;0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+          </feOffset>
+          <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+          <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+            <animate attributeName="dx" values="0;-490" dur="6s" repeatCount="indefinite" calcMode="linear" />
+          </feOffset>
+          <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+          <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+          <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+          <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+        </filter>
+      </defs>
+    </svg>
 
+    <!-- ===== Electric Glow Layers (CSS-driven) ===== -->
+    <div class="eb-layers">
+      <div class="eb-stroke"></div>
+      <div class="eb-glow-1"></div>
+      <div class="eb-glow-2"></div>
+      <div class="eb-background-glow"></div>
+    </div>
 
+    <!-- ===== Card Background with Image and Overlay ===== -->
+    <div class="absolute inset-0 opacity-30">
+      <img src="<?= base_url($img) ?>" alt="<?= esc($title) ?> Background" class="w-full h-full object-cover rounded-2xl">
+    </div>
+    <div class="absolute inset-0 bg-gradient-to-t from-[var(--color-black)] via-transparent to-transparent"></div>
 
+    <!-- ===== Main Card Content ===== -->
+    <div class="eb-content relative z-10 py-10 px-5 md:px-10 flex flex-col gap-5 bg-[color-mix(in_srgb,var(--color-black)_10%,transparent)] backdrop-blur-sm rounded-2xl">
 
-  <!-- ===== Bottom Contact Title ===== -->
-  <h1 class="relative z-10 text-xl sm:text-3xl font-normal leading-tight mb-6 mt-15 text-center">
-    <span class="flex items-center justify-center gap-2 text-white">
-      <img src="<?= base_url('SENTINEL/public_html/assets/icons/phone.png') ?>" 
-           alt="Phone Icon" 
-           class="w-12 h-12 inline-block">
-      CALL US - 077 123 4567
-    </span>
-  </h1>
+      <!-- ==== Icon Container ==== -->
+      <div class="bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] w-14 h-14 flex items-center justify-center rounded-xl shadow-md ">
+        <img src="<?= base_url($icon) ?>" alt="<?= esc($title) ?> Icon" class="w-7 h-7 animate-phone-ring">
+      </div>
+
+      <!-- ==== Title and Description ==== -->
+      <div>
+        <h2 class="text-xl font-semibold"><?= esc($title) ?></h2>
+        <p class="text-[var(--text-secondary)] text-base mt-1"><?= esc($description) ?></p>
+      </div>
+
+      <!-- ==== Features List ==== -->
+      <ul class="space-y-2 text-base">
+        <?php foreach($features as $feature): ?>
+          <li class="flex items-center gap-2 font-medium">
+            <img src="<?= getenv('app.baseURL') ?>assets/icons/correct.png" alt="Correct Icon" class="w-4 h-4">
+            <?= esc($feature) ?>
+          </li>
+        <?php endforeach; ?>
+      </ul>
+
+      <!-- ==== Discover Button ==== -->
+      <div class="mt-auto flex justify-end">
+        <a href="<?= base_url('services') ?>"
+           class="px-5 py-2 border border-[var(--color-yellow)] text-[var(--color-yellow)] rounded-lg
+                  text-sm font-medium transition-all duration-500 ease-in-out 
+                  group-hover:bg-gradient-to-r group-hover:from-[var(--color-yellow)] group-hover:to-[var(--color-orange-dark)]
+                  group-hover:text-[var(--color-black)]">
+          Discover More
+        </a>
+      </div>
+
+      <!-- ==== Promotional Badge (Shown only on first card) ==== -->
+      <div class="absolute top-5 right-4 bg-gradient-to-r from-white/70 to-white
+                  text-[var(--color-black)] text-sm font-bold px-3 py-1 rounded-full shadow-lg">
+        FREE
+      </div>
+
+    </div>
+  </div>
+  <?php endforeach; ?>
+</div>
+
+<!-- ===== Bottom Contact Title ===== -->
+<h1 class="relative z-10 text-base sm:text-3xl font-normal leading-tight mb-6 mt-15 text-center">
+  <span class="flex items-center justify-center gap-5 md:gap-3 text-white px-3 flex-col md:flex-row ">
+    <img src="<?= getenv('app.baseURL') ?>assets/icons/phone.png" 
+         alt="Phone Icon" 
+         class="w-16 md:w-12 w-16 md:h-12 inline-block animate-phone-ring">
+    CALL US - 077 123 4567
+  </span>
+</h1>
 </section>
 
 <!-- ========================= ELECTRIC BORDER SCRIPT ========================= -->
@@ -289,16 +276,15 @@ document.addEventListener('DOMContentLoaded', () => {
   // Select all cards that have the electric-border class
   const borders = document.querySelectorAll('.electric-border');
 
-// Update slider values dynamically
-document.addEventListener('input', (e) => {
-  if (e.target.id === 'cameraRange') {
-    document.getElementById('cameraValue').textContent = e.target.value;
-  }
-  if (e.target.id === 'monitorRange') {
-    document.getElementById('monitorValue').textContent = e.target.value;
-  }
-});
-
+  // Update slider values dynamically
+  document.addEventListener('input', (e) => {
+    if (e.target.id === 'cameraRange') {
+      document.getElementById('cameraValue').textContent = e.target.value;
+    }
+    if (e.target.id === 'monitorRange') {
+      document.getElementById('monitorValue').textContent = e.target.value;
+    }
+  });
 
   borders.forEach(border => {
     const svg = border.querySelector('.eb-svg');

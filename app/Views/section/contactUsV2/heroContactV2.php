@@ -3,7 +3,7 @@
   <!-- Full Background Image -->
   <div class="absolute inset-0">
     <img 
-      src="<?= base_url('SENTINEL/public_html/assets/img/contactHero1.png') ?>" 
+      src="<?= getenv('app.baseURL') ?>assets/img/contactHero1.png" 
       alt="Contact Us Background" 
       class="w-full h-full object-cover object-center opacity-90">
     <div class="absolute inset-0 blck md:hidden bg-gradient-to-r from-black/70 via-black/40 to-transparent"></div>
@@ -58,7 +58,7 @@
                 hover:scale-105 transform transition duration-500
                 bg-gradient-animate
                 hover:bg-gradient-to-r from-[var(--accent-red)] via-[var(--bg-background)] to-[var(--accent-red)]">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/yellowarrow.png') ?>" class="w-5 h-5">
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/yellowarrow.png" class="w-5 h-5">
         <h1>About Sentinel</h1>
       </a>
     </div>

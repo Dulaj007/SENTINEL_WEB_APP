@@ -525,3 +525,18 @@ h1, h2, h3, h4, h5, h6,.font-title {
       transform: none !important;
     }
   }
+
+  @keyframes phone-ring {
+  0%   { transform: rotate(0) translateX(0); }
+  5%   { transform: rotate(8deg) translateX(2px); }
+  10%  { transform: rotate(-8deg) translateX(-2px); }
+  15%  { transform: rotate(8deg) translateX(2px); }
+  20%  { transform: rotate(-8deg) translateX(-2px); }
+  25%  { transform: rotate(0) translateX(0); }
+  100% { transform: rotate(0) translateX(0); }
+}
+
+.animate-phone-ring {
+  transform-origin: center;
+  animation: phone-ring 2.2s ease-in-out infinite;
+}

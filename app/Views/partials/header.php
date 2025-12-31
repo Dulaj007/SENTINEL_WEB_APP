@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title><?= esc($meta['title'] ?? '24/7 Sentinel') ?></title>
     <meta name="description" content="<?= esc($meta['description'] ?? 'Professional CCTV & Surveillance Services') ?>">
     <meta name="keywords" content="<?= esc($meta['keywords'] ?? 'CCTV, Surveillance, Security') ?>">
-<link rel="stylesheet" href="<?= base_url('/SENTINEL/public_html/assets/css/output.css') ?>">
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="<?= getenv('assets.baseURL') ?>css/output.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.3.17/dist/lenis.min.js"></script> 
+    <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.17/dist/lenis.css">
+
+    <script src="<?= base_url('assets/js/smooth-scroll.js') ?>"></script>
 
 
 </head>

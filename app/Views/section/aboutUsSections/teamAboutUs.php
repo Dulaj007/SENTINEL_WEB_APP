@@ -20,7 +20,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-1.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-1.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold text-white">Alex Carter</div>
@@ -34,7 +34,7 @@
             <div class="absolute inset-0 p-6 [transform:rotateY(180deg)] backface-hidden flex flex-col justify-between bg-gradient-to-br from-var(--color-dark-3) via-var(--color-dark-1) to-var(--color-dark-2)">
               <div class="flex items-center gap-3">
                 <div class="relative h-10 w-10 overflow-hidden rounded-full ring-1 ring-white/10 bg-white/5 shrink-0">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-1.png') ?>" alt="Alex Carter" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-1.png" alt="Alex Carter" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight text-white">Alex Carter</h3>
@@ -75,7 +75,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-2.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-2.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold text-white">Jessica Brown</div>
@@ -89,7 +89,7 @@
             <div class="absolute inset-0 p-6 [transform:rotateY(180deg)] backface-hidden flex flex-col justify-between bg-gradient-to-br from-var(--color-dark-3) via-var(--color-dark-1) to-var(--color-dark-2)">
               <div class="flex items-center gap-3">
                 <div class="relative h-10 w-10 overflow-hidden rounded-full ring-1 ring-white/10 bg-white/5 shrink-0">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-2.png') ?>" alt="Jessica Brown" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-2.png" alt="Jessica Brown" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight text-white">Jessica Brown</h3>
@@ -127,7 +127,7 @@
             <div class="absolute inset-0 backface-hidden flex flex-col justify-end p-6"
                  style="background-image:
                         linear-gradient(180deg, rgba(0,0,0,.10) 20%, rgba(0,0,0,.55) 70%, rgba(0,0,0,.85) 100%),
-                        url('<?= base_url('SENTINEL/public_html/assets/img/user-3.png') ?>');
+                        url('<?= getenv('app.baseURL') ?>assets/img/user-3.png');
                         background-size: cover; background-position: center;">
               <div class="space-y-1">
                 <div class="text-xl font-semibold text-white">Michael Lee</div>
@@ -141,7 +141,7 @@
             <div class="absolute inset-0 p-6 [transform:rotateY(180deg)] backface-hidden flex flex-col justify-between bg-gradient-to-br from-var(--color-dark-3) via-var(--color-dark-1) to-var(--color-dark-2)">
               <div class="flex items-center gap-3">
                 <div class="relative h-10 w-10 overflow-hidden rounded-full ring-1 ring-white/10 bg-white/5 shrink-0">
-                  <img src="<?= base_url('SENTINEL/public_html/assets/img/user-3.png') ?>" alt="Michael Lee" class="h-full w-full object-cover"/>
+                  <img src="<?= getenv('app.baseURL') ?>assets/img/user-3.png" alt="Michael Lee" class="h-full w-full object-cover"/>
                 </div>
                 <div>
                   <h3 class="text-xl font-semibold leading-tight text-white">Michael Lee</h3>

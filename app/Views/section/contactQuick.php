@@ -36,7 +36,7 @@
 
         <button type="submit" 
             class="flex items-center justify-center gap-2 bg-gradient-to-r from-[var(--color-yellow)] to-[var(--color-orange-dark)] text-white font-bold px-6 py-3 rounded-lg transition-all duration-300 transform hover:scale-105 hover:bg-white hover:text-[var(--color-yellow)]">
-          <img src="<?= base_url('SENTINEL/public_html/assets/icons/se-logo.svg') ?>" alt="Send" class="w-7 h-7" />
+          <img src="<?= getenv('app.baseURL') ?> assets/icons/se-logo.svg') ?>" alt="Send" class="w-7 h-7" />
           Send Message
         </button>
       </form>
@@ -54,22 +54,22 @@
       <p class="text-[var(--color-white-60)] text-sm mb-2">Contact us for a free consultation</p>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/fb-logo.png') ?>" alt="Facebook" class="w-6 h-6" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/fb-logo.png" alt="Facebook" class="w-6 h-6" />
         <p class="text-[var(--color-white)] font-medium">Follow us on Facebook</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/loc-logo.svg') ?>" alt="Location" class="w-6 h-6" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/loc-logo.svg" alt="Location" class="w-6 h-6" />
         <p class="text-[var(--color-white-80)]">Horana Road, Wekada, Panadura, Sri Lanka</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/em-logo.png') ?>" alt="Email" class="w-6 h-6" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/em-logo.png" alt="Email" class="w-6 h-6" />
         <p class="text-[var(--color-white-80)]">info@24-7sentinel.com</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= base_url('SENTINEL/public_html/assets/icons/call-logo.png') ?>" alt="Phone" class="w-6 h-6" />
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/call-logo.png" alt="Phone" class="w-6 h-6" />
         <p class="text-[var(--color-white-80)]">+1 (555) 123-4567</p>
       </div>
     </div>
