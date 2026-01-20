@@ -27,11 +27,11 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">Call Us</h3>
         <p class="text-sm text-gray-400 mb-3">Speak directly with our experts</p>
-        <a href="tel:+1800SENTINEL" class="text-[var(--color-yellow)] text-sm font-medium hover:underline">074 0134 247</a>
+        <a href="tel:+94740134247" class="text-[var(--color-yellow)] text-sm font-medium hover:underline">074 0134 247</a>
       </div>
 
       <!-- WhatsApp -->
-      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)]  p-3 sm:p-10 flex flex-col items-center border border-[var(--color-green-dark)] hover:border-[var(--color-green)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-green)] hover:shadow-[inset_0_0_15px_var(--color-green)]">
+      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-green-dark)] hover:border-[var(--color-green)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-green)] hover:shadow-[inset_0_0_15px_var(--color-green)]">
         <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 text-[var(--color-green)] transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
           <!-- WhatsApp Icon -->
           <svg viewBox="0 0 20 20" fill="currentColor" class="w-full h-full">
@@ -40,11 +40,11 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">WhatsApp</h3>
         <p class="text-sm text-gray-400 mb-3">Quick chat support</p>
-        <a href="https://wa.me/18001234567" target="_blank" class="text-[var(--color-green)] text-sm font-medium hover:underline">Start Chat</a>
+        <a href="https://wa.me/94740134247" target="_blank" class="text-[var(--color-green)] text-sm font-medium hover:underline">Start Chat</a>
       </div>
 
       <!-- Facebook -->
-      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)]  p-3 sm:p-10 flex flex-col items-center border border-[var(--color-blue-dark)] hover:border-[var(--color-blue)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-blue)] hover:shadow-[inset_0_0_15px_var(--color-blue)]">
+      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-blue-dark)] hover:border-[var(--color-blue)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-blue)] hover:shadow-[inset_0_0_15px_var(--color-blue)]">
         <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 text-[var(--color-blue)] transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
           <svg fill="currentColor" viewBox="0 0 24 24" class="w-full h-full">
             <path d="M12 2.04C6.5 2.04 2 6.53 2 12.06C2 17.06 5.66 21.21 10.44 21.96V14.96H7.9V12.06H10.44V9.85C10.44 7.34 11.93 5.96 14.22 5.96C15.31 5.96 16.45 6.15 16.45 6.15V8.62H15.19C13.95 8.62 13.56 9.39 13.56 10.18V12.06H16.34L15.89 14.96H13.56V21.96C15.92 21.59 18.06 20.39 19.61 18.57C21.16 16.75 22.01 14.45 22 12.06C22 6.53 17.5 2.04 12 2.04Z"/>
@@ -52,11 +52,11 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">Facebook</h3>
         <p class="text-sm text-gray-400 mb-3">Follow us for updates</p>
-        <a href="https://facebook.com/247sentinel" target="_blank" class="text-[var(--color-blue)] text-sm font-medium hover:underline">Start Chat</a>
+        <a href="https://facebook.com/247sentinel" target="_blank" class="text-[var(--color-blue)] text-sm font-medium hover:underline">Follow Us</a>
       </div>
 
       <!-- Email -->
-      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)]  p-3 sm:p-10 flex flex-col items-center border border-[var(--color-red-dark)] hover:border-[var(--color-red)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-red)] hover:shadow-[inset_0_0_15px_var(--color-red)]">
+      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-red-dark)] hover:border-[var(--color-red)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-red)] hover:shadow-[inset_0_0_15px_var(--color-red)]">
         <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 text-[var(--color-red)] transition-transform duration-500 group-hover:-rotate-12 group-hover:scale-110">
           <svg viewBox="0 0 20 20" fill="currentColor" class="w-full h-full">
             <path d="M2 4a2 2 0 00-2 2v8a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2H2zm8 5l8-5v2l-8 5-8-5V4l8 5z"/>
@@ -64,30 +64,36 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">Email</h3>
         <p class="text-sm text-gray-400 mb-3">Write to our team</p>
-        <a href="mailto:info@247sentinel.com" class="text-[var(--color-red)] text-sm font-medium hover:underline">info@sentinel24-7.com</a>
+        <a href="mailto:info@247sentinel.com" class="text-[var(--color-red)] text-sm font-medium hover:underline">info@247sentinel.com</a>
       </div>
 
-          <!-- Instagram -->
-  <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-pink-dark)] hover:border-text-pink-500 transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-pink)] hover:shadow-[inset_0_0_15px_var(--color-pink)]">
-    
-    <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 text-pink-500 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
-      <!-- Instagram Icon -->
-      <svg fill="currentColor" viewBox="0 0 24 24" class="w-full h-full">
-        <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 1.5h8.5c2.35 0 4.25 1.9 4.25 4.25v8.5c0 2.35-1.9 4.25-4.25 4.25h-8.5C5.4 20.5 3.5 18.6 3.5 16.25v-8.5C3.5 5.4 5.4 3.5 7.75 3.5zm8.75 2a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
-      </svg>
+      <!-- Instagram (FIXED with inline styles) -->
+      <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center transition-all duration-500 hover:scale-[1.05]"
+           style="border: 1px solid #833AB4;"
+           onmouseover="this.style.borderColor='#E1306C'; this.style.boxShadow='0 0 25px #E1306C, inset 0 0 15px rgba(225,48,108,0.3)';"
+           onmouseout="this.style.borderColor='#833AB4'; this.style.boxShadow='0 0 20px rgba(255,255,255,0.05)';">
+        
+        <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110"
+             style="color: #E1306C;">
+          <!-- Instagram Icon -->
+          <svg fill="currentColor" viewBox="0 0 24 24" class="w-full h-full">
+            <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 1.5h8.5c2.35 0 4.25 1.9 4.25 4.25v8.5c0 2.35-1.9 4.25-4.25 4.25h-8.5C5.4 20.5 3.5 18.6 3.5 16.25v-8.5C3.5 5.4 5.4 3.5 7.75 3.5zm8.75 2a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
+          </svg>
+        </div>
+
+        <h3 class="text-lg font-semibold mb-1">Instagram</h3>
+        <p class="text-sm mb-3" style="color: #E1306C;">Follow our latest updates</p>
+
+        <a href="https://www.instagram.com/247sentinel/" target="_blank"
+           class="text-sm font-medium hover:underline"
+           style="color: #E1306C;"
+           onmouseover="this.style.color='#F56040';"
+           onmouseout="this.style.color='#E1306C';">
+          Follow Us
+        </a>
+      </div>
+
     </div>
-
-    <h3 class="text-lg font-semibold mb-1">Instagram</h3>
-    <p class="text-sm text-pink-500 mb-3">Follow our latest updates</p>
-
-    <a href="https://www.instagram.com/247sentinel/" target="_blank"
-      class="text-[var(--color-pink)] text-sm font-medium hover:underline">
-      Follow Us
-    </a>
-  </div>
-    </div>
-
-
 
   </div>
 </section>

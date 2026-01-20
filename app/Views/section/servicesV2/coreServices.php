@@ -40,7 +40,7 @@
       <!-- Subtitle -->
       <p class="text-base sm:text-lg md:text-xl max-w-3xl mx-auto leading-relaxed" 
          style="color: var(--text-secondary);">
-        Three pillars of comprehensive security monitoring designed to keep your property safe 24/7
+        Comprehensive security solutions designed to keep your property, assets, and people safe 24/7
       </p>
 
       <!-- Decorative Line -->
@@ -70,26 +70,24 @@
               
               <svg class="w-7 h-7 sm:w-8 sm:h-8 relative z-10 transition-transform duration-300 group-hover:scale-110" 
                    style="color: var(--color-black);" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 5c-7.633 0-11 7-11 7s3.367 7 11 7 11-7 11-7-3.367-7-11-7zm0 11a4 4 0 110-8 4 4 0 010 8zm0-6a2 2 0 100 4 2 2 0 000-4z"/>
+                <path d="M12 2L2 7v10c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V7l-10-5zm0 2.18l6 3v8.64l-6 3-6-3V7.18l6-3z"/>
               </svg>
             </div>
             
             <div>
               <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style="color: var(--color-white);">
-                Live Monitoring
+                Construction, Industrial & Logistics Security
               </h3>
               <div class="flex items-center gap-2 text-sm" style="color: var(--color-yellow);">
                 <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--accent-red);"></span>
-                <span>Active 24/7/365</span>
+                <span>Keep your operations running safely</span>
               </div>
             </div>
           </div>
 
           <!-- Description -->
           <p class="text-base sm:text-lg leading-relaxed" style="color: var(--color-white-80);">
-            Our state-of-the-art monitoring center operates around the clock with certified security professionals
-            watching your property in real-time. Using advanced AI-powered analytics combined with human expertise,
-            we detect and respond to threats instantly, ensuring your property is always protected.
+            Keep your operations running safely and smoothly with comprehensive security monitoring for construction sites, industrial facilities, and logistics operations.
           </p>
 
           <!-- Features List -->
@@ -104,7 +102,7 @@
               <div class="flex-1">
                 <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white" 
                       style="color: var(--color-white-80);">
-                  Real-time threat detection and analysis
+                  Construction Sites Monitoring – Protect your tools, materials, and workers with real-time surveillance that prevents theft, trespassing, and equipment damage.
                 </span>
               </div>
             </li>
@@ -119,7 +117,7 @@
               <div class="flex-1">
                 <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white" 
                       style="color: var(--color-white-80);">
-                  AI-powered behavioral analytics
+                  Industrial & Manufacturing Facilities Monitoring – Safeguard machinery, sensitive operations, and staff with constant security oversight.
                 </span>
               </div>
             </li>
@@ -134,22 +132,7 @@
               <div class="flex-1">
                 <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white" 
                       style="color: var(--color-white-80);">
-                  Certified security professionals on duty
-                </span>
-              </div>
-            </li>
-
-            <li class="service-feature-item flex items-start gap-3 group">
-              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
-                   style="background-color: var(--color-yellow);">
-                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <div class="flex-1">
-                <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white" 
-                      style="color: var(--color-white-80);">
-                  Instant alert notifications
+                  Logistics Yards & Trucking Depots Monitoring – Monitor vehicle movements, loading zones, and access points to reduce theft and keep your supply chain moving efficiently.
                 </span>
               </div>
             </li>
@@ -164,8 +147,8 @@
             
             <!-- Image -->
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= getenv('app.baseURL') ?>assets/img/service-1.png" 
-                   alt="Live Monitoring Service" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service/service-con.png" 
+                   alt="Construction, Industrial & Logistics Security" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               
               <!-- Gradient Overlay -->
@@ -190,8 +173,8 @@
                style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
             
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= getenv('app.baseURL') ?>assets/img/service-2.png" 
-                   alt="Two-Way Audio Service" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service/srevice-car.png" 
+                   alt="Commercial & Business Property Security" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               
               <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
@@ -215,25 +198,23 @@
               
               <svg class="w-7 h-7 sm:w-8 sm:h-8 relative z-10 transition-transform duration-300 group-hover:scale-110" 
                    style="color: var(--color-black);" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 14a3 3 0 003-3V5a3 3 0 10-6 0v6a3 3 0 003 3zm5-3a5 5 0 01-10 0h-2a7 7 0 0014 0h-2zm-5 8a7.975 7.975 0 01-5.65-2.35l-1.42 1.42A9.969 9.969 0 0012 22a9.969 9.969 0 007.07-2.93l-1.42-1.42A7.975 7.975 0 0112 19z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
               </svg>
             </div>
             
             <div>
               <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style="color: var(--color-white);">
-                Two-Way Audio
+                Commercial & Business Property Security
               </h3>
               <div class="flex items-center gap-2 text-sm" style="color: var(--color-yellow);">
                 <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--accent-red);"></span>
-                <span>Real-Time Communication</span>
+                <span>Secure your business, assets, and people</span>
               </div>
             </div>
           </div>
 
           <p class="text-base sm:text-lg leading-relaxed" style="color: var(--color-white-80);">
-            Our advanced two-way audio technology enables real-time communication between our monitoring
-            center and your property. This powerful feature allows for immediate intervention and
-            de-escalation of potential threats before they become serious incidents.
+            Secure your business, assets, and people with comprehensive commercial security solutions tailored to your industry needs.
           </p>
 
           <ul class="space-y-4">
@@ -246,7 +227,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Live voice intervention capabilities
+                Automotive Dealerships Monitoring – Deter theft and vandalism across open layouts while maintaining a professional customer environment.
               </span>
             </li>
 
@@ -259,7 +240,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Deterrent effect on potential intruders
+                Warehouses & Distribution Centre Monitoring – Protect valuable inventory and prevent unauthorized access with 24/7 surveillance.
               </span>
             </li>
 
@@ -272,7 +253,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Clear, high-quality audio transmission
+                Retail Stores & Shopping Centers Monitoring – Minimise shoplifting, vandalism, and after-hours risks to create a safe shopping experience.
               </span>
             </li>
 
@@ -285,7 +266,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Remote assistance and guidance
+                Commercial Office Buildings Monitoring – Maintain workplace safety and control access during and after business hours.
               </span>
             </li>
           </ul>
@@ -309,25 +290,23 @@
               
               <svg class="w-7 h-7 sm:w-8 sm:h-8 relative z-10 transition-transform duration-300 group-hover:scale-110" 
                    style="color: var(--color-black);" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.02-.24c1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20a1 1 0 01-1 1C10.07 21 3 13.93 3 5a1 1 0 011-1h3.5a1 1 0 011 1c0 1.24.2 2.45.57 3.57.12.34.04.73-.24 1.02l-2.21 2.2z"/>
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.94-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
               </svg>
             </div>
             
             <div>
               <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style="color: var(--color-white);">
-                Emergency Response
+                Public, Institutional & Community Security
               </h3>
               <div class="flex items-center gap-2 text-sm" style="color: var(--color-yellow);">
                 <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--accent-red);"></span>
-                <span>Rapid Deployment</span>
+                <span>Protect people, assets, and reputation</span>
               </div>
             </div>
           </div>
 
           <p class="text-base sm:text-lg leading-relaxed" style="color: var(--color-white-80);">
-            When threats are detected, our emergency response protocol activates immediately.
-            We coordinate with local law enforcement, fire departments, and emergency services
-            to ensure rapid response and resolution of any security incident.
+            Protect people, assets, and reputation with specialized security monitoring for public spaces, institutions, and cultural sites.
           </p>
 
           <ul class="space-y-4">
@@ -340,7 +319,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Direct connection to emergency services
+                Healthcare Facilities & Clinics Monitoring - Quiet, professional monitoring that ensures patient and staff safety while respecting privacy.
               </span>
             </li>
 
@@ -353,7 +332,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Automated dispatch protocols
+                Educational Institutions & Campuses Monitoring – Detect suspicious activity early and maintain a safe, uninterrupted learning environment.
               </span>
             </li>
 
@@ -366,20 +345,7 @@
               </div>
               <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
                     style="color: var(--color-white-80);">
-                Real-time situation updates
-              </span>
-            </li>
-
-            <li class="service-feature-item flex items-start gap-3 group">
-              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
-                   style="background-color: var(--color-yellow);">
-                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
-                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
-                </svg>
-              </div>
-              <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
-                    style="color: var(--color-white-80);">
-                Coordinated response management
+                Museums, Galleries & Cultural Sites Monitoring – Protect priceless artifacts, prevent vandalism, and ensure a safe space for visitors.
               </span>
             </li>
           </ul>
@@ -392,8 +358,178 @@
                style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
             
             <div class="relative overflow-hidden aspect-[4/3]">
-              <img src="<?= getenv('app.baseURL') ?>assets/img/service-3.png" 
-                   alt="Emergency Response Service" 
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service/service-pub.png" 
+                   alt="Public, Institutional & Community Security" 
+                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                   style="background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%);"></div>
+            </div>
+
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                 style="box-shadow: inset 0 0 0 2px var(--color-yellow), 0 0 40px rgba(255, 191, 53, 0.4);"></div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ==================== SERVICE 4 ==================== -->
+      <div class="service-card-wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+        
+        <!-- Image -->
+        <div class="order-1" data-aos="fade-right">
+          <div class="service-image-card group relative rounded-2xl overflow-hidden border transition-all duration-500 hover:-translate-y-2"
+               style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+            
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service/service-out.png" 
+                   alt="Outdoor & Event Security" 
+                   class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+              
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                   style="background: linear-gradient(180deg, transparent 0%, rgba(0,0,0,0.7) 100%);"></div>
+            </div>
+
+            <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none"
+                 style="box-shadow: inset 0 0 0 2px var(--color-yellow), 0 0 40px rgba(255, 191, 53, 0.4);"></div>
+          </div>
+        </div>
+
+        <!-- Content -->
+        <div class="space-y-6 order-2" data-aos="fade-left">
+          
+          <div class="flex items-start gap-4">
+            <div class="service-icon-wrapper shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center relative overflow-hidden group"
+                 style="background: linear-gradient(135deg, var(--color-yellow), var(--color-orange-dark)); box-shadow: 0 8px 32px rgba(255, 191, 53, 0.3);">
+              
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                   style="background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);"></div>
+              
+              <svg class="w-7 h-7 sm:w-8 sm:h-8 relative z-10 transition-transform duration-300 group-hover:scale-110" 
+                   style="color: var(--color-black);" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style="color: var(--color-white);">
+                Outdoor & Event Security
+              </h3>
+              <div class="flex items-center gap-2 text-sm" style="color: var(--color-yellow);">
+                <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--accent-red);"></span>
+                <span>Safety and peace of mind in public spaces</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-base sm:text-lg leading-relaxed" style="color: var(--color-white-80);">
+            Safety and peace of mind in public spaces with specialized outdoor and event security monitoring solutions.
+          </p>
+
+          <ul class="space-y-4">
+            <li class="service-feature-item flex items-start gap-3 group">
+              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
+                   style="background-color: var(--color-yellow);">
+                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
+                    style="color: var(--color-white-80);">
+                Parking Lot Monitoring – Keep vehicles, customers, and employees safe with real-time monitoring.
+              </span>
+            </li>
+
+            <li class="service-feature-item flex items-start gap-3 group">
+              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
+                   style="background-color: var(--color-yellow);">
+                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
+                    style="color: var(--color-white-80);">
+                Holiday Event Monitoring – Ensure crowd safety and reduce risks during festivals, celebrations, and special events.
+              </span>
+            </li>
+          </ul>
+
+        </div>
+
+      </div>
+
+      <!-- ==================== SERVICE 5 ==================== -->
+      <div class="service-card-wrapper grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 xl:gap-16 items-center">
+        
+        <!-- Content -->
+        <div class="space-y-6 order-2 lg:order-1" data-aos="fade-right">
+          
+          <div class="flex items-start gap-4">
+            <div class="service-icon-wrapper shrink-0 w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center relative overflow-hidden group"
+                 style="background: linear-gradient(135deg, var(--color-yellow), var(--color-orange-dark)); box-shadow: 0 8px 32px rgba(255, 191, 53, 0.3);">
+              
+              <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+                   style="background: radial-gradient(circle, rgba(255,255,255,0.3) 0%, transparent 70%);"></div>
+              
+              <svg class="w-7 h-7 sm:w-8 sm:h-8 relative z-10 transition-transform duration-300 group-hover:scale-110" 
+                   style="color: var(--color-black);" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 5c-7.633 0-11 7-11 7s3.367 7 11 7 11-7 11-7-3.367-7-11-7zm0 11a4 4 0 110-8 4 4 0 010 8zm0-6a2 2 0 100 4 2 2 0 000-4z"/>
+              </svg>
+            </div>
+            
+            <div>
+              <h3 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-2" style="color: var(--color-white);">
+                24/7 Live Monitoring & Rapid Response
+              </h3>
+              <div class="flex items-center gap-2 text-sm" style="color: var(--color-yellow);">
+                <span class="w-2 h-2 rounded-full animate-pulse" style="background-color: var(--accent-red);"></span>
+                <span>Always alert, always ready</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="text-base sm:text-lg leading-relaxed" style="color: var(--color-white-80);">
+            Always alert, always ready. Our skilled security professionals watch your cameras around the clock, taking immediate action at the first sign of trouble.
+          </p>
+
+          <ul class="space-y-4">
+            <li class="service-feature-item flex items-start gap-3 group">
+              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
+                   style="background-color: var(--color-yellow);">
+                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
+                    style="color: var(--color-white-80);">
+                24/7 Live Monitoring – Skilled security professionals watch your cameras around the clock, taking immediate action at the first sign of trouble.
+              </span>
+            </li>
+
+            <li class="service-feature-item flex items-start gap-3 group">
+              <div class="shrink-0 w-6 h-6 rounded-full flex items-center justify-center mt-0.5 transition-all duration-300 group-hover:scale-110"
+                   style="background-color: var(--color-yellow);">
+                <svg class="w-3.5 h-3.5" style="color: var(--color-black);" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <span class="text-sm sm:text-base font-medium transition-colors duration-300 group-hover:text-white flex-1" 
+                    style="color: var(--color-white-80);">
+                Criminal Activity Notification – Instant alerts and fast, structured responses minimise risk and protect your property.
+              </span>
+            </li>
+          </ul>
+
+        </div>
+
+        <!-- Image -->
+        <div class="order-1 lg:order-2" data-aos="fade-left">
+          <div class="service-image-card group relative rounded-2xl overflow-hidden border transition-all duration-500 hover:-translate-y-2"
+               style="border-color: var(--border-color); box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);">
+            
+            <div class="relative overflow-hidden aspect-[4/3]">
+              <img src="<?= getenv('app.baseURL') ?>assets/img/service/service-live.png" 
+                   alt="24/7 Live Monitoring & Rapid Response" 
                    class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
               
               <div class="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500"

@@ -106,7 +106,7 @@
           </div>
           <div class="text-center p-4 rounded-2xl border transition-all duration-300 hover:-translate-y-1"
                style="background-color: rgba(255, 255, 255, 0.05); border-color: var(--border-color);">
-            <span class="text-2xl sm:text-3xl font-bold block" style="color: var(--color-yellow);">500+</span>
+            <span class="text-2xl sm:text-3xl font-bold block" style="color: var(--color-yellow);">20+</span>
             <span class="text-xs sm:text-sm mt-1 block" style="color: var(--text-secondary);">Properties</span>
           </div>
         </div>

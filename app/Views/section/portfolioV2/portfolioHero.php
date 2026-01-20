@@ -44,7 +44,7 @@
     <!-- Stats -->
     <div class="flex flex-wrap gap-8 md:gap-12 mb-8 ml-2">
       <div class="text-center">
-        <h2 class="text-2xl md:text-3xl font-bold text-[var(--color-yellow)] drop-shadow-lg">500+</h2>
+        <h2 class="text-2xl md:text-3xl font-bold text-[var(--color-yellow)] drop-shadow-lg">20+</h2>
         <p class="text-[var(--text-secondary)] text-sm">Properties Protected</p>
       </div>
       <div class="text-center">
