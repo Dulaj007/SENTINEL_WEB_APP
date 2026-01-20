@@ -265,7 +265,7 @@
     <img src="<?= getenv('app.baseURL') ?>assets/icons/phone.png" 
          alt="Phone Icon" 
          class="w-16 md:w-12 w-16 md:h-12 inline-block animate-phone-ring">
-    CALL US - 077 123 4567
+    CALL US - 074 0134 247
   </span>
 </h1>
 </section>

@@ -10,12 +10,12 @@
   </div>
 
   <!-- Content -->
-  <div class="max-w-6xl mx-auto px-6 text-center relative z-10 flex flex-col items-center justify-center h-full">
+  <div class="max-w-7xl mx-auto px-6 text-center relative z-10 flex flex-col items-center justify-center h-full">
     <h2 class="text-4xl md:text-5xl font-bold mb-14 text-[var(--text-primary)] tracking-tight">
       Contact Us
     </h2>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-8 justify-center">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 space-y-5 gap-3 sm:gap-8 justify-center items-center">
       
       <!-- Call Us -->
       <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-yellow-dark)] hover:border-[var(--color-yellow)] transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-yellow)] hover:shadow-[inset_0_0_15px_var(--color-yellow)]">
@@ -27,7 +27,7 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">Call Us</h3>
         <p class="text-sm text-gray-400 mb-3">Speak directly with our experts</p>
-        <a href="tel:+1800SENTINEL" class="text-[var(--color-yellow)] text-sm font-medium hover:underline">+1-800-SENTINEL</a>
+        <a href="tel:+1800SENTINEL" class="text-[var(--color-yellow)] text-sm font-medium hover:underline">074 0134 247</a>
       </div>
 
       <!-- WhatsApp -->
@@ -64,8 +64,30 @@
         </div>
         <h3 class="text-lg font-semibold mb-1">Email</h3>
         <p class="text-sm text-gray-400 mb-3">Write to our team</p>
-        <a href="mailto:info@247sentinel.com" class="text-[var(--color-red)] text-sm font-medium hover:underline">info@247sentinel.com</a>
+        <a href="mailto:info@247sentinel.com" class="text-[var(--color-red)] text-sm font-medium hover:underline">info@sentinel24-7.com</a>
       </div>
+
+          <!-- Instagram -->
+  <div class="group bg-[var(--color-black)] rounded-2xl shadow-[0_0_20px_rgba(255,255,255,0.05)] p-3 sm:p-10 flex flex-col items-center border border-[var(--color-pink-dark)] hover:border-text-pink-500 transition-all duration-500 hover:scale-[1.05] hover:shadow-[0_0_25px_var(--color-pink)] hover:shadow-[inset_0_0_15px_var(--color-pink)]">
+    
+    <div class="h-10 w-10 sm:h-14 sm:w-14 mb-1 sm:mb-3 text-pink-500 transition-transform duration-500 group-hover:rotate-12 group-hover:scale-110">
+      <!-- Instagram Icon -->
+      <svg fill="currentColor" viewBox="0 0 24 24" class="w-full h-full">
+        <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 1.5h8.5c2.35 0 4.25 1.9 4.25 4.25v8.5c0 2.35-1.9 4.25-4.25 4.25h-8.5C5.4 20.5 3.5 18.6 3.5 16.25v-8.5C3.5 5.4 5.4 3.5 7.75 3.5zm8.75 2a1 1 0 100 2 1 1 0 000-2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 1.5a3.5 3.5 0 110 7 3.5 3.5 0 010-7z"/>
+      </svg>
     </div>
+
+    <h3 class="text-lg font-semibold mb-1">Instagram</h3>
+    <p class="text-sm text-pink-500 mb-3">Follow our latest updates</p>
+
+    <a href="https://www.instagram.com/247sentinel/" target="_blank"
+      class="text-[var(--color-pink)] text-sm font-medium hover:underline">
+      Follow Us
+    </a>
+  </div>
+    </div>
+
+
+
   </div>
 </section>

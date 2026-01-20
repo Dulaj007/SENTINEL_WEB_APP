@@ -23,28 +23,36 @@
   <!-- Stat Card 1 -->
   <div class="relative p-3 sm:p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] backdrop-blur-md border border-[var(--border-color)] 
               shadow-[0_0_15px_var(--shadow-soft)]">
-    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-yellow)] mb-2 sm:mb-3">3+</h2>
+    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-yellow)] mb-2 sm:mb-3">5+</h2>
     <p class="text-sm sm:text-base md:text-sm  text-[var(--text-primary)] font-semibold uppercase tracking-wide">Years Experience</p>
   </div>
 
   <!-- Stat Card 2 -->
   <div class="relative p-3 sm:p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] backdrop-blur-md border border-[var(--border-color)] 
               shadow-[0_0_15px_var(--shadow-soft)]">
-    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-blue)] mb-2 sm:mb-3">500+</h2>
+    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-blue)] mb-2 sm:mb-3">20+</h2>
     <p class="text-sm sm:text-base md:text-sm  text-[var(--text-primary)] font-semibold uppercase tracking-wide">Properties Protected</p>
   </div>
 
   <!-- Stat Card 3 -->
   <div class="relative p-3 sm:p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] backdrop-blur-md border border-[var(--border-color)] 
               shadow-[0_0_15px_var(--shadow-soft)]">
-    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-green)] mb-2 sm:mb-3">24/ 7</h2>
-    <p class="text-sm sm:text-base md:text-sm  text-[var(--text-primary)] font-semibold uppercase tracking-wide">Active Monitoring</p>
+    <div class="flex flex-row justify-center items-center">     
+    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-green)] mb-2 sm:mb-3">24</h2>    
+    <h3 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-green)] mb-2 sm:mb-3">/</h3>
+    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-green)] mb-2 sm:mb-3 ml-1"> 7</h2>
+     </div>
+    <p class="text-sm sm:text-base md:text-sm  text-[var(--text-primary)] font-semibold uppercase tracking-wide">Hours Daily Monitoring</p>
+ 
   </div>
 
   <!-- Stat Card 4 -->
   <div class="relative p-3 sm:p-6 rounded-2xl bg-[rgba(255,255,255,0.05)] backdrop-blur-md border border-[var(--border-color)] 
               shadow-[0_0_15px_var(--shadow-soft)]">
-    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-red)] mb-2 sm:mb-3">99.9%</h2>
+      <div class="flex flex-row justify-center items-center"> 
+    <h2 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-red)] mb-2 sm:mb-3">99.9</h2>
+       <h3 class="text-4xl sm:text-5xl md:text-5xl  font-bold text-[var(--color-red)] mb-2 sm:mb-3">%</h3>
+    </div>
     <p class="text-sm sm:text-base md:text-sm  text-[var(--text-primary)] font-semibold uppercase tracking-wide">Uptime Reliability</p>
   </div>
 </div>
