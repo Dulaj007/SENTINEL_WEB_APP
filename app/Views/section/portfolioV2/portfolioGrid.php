@@ -5,267 +5,103 @@
 // ========================================
 // PROJECT DATA
 // ========================================
-// Available work images
-$workImages = [
-    base_url('assets/img/work-img-1.png'),
-    base_url('assets/img/work-img-2.png'),
-    base_url('assets/img/work-img-3.png')
-];
-
-// Shuffled image assignment for main images (distributed across 12 projects)
-$shuffledImages = [
-    $workImages[0], // 1
-    $workImages[2], // 3
-    $workImages[1], // 2
-    $workImages[2], // 3
-    $workImages[0], // 1
-    $workImages[1], // 2
-    $workImages[1], // 2
-    $workImages[2], // 3
-    $workImages[0], // 1
-    $workImages[1], // 2
-    $workImages[0], // 1
-    $workImages[2], // 3
-];
-
 $allProjects = [
     [
-        'title' => 'World Trade Center Colombo', 
-        'category' => 'commercial', 
-        'location' => 'Colombo 01',
-        'cameras' => '200+',
-        'description' => 'Complete security overhaul with advanced surveillance systems',
-        'img' => $shuffledImages[0],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Successfully deployed cutting-edge surveillance technology across this premier Colombo 01 location. Our team integrated advanced AI-powered cameras with existing infrastructure, ensuring seamless 24/7 monitoring capabilities.',
-            'installation' => '2-3 weeks',
-            'coverage' => 'Full premises',
-            'support' => '24/7 Local',
-            'features' => [
-                'AI-powered threat detection with instant SMS/Email alerts',
-                'Local monitoring center with Sinhala/Tamil/English support',
-                'Power backup systems for uninterrupted operation'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Biyagama Export Zone', 
-        'category' => 'industrial', 
-        'location' => 'Biyagama',
-        'cameras' => '150+',
-        'description' => 'Industrial-grade security monitoring for export processing zone',
-        'img' => $shuffledImages[1],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Comprehensive industrial security solution for one of Sri Lanka\'s largest export processing zones with perimeter protection and warehouse surveillance.',
-            'installation' => '3-4 weeks',
-            'coverage' => 'Full zone',
-            'support' => '24/7 Local',
-            'features' => [
-                'Perimeter intrusion detection systems',
-                'Vehicle tracking and access control',
-                'Integration with existing security protocols'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Cinnamon Gardens Residences', 
+        'title' => 'Mr Anura\'s Residence', 
         'category' => 'residential', 
-        'location' => 'Colombo 07',
-        'cameras' => '100+',
-        'description' => 'Premium residential security for luxury apartments',
-        'img' => $shuffledImages[2],
-        'gallery' => $workImages,
+        'location' => 'Panadura',
+        'cameras' => '5',
+        'description' => 'Fully coverage Home Security monitoring',
+        'img' => base_url('assets/img/work/anura1.jpeg'),
+        'gallery' => [
+            base_url('assets/img/work/anura1.jpeg'),
+            base_url('assets/img/work/anura2.jpeg')
+        ],
         'details' => [
-            'overview' => 'Elegant security solution designed for high-end residential complex in Colombo\'s prime neighborhood with discreet camera placement.',
-            'installation' => '2 weeks',
-            'coverage' => 'All common areas',
+            'overview' => 'Fully coverage Home Security monitoring',
+            'installation' => '1 Day',
+            'coverage' => 'Front yard backyard and inside the home',
             'support' => '24/7 Local',
             'features' => [
-                'Facial recognition access control',
-                'Visitor management system',
-                'Mobile app for residents'
+                'Front yard Monitoring',
+                'Living Room Monitoring',
+                'Back yard Monitoring',
+                '2 Way Audio'
             ]
         ]
     ],
     [
-        'title' => 'ODEL Shopping Complex', 
-        'category' => 'retail', 
-        'location' => 'Colombo 03',
-        'cameras' => '350+',
-        'description' => 'Retail security with loss prevention focus',
-        'img' => $shuffledImages[3],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Comprehensive retail security system with integrated loss prevention analytics and customer flow analysis.',
-            'installation' => '4 weeks',
-            'coverage' => 'All floors & parking',
-            'support' => '24/7 Local',
-            'features' => [
-                'POS integration for transaction verification',
-                'Customer behavior analytics',
-                'Emergency evacuation support systems'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Orion City IT Park', 
-        'category' => 'commercial', 
-        'location' => 'Dematagoda',
-        'cameras' => '275+',
-        'description' => 'Corporate campus security with multi-tenant support',
-        'img' => $shuffledImages[4],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Multi-tenant commercial building security with individual tenant dashboards and unified security management.',
-            'installation' => '3 weeks',
-            'coverage' => 'Full campus',
-            'support' => '24/7 Local',
-            'features' => [
-                'Tenant-specific access zones',
-                'Server room monitoring',
-                'Biometric access integration'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Mount Lavinia Beach Resort', 
-        'category' => 'hospitality', 
-        'location' => 'Mount Lavinia',
-        'cameras' => '180+',
-        'description' => 'Beachfront resort security with guest privacy focus',
-        'img' => $shuffledImages[5],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Hospitality-focused security maintaining guest privacy while ensuring comprehensive coverage of all public areas.',
-            'installation' => '2-3 weeks',
-            'coverage' => 'Public areas & perimeter',
-            'support' => '24/7 Local',
-            'features' => [
-                'Weather-resistant beach cameras',
-                'Night vision for 24/7 coverage',
-                'Integration with hotel PMS'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Kandy General Hospital', 
-        'category' => 'hospitality', 
-        'location' => 'Kandy',
-        'cameras' => '400+',
-        'description' => 'Healthcare facility security with patient safety focus',
-        'img' => $shuffledImages[6],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Comprehensive healthcare security solution with infant protection systems and emergency response integration.',
-            'installation' => '5-6 weeks',
-            'coverage' => 'All departments',
-            'support' => '24/7 Local',
-            'features' => [
-                'Infant protection & tracking',
-                'Pharmacy and medication storage monitoring',
-                'Emergency room priority coverage'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Katunayake FTZ', 
-        'category' => 'industrial', 
-        'location' => 'Katunayake',
-        'cameras' => '225+',
-        'description' => 'Free trade zone industrial security',
-        'img' => $shuffledImages[7],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Multi-factory security coordination for Sri Lanka\'s premier free trade zone with centralized monitoring.',
-            'installation' => '4 weeks',
-            'coverage' => 'Multiple factories',
-            'support' => '24/7 Local',
-            'features' => [
-                'Cross-factory incident correlation',
-                'Customs compliance monitoring',
-                'Container tracking systems'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Commercial Bank Plaza', 
-        'category' => 'commercial', 
-        'location' => 'Colombo Fort',
-        'cameras' => '175+',
-        'description' => 'Banking sector security with high compliance standards',
-        'img' => $shuffledImages[8],
-        'gallery' => $workImages,
-        'details' => [
-            'overview' => 'Banking-grade security meeting Central Bank of Sri Lanka compliance requirements.',
-            'installation' => '3 weeks',
-            'coverage' => 'All branches & ATMs',
-            'support' => '24/7 Local',
-            'features' => [
-                'ATM transaction monitoring',
-                'Vault and cash handling surveillance',
-                'Regulatory compliance reporting'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Blue Ocean Residencies', 
+        'title' => 'Mr Nalaka\'s Home', 
         'category' => 'residential', 
-        'location' => 'Dehiwala',
-        'cameras' => '300+',
-        'description' => 'Large-scale apartment complex security',
-        'img' => $shuffledImages[9],
-        'gallery' => $workImages,
+        'location' => 'Panadura',
+        'cameras' => '10',
+        'description' => 'Fully coverage Home and indoor and Road side Security monitoring',
+        'img' => base_url('assets/img/work/nalaka1.jpeg'),
+        'gallery' => [
+            base_url('assets/img/work/nalaka1.jpeg'),
+            base_url('assets/img/work/nalaka2.jpeg'),
+            base_url('assets/img/work/nalaka3.jpeg')
+        ],
         'details' => [
-            'overview' => 'Multi-tower residential security with swimming pool, gym, and parking surveillance.',
-            'installation' => '4 weeks',
-            'coverage' => 'All towers & amenities',
+            'overview' => 'Fully coverage Home and indoor and Road side Security monitoring',
+            'installation' => '1 Day',
+            'coverage' => 'Front yard backyard and inside the home and Road side',
             'support' => '24/7 Local',
             'features' => [
-                'Elevator monitoring',
-                'Parking guidance integration',
-                'Amenity access control'
+                '24/7 Service',
+                '2 Way Audio',
+                'PTZ Camera Service'
             ]
         ]
     ],
     [
-        'title' => 'House of Fashion', 
-        'category' => 'retail', 
-        'location' => 'Nugegoda',
-        'cameras' => '250+',
-        'description' => 'Multi-floor retail security with inventory protection',
-        'img' => $shuffledImages[10],
-        'gallery' => $workImages,
+        'title' => 'Mrs. Thilini\'s Home', 
+        'category' => 'residential', 
+        'location' => 'Panadura',
+        'cameras' => '16',
+        'description' => 'Fully coverage Home and indoor and Outdoor Security monitoring',
+        'img' => base_url('assets/img/work/thilini1.jpeg'),
+        'gallery' => [
+            base_url('assets/img/work/thilini1.jpeg'),
+            base_url('assets/img/work/thilini2.jpeg'),
+            base_url('assets/img/work/thilini3.jpeg'),
+            base_url('assets/img/work/thilini4.jpeg'),
+            base_url('assets/img/work/thilini5.jpeg'),
+            base_url('assets/img/work/thilini7.jpeg')
+        ],
         'details' => [
-            'overview' => 'Fashion retail security with fitting room monitoring and stockroom protection.',
-            'installation' => '3 weeks',
-            'coverage' => 'All floors & storage',
+            'overview' => 'Fully coverage Home and indoor and Outdoor Security monitoring',
+            'installation' => '2 Days',
+            'coverage' => 'Front yard backyard and Living Room and Road side',
             'support' => '24/7 Local',
             'features' => [
-                'Shoplifting prevention AI',
-                'Stock room access logging',
-                'Employee area monitoring'
+                '24/7 Service',
+                '2 Way Audio',
+                'PTZ Camera Service'
             ]
         ]
     ],
     [
-        'title' => 'Dialog Axiata Data Center', 
-        'category' => 'industrial', 
-        'location' => 'Malabe',
-        'cameras' => '190+',
-        'description' => 'Mission-critical data center security',
-        'img' => $shuffledImages[11],
-        'gallery' => $workImages,
+        'title' => 'Mrs. Srimali\'s Home', 
+        'category' => 'residential', 
+        'location' => 'Panadura',
+        'cameras' => '7',
+        'description' => 'Fully coverage Home Outdoor Security monitoring',
+        'img' => base_url('assets/img/work/srimali1.jpeg'),
+        'gallery' => [
+            base_url('assets/img/work/srimali1.jpeg'),
+            base_url('assets/img/work/srimali2.jpeg'),
+            base_url('assets/img/work/srimali3.jpeg')
+        ],
         'details' => [
-            'overview' => 'Tier-3 data center security with multi-layer access control and environmental monitoring.',
-            'installation' => '4-5 weeks',
-            'coverage' => 'All server rooms & perimeter',
+            'overview' => 'Fully coverage Home Outdoor Security monitoring',
+            'installation' => '1 Day',
+            'coverage' => 'Front yard and backyard Premises',
             'support' => '24/7 Local',
             'features' => [
-                'Biometric + card dual authentication',
-                'Server rack level monitoring',
-                'Environmental sensor integration'
+                '24/7 Service',
+                '2 Way Audio',
+                'PTZ Camera Service'
             ]
         ]
     ],

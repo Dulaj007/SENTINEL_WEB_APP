@@ -264,10 +264,132 @@ document.addEventListener("DOMContentLoaded", function() {
     
     let currentPage = 1;
     let currentFilter = 'all';
+    const projectsPerPage = 6;
     
     // ========================================
     // FILTER FUNCTIONALITY
     // ========================================
+    function reorganizeCards() {
+        // Get all visible cards based on current filter
+        const visibleCards = Array.from(allCards).filter(card => {
+            const cardCategory = card.dataset.category;
+            const isVisible = currentFilter === "all" || cardCategory === currentFilter;
+            
+            // Reset card styles
+            card.style.transitionDelay = '';
+            if (isVisible) {
+                card.style.opacity = "1";
+                card.style.transform = "translateY(0) scale(1)";
+                card.style.display = "block";
+            } else {
+                card.style.opacity = "0";
+                card.style.transform = "translateY(20px) scale(0.95)";
+                card.style.display = "none";
+            }
+            
+            return isVisible;
+        });
+        
+        // Get all existing page containers
+        const existingPageContainers = Array.from(portfolioTrack.querySelectorAll('[data-page]'));
+        
+        // Clear all grid containers first
+        existingPageContainers.forEach(page => {
+            const grid = page.querySelector('.grid');
+            if (grid) {
+                grid.innerHTML = '';
+            }
+        });
+        
+        // Calculate number of pages needed
+        const totalVisible = visibleCards.length;
+        const totalPagesNeeded = Math.ceil(totalVisible / projectsPerPage) || 1;
+        
+        // Reorganize visible cards into new pages
+        visibleCards.forEach((card, index) => {
+            // Calculate which page this card should be on
+            const targetPageIndex = Math.floor(index / projectsPerPage);
+            
+            // Get or create the target page container
+            let targetPage = existingPageContainers[targetPageIndex];
+            if (!targetPage) {
+                // Create new page container if needed
+                targetPage = document.createElement('div');
+                targetPage.className = 'min-w-full w-full';
+                targetPage.setAttribute('data-page', targetPageIndex + 1);
+                
+                const grid = document.createElement('div');
+                grid.className = 'grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 w-full';
+                targetPage.appendChild(grid);
+                
+                portfolioTrack.appendChild(targetPage);
+            }
+            
+            const targetGrid = targetPage.querySelector('.grid');
+            if (targetGrid) {
+                targetGrid.appendChild(card);
+            }
+        });
+        
+        // Hide unused page containers
+        existingPageContainers.forEach((page) => {
+            const pageNum = parseInt(page.getAttribute('data-page'));
+            if (pageNum <= totalPagesNeeded) {
+                page.style.display = 'block';
+            } else {
+                page.style.display = 'none';
+            }
+        });
+        
+        // Update pagination buttons
+        updatePaginationButtons(totalPagesNeeded);
+        
+        // Reset to page 1
+        currentPage = 1;
+        slideToPage(1);
+    }
+    
+    function updatePaginationButtons(totalPages) {
+        const paginationContainer = document.querySelector('.flex.justify-center.mt-10');
+        if (!paginationContainer) return;
+        
+        const existingButtons = paginationContainer.querySelectorAll('.page-btn');
+        existingButtons.forEach(btn => btn.remove());
+        
+        if (totalPages > 1) {
+            paginationContainer.style.display = 'flex';
+            const buttonContainer = paginationContainer.querySelector('.flex.gap-3');
+            if (buttonContainer) {
+                for (let i = 1; i <= totalPages; i++) {
+                    const btn = document.createElement('button');
+                    btn.className = `page-btn w-12 h-12 rounded-xl font-bold text-lg transition-all duration-300 cursor-pointer ${i === 1 ? 'active' : ''}`;
+                    btn.setAttribute('data-page', i);
+                    btn.textContent = i;
+                    buttonContainer.appendChild(btn);
+                }
+                
+                // Re-attach event listeners to new buttons
+                const newPageBtns = buttonContainer.querySelectorAll('.page-btn');
+                newPageBtns.forEach(btn => {
+                    btn.addEventListener("click", function() {
+                        currentPage = parseInt(this.dataset.page);
+                        updatePagination();
+                        slideToPage(currentPage);
+                        
+                        // Smooth scroll to grid
+                        document.getElementById('portfolio-grid').scrollIntoView({ 
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    });
+                });
+            }
+        } else {
+            // Hide pagination if only one page
+            paginationContainer.style.display = 'none';
+        }
+    }
+    
     filterBtns.forEach(btn => {
         btn.addEventListener("click", function() {
             // Update active state
@@ -276,32 +398,8 @@ document.addEventListener("DOMContentLoaded", function() {
             
             currentFilter = this.dataset.filter;
             
-            // Animate and filter cards
-            allCards.forEach((card, index) => {
-                const cardCategory = card.dataset.category;
-                
-                // Add transition delay for stagger effect
-                card.style.transitionDelay = `${index * 30}ms`;
-                
-                if (currentFilter === "all" || cardCategory === currentFilter) {
-                    card.style.opacity = "1";
-                    card.style.transform = "translateY(0) scale(1)";
-                    card.style.display = "block";
-                } else {
-                    card.style.opacity = "0";
-                    card.style.transform = "translateY(20px) scale(0.95)";
-                    setTimeout(() => {
-                        if (currentFilter !== "all" && cardCategory !== currentFilter) {
-                            card.style.display = "none";
-                        }
-                    }, 300);
-                }
-            });
-            
-            // Reset pagination
-            currentPage = 1;
-            updatePagination();
-            slideToPage(1);
+            // Reorganize cards into new pages
+            reorganizeCards();
         });
     });
     
@@ -330,7 +428,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
     
     function updatePagination() {
-        pageBtns.forEach(btn => {
+        const allPageBtns = document.querySelectorAll(".page-btn");
+        allPageBtns.forEach(btn => {
             const pageNum = parseInt(btn.dataset.page);
             btn.classList.toggle('active', pageNum === currentPage);
         });

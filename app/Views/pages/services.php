@@ -10,6 +10,7 @@
 
 
 <?= $this->include('section/servicesV2/heroServices') ?>
+<?= $this->include('section/servicesV2/howItWorks') ?>
 <?= $this->include('section/servicesV2/CoreServices') ?>
 <?= $this->include('section/servicesV2/scriptServices') ?>
 
