@@ -72,24 +72,36 @@
       <h3 class="text-2xl font-bold text-[var(--color-white)]">Get In Touch</h3>
       <p class="text-[var(--color-white-60)] text-sm mb-2">Contact us for a free consultation</p>
 
-      <div class="flex items-center gap-3 mb-2 ml-4">
-        <img src="<?= getenv('app.baseURL') ?>assets/icons/fb-logo.png" alt="Facebook" class="w-8 h-8" />
-        <p class="text-[var(--color-white)] font-medium">Follow us on Facebook</p>
+    <a href="https://www.facebook.com/247Sentinel"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-block">
+
+      <div class="flex items-center gap-3 mb-2 ml-4 cursor-pointer hover:opacity-90">
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/fb-logo.png"
+            alt="Facebook"
+            class="w-8 h-8" />
+        <p class="text-[var(--color-white)] font-medium">
+          Follow us on Facebook - 247Sentinel
+        </p>
       </div>
+
+    </a>
+
 
       <div class="flex items-center gap-3 mb-2 ml-4">
         <img src="<?= getenv('app.baseURL') ?>assets/icons/loc-logo.svg" alt="Location" class="w-8 h-8" />
-        <p class="text-[var(--color-white-80)]">Horana Road, Wekada, Panadura, Sri Lanka</p>
+        <p class="text-[var(--color-white-80)]">No 167//B. Rathnapura Road Wekada Panadura Sri Lanka</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
         <img src="<?= getenv('app.baseURL') ?>assets/icons/em-logo.png" alt="Email" class="w-8 h-6" />
-        <p class="text-[var(--color-white-80)]">info@24-7sentinel.com</p>
+        <p class="text-[var(--color-white-80)]">support@sentinel24-7.com</p>
       </div>
 
       <div class="flex items-center gap-3 mb-2 ml-4">
         <img src="<?= getenv('app.baseURL') ?>assets/icons/call-logo.png" alt="Phone" class="w-8 h-8" />
-        <p class="text-[var(--color-white-80)]">+1 (555) 123-4567</p>
+        <p class="text-[var(--color-white-80)]">074 0134 247</p>
       </div>
 
     </div>

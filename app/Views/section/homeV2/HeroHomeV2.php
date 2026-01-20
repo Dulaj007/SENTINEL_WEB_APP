@@ -81,7 +81,7 @@
       alt="Phone Icon"
       class="w-12 h-12 animate-phone-ring"
     />
-      CALL US - 077 123 4567
+      CALL US - 074 0134 247
     </span>
   </h1>  
 </div>

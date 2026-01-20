@@ -37,7 +37,7 @@
         Learn More
       </button>
       <button class="w-full sm:w-auto px-8 py-3 rounded-lg font-semibold border-2 border-[var(--color-white)] transition-all duration-300 transform hover:scale-105 shadow-md bg-transparent font-title text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--accent-red)]">
-        Call 077 123 4567
+        Call 074 0134 247
       </button>
     </div>
 

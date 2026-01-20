@@ -11,7 +11,9 @@
 <?= $this->include('section//homeV2/OurWorkHomeV2') ?>
 <?= $this->include('section//homeV2/CallUsHomeV2') ?>
 <?= $this->include('section//homeV2/ContactQuickHomeV2') ?>
-<?= $this->include('section//homeV2/TestimonialsHomeV2') ?>
+
+<?php // echo $this->include('section//homeV2/TestimonialsHomeV2'); ?>
+
 
 <?= view('partials/footer') ?>
 <?= view('partials/bgOverlay') ?>
