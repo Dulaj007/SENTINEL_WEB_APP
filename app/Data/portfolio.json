@@ -1,0 +1,126 @@
+[
+  {
+    "title": "Mr Anura's Residence",
+    "category": "residential",
+    "location": "Panadura",
+    "cameras": "5",
+    "description": "Fully coverage Home Security monitoring",
+    "img": "assets/img/work/anura1.jpeg",
+    "gallery": [
+      "assets/img/work/anura1.jpeg",
+      "assets/img/work/anura2.jpeg"
+    ],
+    "details": {
+      "overview": "Fully coverage Home Security monitoring",
+      "installation": "1 Day",
+      "coverage": "Front yard backyard and inside the home",
+      "support": "24/7 Local",
+      "features": [
+        "Front yard Monitoring",
+        "Living Room Monitoring",
+        "Back yard Monitoring",
+        "2 Way Audio"
+      ]
+    }
+  },
+  {
+    "title": "Mr Nalaka's Home",
+    "category": "residential",
+    "location": "Panadura",
+    "cameras": "10",
+    "description": "Fully coverage Home and indoor and Road side Security monitoring",
+    "img": "assets/img/work/nalaka1.jpeg",
+    "gallery": [
+      "assets/img/work/nalaka1.jpeg",
+      "assets/img/work/nalaka2.jpeg",
+      "assets/img/work/nalaka3.jpeg"
+    ],
+    "details": {
+      "overview": "Fully coverage Home and indoor and Road side Security monitoring",
+      "installation": "1 Day",
+      "coverage": "Front yard backyard and inside the home and Road side",
+      "support": "24/7 Local",
+      "features": [
+        "24/7 Service",
+        "2 Way Audio",
+        "PTZ Camera Service"
+      ]
+    }
+  },
+  {
+    "title": "Mrs. Thilini's Home",
+    "category": "residential",
+    "location": "Panadura",
+    "cameras": "16",
+    "description": "Fully coverage Home and indoor and Outdoor Security monitoring",
+    "img": "assets/img/work/thilini1.jpeg",
+    "gallery": [
+      "assets/img/work/thilini1.jpeg",
+      "assets/img/work/thilini2.jpeg",
+      "assets/img/work/thilini3.jpeg",
+      "assets/img/work/thilini4.jpeg",
+      "assets/img/work/thilini5.jpeg",
+      "assets/img/work/thilini7.jpeg"
+    ],
+    "details": {
+      "overview": "Fully coverage Home and indoor and Outdoor Security monitoring",
+      "installation": "2 Days",
+      "coverage": "Front yard backyard and Living Room and Road side",
+      "support": "24/7 Local",
+      "features": [
+        "24/7 Service",
+        "2 Way Audio",
+        "PTZ Camera Service"
+      ]
+    }
+  },
+  {
+    "title": "Mrs. Srimali's Home",
+    "category": "residential",
+    "location": "Panadura",
+    "cameras": "7",
+    "description": "Fully coverage Home Outdoor Security monitoring",
+    "img": "assets/img/work/srimali1.jpeg",
+    "gallery": [
+      "assets/img/work/srimali1.jpeg",
+      "assets/img/work/srimali2.jpeg",
+      "assets/img/work/srimali3.jpeg"
+    ],
+    "details": {
+      "overview": "Fully coverage Home Outdoor Security monitoring",
+      "installation": "1 Day",
+      "coverage": "Front yard and backyard Premises",
+      "support": "24/7 Local",
+      "features": [
+        "24/7 Service",
+        "2 Way Audio",
+        "PTZ Camera Service"
+      ]
+    }
+  },
+  {
+    "title": "Lexus Business Consultants",
+    "category": "commercial",
+    "location": "Dehiwala",
+    "cameras": "15",
+    "description": "Fully coverage Office Outdoor and Indoor Security monitoring",
+    "img": "assets/img/work/lexus1.jpeg",
+    "gallery": [
+      "assets/img/work/lexus1.jpeg",
+      "assets/img/work/lexus2.jpeg",
+      "assets/img/work/lexus3.jpeg",
+      "assets/img/work/lexus4.jpeg"
+    ],
+    "details": {
+      "overview": "Fully coverage Office Outdoor and Indoor Security monitoring",
+      "installation": "1 Day",
+      "coverage": "Full Coverage",
+      "support": "24/7 Local",
+      "features": [
+        "24/7 Service",
+        "2 Way Audio",
+        "PTZ Camera Service"
+      ]
+    }
+  }
+]
