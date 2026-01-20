@@ -12,7 +12,16 @@ class Pages extends BaseController
             throw new \CodeIgniter\Exceptions\PageNotFoundException("Page '{$page}' not found");
         }
 
-        return view("pages/{$page}");
+        $data = [];
+
+        // Load portfolio data from JSON if viewing portfolio page
+        if ($page === 'portfolio') {
+            $jsonData = file_get_contents(APPPATH . 'Data/portfolio.json');
+            $portfolioData = json_decode($jsonData, true);
+            $data['portfolioProjects'] = $portfolioData;
+        }
+
+        return view("pages/{$page}", $data);
     }
 }
 

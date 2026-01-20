@@ -3,109 +3,27 @@
 <!-- ============================================ -->
 <?php 
 // ========================================
-// PROJECT DATA
+// PROJECT DATA - Loaded from JSON
 // ========================================
-$allProjects = [
-    [
-        'title' => 'Mr Anura\'s Residence', 
-        'category' => 'residential', 
-        'location' => 'Panadura',
-        'cameras' => '5',
-        'description' => 'Fully coverage Home Security monitoring',
-        'img' => base_url('assets/img/work/anura1.jpeg'),
-        'gallery' => [
-            base_url('assets/img/work/anura1.jpeg'),
-            base_url('assets/img/work/anura2.jpeg')
-        ],
-        'details' => [
-            'overview' => 'Fully coverage Home Security monitoring',
-            'installation' => '1 Day',
-            'coverage' => 'Front yard backyard and inside the home',
-            'support' => '24/7 Local',
-            'features' => [
-                'Front yard Monitoring',
-                'Living Room Monitoring',
-                'Back yard Monitoring',
-                '2 Way Audio'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Mr Nalaka\'s Home', 
-        'category' => 'residential', 
-        'location' => 'Panadura',
-        'cameras' => '10',
-        'description' => 'Fully coverage Home and indoor and Road side Security monitoring',
-        'img' => base_url('assets/img/work/nalaka1.jpeg'),
-        'gallery' => [
-            base_url('assets/img/work/nalaka1.jpeg'),
-            base_url('assets/img/work/nalaka2.jpeg'),
-            base_url('assets/img/work/nalaka3.jpeg')
-        ],
-        'details' => [
-            'overview' => 'Fully coverage Home and indoor and Road side Security monitoring',
-            'installation' => '1 Day',
-            'coverage' => 'Front yard backyard and inside the home and Road side',
-            'support' => '24/7 Local',
-            'features' => [
-                '24/7 Service',
-                '2 Way Audio',
-                'PTZ Camera Service'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Mrs. Thilini\'s Home', 
-        'category' => 'residential', 
-        'location' => 'Panadura',
-        'cameras' => '16',
-        'description' => 'Fully coverage Home and indoor and Outdoor Security monitoring',
-        'img' => base_url('assets/img/work/thilini1.jpeg'),
-        'gallery' => [
-            base_url('assets/img/work/thilini1.jpeg'),
-            base_url('assets/img/work/thilini2.jpeg'),
-            base_url('assets/img/work/thilini3.jpeg'),
-            base_url('assets/img/work/thilini4.jpeg'),
-            base_url('assets/img/work/thilini5.jpeg'),
-            base_url('assets/img/work/thilini7.jpeg')
-        ],
-        'details' => [
-            'overview' => 'Fully coverage Home and indoor and Outdoor Security monitoring',
-            'installation' => '2 Days',
-            'coverage' => 'Front yard backyard and Living Room and Road side',
-            'support' => '24/7 Local',
-            'features' => [
-                '24/7 Service',
-                '2 Way Audio',
-                'PTZ Camera Service'
-            ]
-        ]
-    ],
-    [
-        'title' => 'Mrs. Srimali\'s Home', 
-        'category' => 'residential', 
-        'location' => 'Panadura',
-        'cameras' => '7',
-        'description' => 'Fully coverage Home Outdoor Security monitoring',
-        'img' => base_url('assets/img/work/srimali1.jpeg'),
-        'gallery' => [
-            base_url('assets/img/work/srimali1.jpeg'),
-            base_url('assets/img/work/srimali2.jpeg'),
-            base_url('assets/img/work/srimali3.jpeg')
-        ],
-        'details' => [
-            'overview' => 'Fully coverage Home Outdoor Security monitoring',
-            'installation' => '1 Day',
-            'coverage' => 'Front yard and backyard Premises',
-            'support' => '24/7 Local',
-            'features' => [
-                '24/7 Service',
-                '2 Way Audio',
-                'PTZ Camera Service'
-            ]
-        ]
-    ],
-];
+// Get portfolio data from controller (loaded from portfolio.json)
+$portfolioProjects = $portfolioProjects ?? [];
+
+// Process the data: convert relative paths to full URLs and ensure proper format
+$allProjects = [];
+foreach ($portfolioProjects as $project) {
+    $allProjects[] = [
+        'title' => $project['title'],
+        'category' => $project['category'],
+        'location' => $project['location'],
+        'cameras' => $project['cameras'],
+        'description' => $project['description'],
+        'img' => base_url($project['img']),
+        'gallery' => array_map(function($img) {
+            return base_url($img);
+        }, $project['gallery']),
+        'details' => $project['details']
+    ];
+}
 
 $projectsPerPage = 6;
 $pages = array_chunk($allProjects, $projectsPerPage);
