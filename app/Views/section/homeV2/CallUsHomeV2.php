@@ -32,14 +32,16 @@
     </p>
     
     <!-- Button container -->
-    <div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
-      <button class="w-full sm:w-auto px-16 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md bg-[var(--color-white)] text-[var(--color-black)] font-title">
-        Learn More
-      </button>
-      <button class="w-full sm:w-auto px-8 py-3 rounded-lg font-semibold border-2 border-[var(--color-white)] transition-all duration-300 transform hover:scale-105 shadow-md bg-transparent font-title text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--accent-red)]">
-        Call 074 0134 247
-      </button>
-    </div>
+<div class="flex flex-col sm:flex-row items-center justify-center space-y-4 sm:space-y-0 sm:space-x-4 w-full">
+  <button class="w-full sm:w-auto px-16 py-3 rounded-lg font-semibold transition-all duration-300 transform hover:scale-105 shadow-md bg-[var(--color-white)] text-[var(--color-black)] font-title">
+    Learn More
+  </button>
+  <a href="tel:0772472477" class="w-full sm:w-auto">
+    <button class="w-full sm:w-auto px-8 py-3 rounded-lg font-semibold border-2 border-[var(--color-white)] transition-all duration-300 transform hover:scale-105 shadow-md bg-transparent font-title text-[var(--color-white)] hover:bg-[var(--color-white)] hover:text-[var(--accent-red)]">
+      📞 Call 077 247 2477
+    </button>
+  </a>
+</div>
 
   </div>
 

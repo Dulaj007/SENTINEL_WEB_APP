@@ -10,6 +10,7 @@
 <?= $this->include('section/aboutV2/heroAboutUs') ?>
 <?= $this->include('section/aboutV2/StoryAboutUs') ?>
 <?= $this->include('section/aboutV2/teamAboutUs') ?>
+<?= $this->include('section/aboutV2/aboutmod.php') ?>
 <?= $this->include('section/aboutV2/vandMAboutUs') ?>
 <?= $this->include('section/aboutV2/scriptAboutUs') ?>
 
