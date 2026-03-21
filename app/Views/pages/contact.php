@@ -6,6 +6,8 @@
 <?= $this->include('section/contactUsV2/heroContactV2') ?>
 
 <?= $this->include('section/contactUsV2/contactusCardsV2') ?>
+<?= $this->include('section/contactUsV2/contactDownloads') ?>
+
 <?= $this->include('section/homeV2/ContactQuickHomeV2') ?>
 <?= view('scripts/home-script') ?>
 

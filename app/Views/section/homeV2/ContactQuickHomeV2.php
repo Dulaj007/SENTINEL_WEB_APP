@@ -101,7 +101,11 @@
 
       <div class="flex items-center gap-3 mb-2 ml-4">
         <img src="<?= getenv('app.baseURL') ?>assets/icons/call-logo.png" alt="Phone" class="w-8 h-8" />
-        <p class="text-[var(--color-white-80)]">074 0134 247</p>
+        <p class="text-[var(--color-white-80)]">076 247 2477</p>
+      </div>
+      <div class="flex items-center gap-3 mb-2 ml-4">
+        <img src="<?= getenv('app.baseURL') ?>assets/icons/call-logo.png" alt="Phone" class="w-8 h-8" />
+        <p class="text-[var(--color-white-80)]">076 247 2476</p>
       </div>
 
     </div>

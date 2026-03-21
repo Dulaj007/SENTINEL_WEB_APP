@@ -3,16 +3,25 @@
 
   <div class="max-w-7xl mx-auto flex items-center justify-between px-3 py-4">
 
-    <!-- Center: Brand with Logo -->
+    <!-- Brand -->
     <div class="flex items-center gap-3">
-      <a href="<?= base_url('/') ?>" class="">
-      <h1 class="text-xl sm:text-2xl font-extrabold flex items-center gap-1">
-        <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)] text-2xl uppercase font-semibold tracking-widest  animate-pulse">
-          ⬤ 
-        </span>
-        <span class="text-[var(--text-primary)] drop-shadow-[0_0_2px_var(--text-primary)]">24/7</span>
-        <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)]">SENTINEL</span>
-      </h1>
+      <a href="<?= base_url('/') ?>" class="flex items-center gap-0">
+        <div class="flex flex-col items-start leading-none">
+          <!-- Main Brand Line -->
+          <h1 class="text-xl sm:text-2xl font-extrabold flex items-center gap-1">
+            <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)] text-2xl uppercase font-semibold tracking-widest animate-pulse">
+              ⬤ 
+            </span>
+            <span class="text-[var(--text-primary)] drop-shadow-[0_0_2px_var(--text-primary)]">24/7</span>
+            <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)]">SENTINEL</span>
+          </h1>
+          <!-- Private Limited Subtitle -->
+          <span class="text-[8px] sm:text-[9px] uppercase tracking-[0.35em] ml-[26px] sm:ml-[30px] -mt-[1px]"
+                style="font-family: 'Inter', sans-serif; font-weight: 500; letter-spacing: 0.35em; text-transform: uppercase;">
+            <span class="text-[var(--text-secondary)]">(</span><span class="text-[var(--text-secondary)]">Pvt</span><span class="text-[var(--text-secondary)]">)</span>
+            <span class="text-[var(--text-secondary)] ml-[1px]">Limited</span>
+          </span>
+        </div>
       </a>
     </div>
 
@@ -43,13 +52,25 @@
     </div>
 
   </div>
-
-  <!-- Mobile Menu -->
-
 </nav>
+
 <!-- Mobile Menu -->
 <div id="mobile-menu" class="lg:hidden fixed inset-0 top-0
  bg-transparent backdrop-blur-xl font-title flex flex-col items-center justify-center space-y-6 scale-0 opacity-0 transform transition-all duration-500 z-40">
+  
+  <!-- Brand in Mobile Menu -->
+  <div class="flex flex-col items-center mb-4">
+    <h1 class="text-2xl sm:text-3xl font-extrabold flex items-center gap-1">
+      <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)] animate-pulse">⬤</span>
+      <span class="text-[var(--text-primary)]">24/7</span>
+      <span class="text-[var(--accent-red)] drop-shadow-[0_0_4px_var(--accent-red)]">SENTINEL</span>
+    </h1>
+    <span class="text-[9px] sm:text-[10px] uppercase tracking-[0.35em] -mt-[1px]"
+          style="font-family: 'Inter', sans-serif; font-weight: 500;">
+      <span class="text-[var(--text-secondary)]">(Pvt) Limited</span>
+    </span>
+  </div>
+
   <a href="<?= base_url('/') ?>" class="mobile-nav-link text-2xl shadow-2xl">Home</a>
   <a href="<?= base_url('about') ?>" class="mobile-nav-link text-2xl shadow-2xl">About</a>
   <a href="<?= base_url('services') ?>" class="mobile-nav-link text-2xl shadow-2xl">Services</a>
@@ -61,7 +82,7 @@
 </div>
 
 <script>
-// Hamburger + Mobile Menu (your existing code)
+// Hamburger + Mobile Menu
 const toggleBtn = document.getElementById('menu-toggle');
 const mobileMenu = document.getElementById('mobile-menu');
 const spans = toggleBtn.querySelectorAll('span');
@@ -71,7 +92,6 @@ let menuOpen = false;
 toggleBtn.addEventListener('click', () => {
   menuOpen = !menuOpen;
 
-  // Animate hamburger → X
   if(menuOpen){
     spans[0].classList.add('rotate-45', 'translate-y-2');
     spans[1].classList.add('opacity-0');
@@ -82,7 +102,6 @@ toggleBtn.addEventListener('click', () => {
     spans[2].classList.remove('-rotate-45', '-translate-y-2');
   }
 
-  // Animate mobile menu zoom
   if(menuOpen){
     mobileMenu.classList.remove('scale-0', 'opacity-0');
     mobileMenu.classList.add('scale-100', 'opacity-100');
@@ -92,17 +111,15 @@ toggleBtn.addEventListener('click', () => {
   }
 });
 
-// Highlight current page link
+// Highlight current page
 const currentPath = window.location.pathname.replace(/\/$/, '');
 
 document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
   const linkPath = new URL(link.href).pathname.replace(/\/$/, '');
-
   if (currentPath === linkPath) {
     link.classList.add('text-[var(--accent-red)]', 'font-bold');
   }
 });
-
 
 // Smart navbar hide/show on scroll
 let lastScrollTop = 0;
@@ -112,36 +129,13 @@ window.addEventListener('scroll', () => {
   const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
 
   if(currentScroll > lastScrollTop && currentScroll > 100){
-    // Scroll Down → hide navbar
     navbar.classList.add('-translate-y-full');
     navbar.classList.remove('translate-y-0');
   } else {
-    // Scroll Up → show navbar
     navbar.classList.remove('-translate-y-full');
     navbar.classList.add('translate-y-0');
   }
 
-  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // For Mobile or negative scroll
+  lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
 });
 </script>
-
-
-
-<!-- Mobile Menu Toggle Script -->
-<script>
-const toggleBtn = document.getElementById('menu-toggle');
-const mobileMenu = document.getElementById('mobile-menu');
-
-toggleBtn.addEventListener('click', () => {
-  mobileMenu.classList.toggle('hidden');
-});
-
-// Highlight current page link
-const currentURL = window.location.href;
-document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
-  if(currentURL.includes(link.getAttribute('href'))) {
-    link.classList.add('text-[var(--accent-red)]', 'font-bold');
-  }
-});
-</script>
-
